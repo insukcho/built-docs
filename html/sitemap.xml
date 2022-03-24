@@ -8571,7 +8571,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/auditbeat-installation-configuration.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -8627,7 +8627,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/auditbeat-template.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -8648,14 +8648,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/change-index-name.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/command-line-options.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -8914,7 +8914,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -9089,7 +9089,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/http-endpoint.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -9110,7 +9110,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/kafka-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -9145,14 +9145,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/load-kibana-dashboards.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/logstash-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -9278,7 +9278,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/auditbeat/current/running-on-docker.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -9705,14 +9705,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/change-index-name.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/command-line-options.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -10013,7 +10013,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -10832,7 +10832,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-installation-configuration.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -11371,14 +11371,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-template.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/filtering-and-enhancing-data.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -11413,7 +11413,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/http-endpoint.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -11441,7 +11441,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/kafka-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -11490,14 +11490,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/load-kibana-dashboards.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/logstash-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -11679,14 +11679,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/running-on-cloudfoundry.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/filebeat/current/running-on-docker.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -11910,14 +11910,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/functionbeat/current/change-index-name.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/functionbeat/current/command-line-options.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -12155,7 +12155,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/functionbeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -12302,14 +12302,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/functionbeat/current/functionbeat-installation-configuration.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/functionbeat/current/functionbeat-overview.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -12323,7 +12323,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/functionbeat/current/functionbeat-template.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -12379,7 +12379,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/functionbeat/current/logstash-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -12680,14 +12680,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/change-index-name.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/command-line-options.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -12960,7 +12960,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -13184,7 +13184,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-installation-configuration.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -13205,7 +13205,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/heartbeat-template.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -13219,7 +13219,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/http-endpoint.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -13240,7 +13240,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/kafka-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -13275,7 +13275,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/logstash-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -13450,7 +13450,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/heartbeat/current/running-on-docker.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -13919,7 +13919,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/journalbeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -15662,21 +15662,21 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/libbeat/current/upgrading.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/loggingplugin/current/log-driver-configuration.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/loggingplugin/current/log-driver-installation.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -15697,14 +15697,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/loggingplugin/current/log-driver-troubleshooting.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/loggingplugin/current/log-driver-usage-examples.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -15858,14 +15858,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/change-index-name.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/command-line-options.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -16145,7 +16145,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-23T14:09:57+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -16775,7 +16775,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/http-endpoint.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -16796,7 +16796,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/kafka-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -16838,14 +16838,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/load-kibana-dashboards.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/logstash-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -16887,7 +16887,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-installation-configuration.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -19064,7 +19064,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-template.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -19183,14 +19183,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/running-on-cloudfoundry.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/metricbeat/current/running-on-docker.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -19414,14 +19414,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/change-index-name.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/command-line-options.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -19456,7 +19456,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/configuration-flows.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -19750,7 +19750,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20037,7 +20037,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/http-endpoint.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20058,7 +20058,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/kafka-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20100,14 +20100,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/load-kibana-dashboards.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/logstash-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20198,7 +20198,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-installation-configuration.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20275,7 +20275,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-template.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20366,7 +20366,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/packetbeat/current/running-on-docker.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -20849,14 +20849,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/change-index-name.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/command-line-options.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -21122,7 +21122,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/elasticsearch-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -21304,7 +21304,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/http-endpoint.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -21325,7 +21325,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/kafka-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -21360,14 +21360,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/load-kibana-dashboards.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/logstash-output.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -21640,7 +21640,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/beats/winlogbeat/current/winlogbeat-template.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -28962,665 +28962,658 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-about.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-access-kibana.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-account-usage.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-activity-page.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-add-user-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-adding-elastic-plugins.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-adding-plugins.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-api-console.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-autoscaling-example.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-autoscaling.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-aws-custom-repository.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-aws-instance-configuration.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
-    <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-azure-instance-configuration.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-azure-snapshotting.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-billing-contacts.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-billing-details.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-billing-history.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-billing-stop.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-billing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-cluster-health-notifications.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-config-change-errors.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-configure-api-module.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-configure-deployment-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-configure-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-configure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-configuring-keystore.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-custom-bundles.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-custom-repository.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-customize-deployment-components.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-default-aws-configurations.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-default-azure-configurations.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-default-gcp-configurations.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-delete-deployment.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-deployment-no-op.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-deployment-node-move.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-editing-user-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-enable-kibana.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-enable-logging-and-monitoring.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-gcp-instance-configuration.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-gcs-snapshotting.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-get-help.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-getting-started-accessing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-getting-started-installing-version.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-getting-started-installing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-getting-started-next-steps.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-getting-started-removing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-getting-started.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-glossary.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-java-transport.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-licensing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-maintenance-mode-deployments.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-manage-apm-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-manage-kibana-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-memory-pressure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-metrics-memory-pressure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-migrate-data-internal.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-migrate-data.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-migrating.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-monitoring-setup.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-monitoring.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-password-reset.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-planning.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-reference-hardware.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-reference-regions.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-regional-deployment-aliases.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-restoring-snapshots.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-restrictions.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-saas-metrics-accessing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-secure-clusters-kerberos.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-secure-clusters-oidc.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-securing-clusters-SAML.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-security-transport.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-security.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-service-status.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-snapshot-restore.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-traffic-filtering-deployment-configuration.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-traffic-filtering-ip.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-traffic-filtering-psc.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-traffic-filtering-vnet.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-traffic-filtering-vpc.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-transport-example-config.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-upgrade-deployment.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-upgrading-v5.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-upgrading-v6.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-upgrading-v7.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-vcpu-boost-instance.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-version-policy.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-watcher.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-whats-new.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/ech-working-with-elasticsearch.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/echscenario_is_my_cluster_really_highly_available.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/echscenario_why_are_my_cluster_response_times_suddenly_so_much_worse.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/echscenario_why_is_performance_degrading_over_time.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/echshare_a_repository_across_clusters.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-heroku/current/echsign_outgoing_saml_message.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29641,7 +29634,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-advanced-node-scheduling.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29753,7 +29746,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-apm-advanced-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29767,7 +29760,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-apm-eck-managed-es.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29795,14 +29788,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-beat-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-beat-quickstart.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29851,14 +29844,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-custom-images.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-customize-pods.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29879,14 +29872,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-deploy-elasticsearch.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-deploy-kibana.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29907,7 +29900,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-elastic-agent-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29921,7 +29914,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-elastic-agent-fleet-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29935,7 +29928,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-elastic-agent-fleet-quickstart.html</loc>
-    <lastmod>2022-03-24T08:39:33+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29949,7 +29942,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-elastic-agent-quickstart.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -29970,14 +29963,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-enterprise-search-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-enterprise-search-quickstart.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30047,35 +30040,35 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-kibana-advanced-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-kibana-es.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-kibana-http-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-kibana-plugins.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-kibana-secure-settings.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30096,28 +30089,28 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-managing-compute-resources.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-maps-advanced-configuration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-maps-data.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-maps-es.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30152,35 +30145,35 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-openshift-agent.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-openshift-anyuid-workaround.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-openshift-beats.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-openshift-deploy-elasticsearch.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-openshift-deploy-kibana.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30222,7 +30215,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-orchestration.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30243,14 +30236,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-pod-disruption-budget.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-prestop.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30264,7 +30257,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-readiness.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30278,7 +30271,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-remote-clusters.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30313,7 +30306,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-saml-authentication.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30327,7 +30320,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-security-context.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30341,14 +30334,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-service-mesh-istio.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-service-mesh-linkerd.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30362,28 +30355,28 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-services.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-snapshots.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-stack-monitoring.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-stateless-autoscaling.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30411,21 +30404,21 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-traffic-splitting.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-transport-settings.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-troubleshooting-methods.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30453,7 +30446,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-upgrade-deployment.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30474,21 +30467,21 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-users-and-roles.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-virtual-memory.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-volume-claim-templates.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30572,14 +30565,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/release-highlights-1.1.0.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud-on-k8s/current/release-highlights-1.1.1.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -30880,1820 +30873,1792 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/APM_routes.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Accounts.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/App_Search_-_Read-only.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Authentication.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Billing_Costs_Analysis.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployment_-_CRUD.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployment_-_Commands.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployment_-_Info.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployment_-_Remote_Clusters.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployment_-_Upgrade_Assistant.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployment_Resources_-_CRUD.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployments_-_Extensions.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployments_-_Templates.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployments_-_Traffic_Filter_-_Associations.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Deployments_-_Traffic_Filter_-_CRUD.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Integrations_Server_routes.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Organizations.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/Stack_-_Versions_-_CRUD.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/definitions.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-about.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-access-kibana.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-account-usage.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-account-user-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-activity-page.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-add-user-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-adding-elastic-plugins.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-adding-plugins.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-access.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-authentication.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-console.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-deployment-crud.html</loc>
-    <lastmod>2022-03-23T20:41:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-deployment-other.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-examples.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-organizations.html</loc>
-    <lastmod>2022-03-23T20:41:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-principles.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-rate-limiting.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-api-swagger.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-appsearch-readonly.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-autoscaling-api-example.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-autoscaling-example.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-autoscaling.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-aws-custom-repository.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-aws-instance-configuration.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
-    <loc>https://www.elastic.co/guide/en/cloud/current/ec-azure-instance-configuration.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-azure-marketplace-native.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-azure-snapshotting.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-beats.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-best-practices-data.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-aws.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-azure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-contacts.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-details.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-dimensions.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-ecu.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-gcp.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-history.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-models.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing-stop.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-billing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-cloud-id.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-cloud-ingest-data.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-cluster-health-notifications.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-config-change-errors.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-configure-api-module.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-configure-deployment-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-configure-index-management.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-configure-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-configure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-configuring-keystore.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-create-deployment.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-custom-bundles.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-custom-repository.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-customize-deployment-components.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-customize-deployment.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-default-aws-configurations.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-default-azure-configurations.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-default-gcp-configurations.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-delete-deployment.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-deployment-no-op.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-deployment-node-move.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-disable-data-tier.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-editing-user-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-enable-ccs.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-enable-enterprise-search.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-enable-kibana.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-enable-logging-and-monitoring.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-faq-billing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-faq-getting-started.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-faq-technical.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-gcp-instance-configuration.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-gcs-snapshotting.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-get-help.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-existing-email.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-next-steps.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-node-js.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-profiles.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-python.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-search-use-cases-beats-logstash.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-search-use-cases-db-logstash.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-search-use-cases-node-logs.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-search-use-cases-python-logs.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started-trial.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-getting-started.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-glossary.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-integrations-server-api-example.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
-    <loc>https://www.elastic.co/guide/en/cloud/current/ec-integrations-server-apm-switch.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-java-transport.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-licensing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-logstash.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-maintenance-mode-deployments.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-manage-apm-and-fleet.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-manage-apm-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-manage-apm.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-manage-appsearch-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-manage-enterprise-search-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-manage-integrations-server.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-manage-kibana-settings.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-marketplaces.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-memory-pressure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-metrics-memory-pressure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-migrate-ccs.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-migrate-data-internal.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-migrate-data.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-migrate-from-aws.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-migrate-index-management.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-monitoring-setup.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-monitoring.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-node-types.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-openapi-specification.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-operational-emails.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-organizations.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-password-reset.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-planning.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-plugins-guide.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-reference-hardware.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-reference-regions.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-regional-deployment-aliases.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-regions-templates-instances.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2018-05-16.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2018-06-19.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2018-07-03.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2018-08-01.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2018-10-29.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2018-11-12.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2018-12-17.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-01-24.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-02-13.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-03-20.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-04-19.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-05-20.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-06-05.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-07-03.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-07-30a.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-08-12.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-08-13.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-09-03.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-09-10.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-10-23.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-10-28.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-11-25.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-12-18.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2019-12-20.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-01-15.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-01-31.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-02-12.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-03-05.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-03-17.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-04-09.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-04-16.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-05-05.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-05-12.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-05-29.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-06-17a.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-06-17b.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-06-25.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-06-30.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-07-13.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-07-30.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-08-11.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-09-15.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-10-01.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-10-02.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-10-06.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-10-15.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-10-29.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-11-17.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-12-08.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2020-12-15.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-01-20.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-02-09.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-03-02.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-03-23.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-04-07.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-04-15.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-04-22.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-05-04.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-05-25.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-06-15.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-07-06.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-07-27.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-08-17.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-09-07.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-10-05.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-10-20.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-10-21-bahrain.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-10-21-capetown.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-10-21-milan.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-11-09.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2021-12-06.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2022-01-18.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2022-02-03.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2022-02-28.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
-    <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2022-03-22-azure.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
-    <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes-2022-03-22.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-release-notes.html</loc>
-    <lastmod>2022-03-23T09:41:55+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-remote-reindex.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-restful-api-client-app.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-restful-api-command-line.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-restful-api-ecctl.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-restful-api-terraform.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-restful-api.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-restoring-snapshots.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-restrictions.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-saas-metrics-accessing.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-scenario_is_my_cluster_really_highly_available.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-scenario_why_are_my_cluster_response_times_suddenly_so_much_worse.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-scenario_why_is_performance_degrading_over_time.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-secure-clusters-kerberos.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-secure-clusters-oidc.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-securing-clusters-SAML.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-securing-clusters-oidc-op.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-securing-clusters-saml-azure.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-security-transport.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-security.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-select-subscription-level.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-service-status.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-sign_outgoing_saml_message.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-snapshot-restore.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-subscription-overview.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-deployment-configuration.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-ip.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-psc.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-through-the-api.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-vnet.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-traffic-filtering-vpc.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-transport-example-config.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-trust-management.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-upgrade-appsearch.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-upgrade-deployment.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-upgrading-v5.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-upgrading-v6.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-upgrading-v7.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-vcpu-boost-instance.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-version-policy.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-watcher.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-whats-new.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec-working-with-elasticsearch-clients.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec_connect_a_client.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec_ingest_data_from_custom_sources.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/cloud/current/ec_share_a_repository_across_clusters.html</loc>
-    <lastmod>2022-03-22T21:40:11+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34779,7 +34744,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html</loc>
-    <lastmod>2022-03-24T14:10:13+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34793,7 +34758,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-stack-docker.html</loc>
-    <lastmod>2022-03-22T16:54:30+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34877,7 +34842,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/elastic-stack-breaking-changes.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34891,7 +34856,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/elasticsearch-breaking-changes.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34905,14 +34870,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/kibana-breaking-changes.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34926,7 +34891,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/logstash-breaking-changes.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34940,14 +34905,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/overview.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/security-breaking-changes.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -34961,35 +34926,35 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrade-elastic-stack-for-elastic-cloud.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-elastic-stack-on-prem.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-elastic-stack.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-elasticsearch.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-kibana.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53294,7 +53259,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-icu.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53364,7 +53329,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-kuromoji.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53406,7 +53371,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-nori.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53420,7 +53385,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-phonetic.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53434,7 +53399,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-smartcn.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53448,14 +53413,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-stempel.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-ukrainian.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53483,7 +53448,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/discovery-azure-classic-long.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53504,7 +53469,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/discovery-azure-classic.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53518,7 +53483,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/discovery-ec2.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53588,7 +53553,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/discovery-gce.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53630,7 +53595,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/ingest-attachment.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53721,7 +53686,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/mapper-annotated-text.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53735,7 +53700,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/mapper-murmur3.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53749,7 +53714,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/mapper-size.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53812,7 +53777,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/repository-hdfs.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -53833,7 +53798,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/plugins/current/store-smb.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -54897,7 +54862,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/breaking-changes.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -55002,7 +54967,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-nodes.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -55016,7 +54981,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/cat-plugins.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -55401,7 +55366,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-stats.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -55758,7 +55723,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/deb.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -55912,7 +55877,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -55926,7 +55891,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete-by-query.html</loc>
-    <lastmod>2022-03-17T11:10:13+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -55996,7 +55961,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update-by-query.html</loc>
-    <lastmod>2022-03-17T11:10:13+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -56311,7 +56276,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/feature-migration-api.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -56388,7 +56353,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/fips-140-compliance.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -56696,7 +56661,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -57767,7 +57732,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/logging.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -58012,14 +57977,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api-deprecation.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/migration-api.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -59573,7 +59538,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-api-compatibility.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -59713,7 +59678,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -61113,7 +61078,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -61596,7 +61561,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-jdbc.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -61624,7 +61589,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/sql-odbc-installation.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -61932,7 +61897,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/targz.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -62037,7 +62002,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/transform-limitations.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -62548,7 +62513,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html</loc>
-    <lastmod>2022-03-22T15:11:09+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -62821,7 +62786,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/enterprise-search/current/docker.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -63206,7 +63171,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/enterprise-search/current/saml-idp.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -63325,14 +63290,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/fleet/current/air-gapped.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/fleet/current/beats-agent-comparison.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -63360,7 +63325,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/fleet/current/debug-standalone-agents.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -63577,14 +63542,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/fleet/current/install-fleet-managed-elastic-agent.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -63766,7 +63731,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/fleet/current/upgrade-elastic-agent.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -64788,7 +64753,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/deb.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -64942,7 +64907,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/docker.html</loc>
-    <lastmod>2022-03-23T11:40:20+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -65432,7 +65397,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/kibana-plugins.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -65670,7 +65635,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/maps-connect-to-ems.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -66048,7 +66013,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/rpm.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -66531,7 +66496,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/targz.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -66748,7 +66713,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/upgrade.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -66832,7 +66797,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/kibana/current/windows.html</loc>
-    <lastmod>2022-03-22T14:41:47+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79264,7 +79229,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.10-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79285,7 +79250,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.11-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79348,7 +79313,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.3-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79383,7 +79348,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.4-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79418,7 +79383,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.5-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79453,7 +79418,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.6-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79488,7 +79453,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.7-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79523,7 +79488,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.8-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79544,7 +79509,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v5.1.9-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79852,7 +79817,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.0-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79908,7 +79873,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.1-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79936,7 +79901,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.10-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79950,28 +79915,28 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.11-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.12-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.13-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.14-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -79985,7 +79950,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.2-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80020,7 +79985,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.3-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80041,7 +80006,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.4-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80069,7 +80034,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.5-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80083,7 +80048,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.6-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80097,7 +80062,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.7-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80111,7 +80076,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.8-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80125,7 +80090,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.0.9-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80146,7 +80111,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.1.0-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80167,7 +80132,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.1.1-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80188,35 +80153,35 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.1.2-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.1.3-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.1.4-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.1.5-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.1.6-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80230,7 +80195,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.2.0-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80258,7 +80223,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.2.1-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80286,7 +80251,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.2.2-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80314,7 +80279,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.2.3-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80335,7 +80300,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.2.4-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80356,7 +80321,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.2.5-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80370,7 +80335,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.2.6-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -80391,7 +80356,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash-versioned-plugins/current/v6.3.0-plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81238,7 +81203,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/codec-new-plugin.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81385,14 +81350,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/docker-config.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/docker.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81448,7 +81413,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/filter-new-plugin.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81462,7 +81427,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/first-event.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81490,7 +81455,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/hot-threads-api.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81504,7 +81469,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/input-new-plugin.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81651,7 +81616,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/logstash-modules.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81714,7 +81679,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/monitoring-logstash.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -81777,14 +81742,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/offline-plugins.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/output-new-plugin.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -82400,7 +82365,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/plugins-inputs-beats.html</loc>
-    <lastmod>2022-03-24T11:39:29+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83247,14 +83212,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/running-logstash-windows.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83380,7 +83345,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83590,7 +83555,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-dfa-limitations.html</loc>
-    <lastmod>2022-03-22T16:54:30+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83681,7 +83646,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-limitations.html</loc>
-    <lastmod>2022-03-22T16:54:30+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84185,21 +84150,21 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/ingest-logs-metrics-uptime.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/ingest-logs.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/ingest-metrics.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84213,14 +84178,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/ingest-traces.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/ingest-uptime.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84248,7 +84213,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/instrument-apps.html</loc>
-    <lastmod>2022-03-18T22:10:10+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84297,35 +84262,35 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/monitor-aws.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/monitor-azure.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/monitor-gcp.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/monitor-java-app.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/monitor-kubernetes.html</loc>
-    <lastmod>2022-03-18T22:10:10+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84430,7 +84395,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/observability/current/synthetics-quickstart.html</loc>
-    <lastmod>2022-03-22T20:41:39+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -92459,7 +92424,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/welcome-to-elastic/current/welcome-to-elastic.html</loc>
-    <lastmod>2022-03-22T22:14:17+00:00</lastmod>
+    <lastmod>2022-03-24T21:05:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
