@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+<meta charset="UTF-8">
+<title>Native Azure integration | Elasticsearch Service Documentation [master] | Elastic</title>
+<link rel="home" href="index.html" title="Elasticsearch Service Documentation [master]"/>
+<link rel="up" href="ec-marketplaces.html" title="Subscribing from a marketplace"/>
+<link rel="prev" href="ec-billing-aws.html" title="AWS Marketplace"/>
+<link rel="next" href="ec-billing-gcp.html" title="GCP Marketplace: Billing and native integrations"/>
+<meta name="DC.type" content="Learn/Docs/Cloud/Reference/master"/>
+<meta name="DC.subject" content="Elastic Cloud"/>
+<meta name="DC.identifier" content="master"/>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.optimizely.com/js/18132920325.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="Elastic">
+    <meta name="application-name" content="Elastic">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="naver-site-verification" content="936882c1853b701b3cef3721758d80535413dbfd" />
+    <meta name="yandex-verification" content="d8a47e95d0972434" />
+    <meta name="localized" content="true" />
+    <meta name="st:robots" content="follow,index" />
+    <meta property="og:image" content="https://www.elastic.co/static/images/elastic-logo-200.png" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="64x64" href="/favicon_64x64_16bit.png">
+    <link rel="apple-touch-icon-precomposed" sizes="32x32" href="/favicon_32x32.png">
+    <link rel="apple-touch-icon-precomposed" sizes="16x16" href="/favicon_16x16.png">
+    <!-- Give IE8 a fighting chance -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="/guide/static/styles.css" />
+  </head>
+
+  <!--© 2015-2022 Elasticsearch B.V. -->
+  <!-- All Elastic documentation is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. -->
+  <!-- http://creativecommons.org/licenses/by-nc-nd/4.0/ -->
+  
+  <body>
+    <!-- Google Tag Manager -->
+    <script>dataLayer = [];</script><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58RLH5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-58RLH5');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12395217-16"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-12395217-16');
+    </script>
+
+    <!--BEGIN QUALTRICS WEBSITE FEEDBACK SNIPPET-->
+    <script type='text/javascript'>
+      (function(){var g=function(e,h,f,g){
+      this.get=function(a){for(var a=a+"=",c=document.cookie.split(";"),b=0,e=c.length;b<e;b++){for(var d=c[b];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(a))return d.substring(a.length,d.length)}return null};
+      this.set=function(a,c){var b="",b=new Date;b.setTime(b.getTime()+6048E5);b="; expires="+b.toGMTString();document.cookie=a+"="+c+b+"; path=/; "};
+      this.check=function(){var a=this.get(f);if(a)a=a.split(":");else if(100!=e)"v"==h&&(e=Math.random()>=e/100?0:100),a=[h,e,0],this.set(f,a.join(":"));else return!0;var c=a[1];if(100==c)return!0;switch(a[0]){case "v":return!1;case "r":return c=a[2]%Math.floor(100/c),a[2]++,this.set(f,a.join(":")),!c}return!0};
+      this.go=function(){if(this.check()){var a=document.createElement("script");a.type="text/javascript";a.src=g;document.body&&document.body.appendChild(a)}};
+      this.start=function(){var a=this;window.addEventListener?window.addEventListener("load",function(){a.go()},!1):window.attachEvent&&window.attachEvent("onload",function(){a.go()})}};
+      try{(new g(100,"r","QSI_S_ZN_emkP0oSe9Qrn7kF","https://znemkp0ose9qrn7kf-elastic.siteintercept.qualtrics.com/WRSiteInterceptEngine/?Q_ZID=ZN_emkP0oSe9Qrn7kF")).start()}catch(i){}})();
+    </script><div id='ZN_emkP0oSe9Qrn7kF'><!--DO NOT REMOVE-CONTENTS PLACED HERE--></div>
+    <!--END WEBSITE FEEDBACK SNIPPET-->
+
+    <div id='elastic-nav' style="display:none;"></div>
+    <script src='https://www.elastic.co/elastic-nav.js'></script>
+
+    <!-- Subnav -->
+    <div>
+      <div>
+        <div class="tertiary-nav d-none d-md-block">
+          <div class="container">
+            <div class="p-t-b-15 d-flex justify-content-between nav-container">
+              <div class="breadcrum-wrapper"><span><a href="/guide/" style="font-size: 14px; font-weight: 600; color: #000;">Docs</a></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <section id="content" >
+        <div class="content-wrapper">
+
+          <section id="guide" lang="en">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-8 guide-section">
+                  <!-- start body -->
+                  <div class="page_header">
+You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Elasticsearch Service Documentation [master]</a></span>
+»
+<span class="breadcrumb-link"><a href="ec-getting-started.html">Getting started</a></span>
+»
+<span class="breadcrumb-link"><a href="ec-marketplaces.html">Subscribing from a marketplace</a></span>
+»
+<span class="breadcrumb-node">Native Azure integration</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="ec-billing-aws.html">« AWS Marketplace</a>
+</span>
+<span class="next">
+<a href="ec-billing-gcp.html">GCP Marketplace: Billing and native integrations »</a>
+</span>
+</div>
+<div class="section">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="ec-azure-marketplace-native"></a>Native Azure integration<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-marketplace-azure-native.asciidoc">edit</a></h2>
+</div></div></div>
+<p>The Elastic Cloud native Azure integration allows you to deploy managed instances of the Elastic Stack directly in Azure, through the Azure integrated marketplace. The integration brings the following benefits:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p><span class="strong strong"><strong>Easy deployment for managed Elastic Stack instances</strong></span></p>
+<p>Elastic Stack instances managed by Elastic can be deployed directly from the Azure console. This provides the complete Elastic Stack experience with all commercial features.</p>
+</li>
+<li class="listitem">
+<p><span class="strong strong"><strong>Integrated billing</strong></span></p>
+<p>You are billed directly to your Azure account; no need to configure billing details in Elastic.</p>
+</li>
+<li class="listitem">
+<p><span class="strong strong"><strong>Easy consolidation of your Azure logs in Elastic</strong></span></p>
+<p>Use a single-step setup to ingest logs from your Azure services into the Elastic Stack.</p>
+</li>
+</ul>
+</div>
+<p>Check the following sections to learn more:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p><span class="strong strong"><strong>Getting started</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-get-started">How do I get started?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-pricing">What is the pricing for this offer?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-regions">Which Azure regions are supported?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-subscription-levels">Which Elastic Cloud subscription levels are available?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-change-subscription">How can I change my Elastic Cloud subscription level?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-existing-email">Can I subscribe using an email address from another Elastic account?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-azure-user-management">Is the Elasticsearch native integration connected with Azure user management?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-prior-cloud-account">I already have an Elastic Cloud account, can I use this integration?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-convert-trial">Can I sign up for an Elastic Cloud trial account and then convert to the Azure Elasticsearch native integration?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-azure-tenant">Does Elasticsearch get deployed into my tenant in Azure?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-azure-tenant-info">What Azure tenant information does Elastic have access to?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-cli-api">Can I deploy Elasticsearch using the Azure CLI, REST API, or an ARM Template?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-migrate">How do I migrate my data from the classic Azure marketplace account to the native integration?</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong strong"><strong>Managing your Elastic Cloud deployment</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-whats-included">What is included in my Elastic Cloud deployment?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-how-to-access">How can I access my Elastic Cloud deployment?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-modify-deployment">How can I modify my Elastic Cloud deployment?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-delete-deployment">How can I delete my Elastic Cloud deployment?</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong strong"><strong>Configuring logs and metrics</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-monitor">How do I monitor my existing Azure services?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-ingest-metrics">How do I ingest metrics from my Azure services?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-vm-extensions">How can I monitor my Azure virtual machines in Elasticsearch?</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong strong"><strong>Troubleshooting</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-authorization-access">I receive an error message about not having required authorization.</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-deployment-failed-traffic-filter">My Elastic Cloud deployment creation failed.</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-failed-sso">I can&#8217;t SSO into my Elastic Cloud deployment.</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-logs-not-ingested">My Azure Cloud Native integration logs are not being ingested.</a>
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p><span class="strong strong"><strong>Support</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-support">How do I get support?</a>
+</li>
+<li class="listitem">
+<a class="xref" href="ec-azure-marketplace-native.html#azure-integration-change-level">How can I change my subscription level / support level?</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<h4><a id="ec-azure-integration-getting-started"></a>Getting started<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-marketplace-azure-native.asciidoc">edit</a></h4>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-get-started"></a>How do I get started with Elastic Cloud?
+</span>
+</dt>
+<dd>
+<p>
+Elastic Cloud is available as an offering through the Azure console.
+</p>
+<p><span class="strong strong"><strong>Prerequisites</strong></span></p>
+<p>There are a few requirements to check before setting up an Elastic Cloud deployment:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+You first must be configured in Azure as a subscription <em>Owner</em>. Check <a href="https://docs.microsoft.com/en-us/azure/cost-management-billing/manage/add-change-subscription-administrator#assign-a-subscription-administrator" class="ulink" target="_top">Assign a subscription administrator</a> in the Azure documentation for steps to assign an <em>Owner</em> role.
+</li>
+<li class="listitem">
+You cannot use an email address that already has an Elastic Cloud account. If your Azure account address is currently used for an Elastic Cloud account, either use a different Azure account to set up the Elasticsearch resource, or <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-support">contact the Elastic Support Team</a> for assistance.
+</li>
+<li class="listitem">
+You must have a credit card present on your Azure subscription. If you have a non-payment subscription, such as a <a href="https://visualstudio.microsoft.com/subscriptions/" class="ulink" target="_top">Virtual Studio Subscription</a>, you won&#8217;t be able to create an Elastic Cloud deployment. Refer to the Azure <a href="https://docs.microsoft.com/en-us/azure/partner-solutions/elastic/troubleshoot#purchase-errors" class="ulink" target="_top">Purchase errors</a> troubleshooting documentation for more information.
+</li>
+<li class="listitem">
+<p>In order to single sign-on into your Elastic Cloud deployment from Azure you need to request approval from your Azure administrator.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure-sso-access.png" alt="A UI dialog indicating that the Elasticsearch app in Azure requires Admin approval for SSO access.">
+</div>
+</div>
+</li>
+</ul>
+</div>
+<p><span class="strong strong"><strong>Getting started</strong></span></p>
+<p>Once you&#8217;re configured in Azure as a subscription owner, you can access Elastic Cloud in two ways:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>Search for <code class="literal">elastic</code> in the Azure Search bar. On the results page, the <code class="literal">Elasticsearch</code> link under the <span class="strong strong"><strong>Services</strong></span> menu will open a page that guides you through deploying the Elastic Stack.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure002.png" alt="Search results showing Elasticsearch at the top of a list under Services">
+</div>
+</div>
+</li>
+<li class="listitem">
+Navigate to the Azure <span class="strong strong"><strong>Marketplace</strong></span> page. There, you&#8217;ll find the Elastic native integration listed as <span class="strong strong"><strong>Elasticsearch (Elastic Cloud)</strong></span>. Open the link and follow the on-screen steps to deploy the Elastic Stack.
+</li>
+</ol>
+</div>
+<p>When you create an Elastic Cloud deployment, an Elastic Stack cluster is created for you. The size of this deployment is <span class="strong strong"><strong>16GB of RAM</strong></span> and <span class="strong strong"><strong>480GB of storage</strong></span>, across <span class="strong strong"><strong>two availability zones</strong></span> for redundancy. The size of the deployment, both RAM and storage, can be changed directly in the Elastic console. Usage charges are based on the size of your deployment so ensure that your instance is sized efficiently. The deployment defaults to the latest available version of the Elastic Stack. Check our <a class="xref" href="ec-version-policy.html" title="Version policy">Version policy</a> to learn more about when new versions are made available and old versions are removed from service.</p>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-pricing"></a>What is the pricing for this offer?
+</span>
+</dt>
+<dd>
+<p>
+Pricing is pay-as-you-go per hour for each Elastic Cloud deployment that you have created. Note that there is no free trial period for the offering. Charges are applied to your Azure bill at the end of the month. You can use the Elastic Cloud <a href="/cloud/elasticsearch-service/pricing?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">Pricing Calculator</a> to size a deployment and view the corresponding hourly rate.
+</p>
+<p>Elastic charges include:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a href="https://cloud.elastic.co/pricing" class="ulink" target="_top">Hourly consumption based on your active deployments</a>
+</li>
+<li class="listitem">
+<a href="https://cloud.elastic.co/deployment-pricing-table" class="ulink" target="_top">Data transfer and snapshot storage charges</a>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-regions"></a>Which Azure regions are supported?
+</span>
+</dt>
+<dd>
+Here is the <a href="/guide/en/cloud/current/ec-regions-templates-instances.html#ec-azure_regions" class="ulink" target="_top">list of available Azure regions</a> supported in Elastic Cloud.
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-subscription-levels"></a>Which Elastic Cloud subscription levels are available?
+</span>
+</dt>
+<dd>
+Elastic Cloud offers a number of different <a href="https://elastic.co/pricing" class="ulink" target="_top">subscription levels</a>. Your Elastic Cloud subscription will default to the Enterprise subscription, giving you immediate access to advanced Elastic Stack features like machine learning, as well as premium support response time SLAs.
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-change-subscription"></a>How can I change my Elastic Cloud subscription level?
+</span>
+</dt>
+<dd>
+<p>
+You can modify your subscription level on the billing page in the Elastic console.
+</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Open the Elastic Cloud <span class="strong strong"><strong>list deployments</strong></span> page in Azure. From here, you can view any existing Elastic Cloud deployments that you have created.
+</li>
+<li class="listitem">
+Select a deployment to open the deployment overview page.
+</li>
+<li class="listitem">
+<p>Select the <span class="strong strong"><strong>Advanced Settings</strong></span> link to access your deployment in the Elastic Cloud console.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure008.png" alt="The deployment overview page in Azure with the change my subscription link highlighted">
+</div>
+</div>
+</li>
+<li class="listitem">
+In the Elastic Cloud console, select your account avatar icon at the top of the page, and then choose <span class="strong strong"><strong>Account &amp; Billing</strong></span>.
+</li>
+<li class="listitem">
+<p>Select the <span class="strong strong"><strong>Billing</strong></span> tab and choose <span class="strong strong"><strong>Change my subscription</strong></span>.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure009.png" alt="The Elastic Account Billing page with Advanced Settings highlighted">
+</div>
+</div>
+</li>
+<li class="listitem">
+<p>Select the <a href="https://elastic.co/pricing" class="ulink" target="_top">subscription level</a> that you&#8217;d like.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure006.png" alt="The Update Subscription page showing Standard" width="Gold" height="Platinum">
+</div>
+</div>
+</li>
+</ol>
+</div>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-existing-email"></a>Can I subscribe using an email address from another Elastic account?
+</span>
+</dt>
+<dd>
+Your email address can be associated with only one Elastic account. For a workaround, check <a class="xref" href="ec-getting-started-existing-email.html" title="Sign up using an email address from another Elastic Cloud account">Sign up using an email address from another Cloud account</a>.
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-azure-user-management"></a>Is the Elasticsearch native integration connected with Azure user management?
+</span>
+</dt>
+<dd>
+<p>
+No. Elastic is not currently integrated with Azure user management. Azure users who deploy Elasticsearch on Azure can view and manage their own cluster through the Cloud console, but other Azure users in the same tenant cannot access clusters through the Cloud console other than those that they themselves created.
+</p>
+<p>In the Cloud console, when you try to access resources such as Elasticsearch, Kibana, Enterprise Search, or APM in a deployment that was created by another Azure user, the following error is shown:</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure026.png" alt="Error message displayed in the Elastic Cloud console: To access the resource {resource-name}" width="the user must have the required authorization.">
+</div>
+</div>
+<p>However, you can share deployment resources directly with other Azure users by <a class="xref" href="ec-securing-clusters-oidc-op.html#ec-securing-oidc-azure" title="Setting up OpenID Connect with Azure">configuring Active Directory single sign-on with the Elasticsearch cluster</a>.</p>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-prior-cloud-account"></a>I already have an Elastic Cloud account, can I use this integration?
+</span>
+</dt>
+<dd>
+Yes. If you already have an Elastic Cloud account with the same email address as your Azure account you may need to contact <a href="mailto:support@elastic.co" class="ulink" target="_top">support@elastic.co</a>.
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-convert-trial"></a>Can I sign up for an Elastic Cloud trial account and then convert to the Azure Elasticsearch native integration?
+</span>
+</dt>
+<dd>
+<p>
+Yes. You can start a <a href="/cloud/elasticsearch-service/signup?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">free Elasticsearch Service trial</a> and then convert your account over to Azure. There are a few requirements:
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Make sure that when you create deployments in the trial account you specify Azure as the cloud provider.
+</li>
+<li class="listitem">
+To convert your trial to the Azure marketplace you need to create a deployment in the Azure console. You can just delete the new deployment if you don&#8217;t need it. After you create the new deployment your marketplace subscription will be ready.
+</li>
+<li class="listitem">
+Any deployments that you create during your trial won&#8217;t show up in the Azure console, since they weren&#8217;t created in Azure, but they are still accessible through the <a href="https://cloud.elastic.co?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">Elasticsearch Service Console</a> and you will be billed for their usage.
+</li>
+</ul>
+</div>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-azure-tenant"></a>Does Elasticsearch get deployed into my tenant in Azure?
+</span>
+</dt>
+<dd>
+No. Elasticsearch resources get deployed in an Azure tenant that is managed by Elastic. This tenant, and the management capabilities associated with it, are the same that are used to run Elastic&#8217;s managed service, which also allows users to deploy on Azure.
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-azure-tenant-info"></a>What Azure tenant information does Elastic have access to?
+</span>
+</dt>
+<dd>
+<p>
+After you subscribe to Elastic Cloud through the native Azure integration, Elastic has access to the following Azure tenant information:
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Data defined in the marketplace <a href="https://docs.microsoft.com/en-us/azure/marketplace/partner-center-portal/pc-saas-fulfillment-subscription-api" class="ulink" target="_top">Saas fulfillment Subscription APIs</a>.
+</li>
+<li class="listitem">
+<p>The following additional data:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Marketplace subscription ID
+</li>
+<li class="listitem">
+Marketplace plan ID
+</li>
+<li class="listitem">
+Azure Account ID
+</li>
+<li class="listitem">
+Azure Tenant ID
+</li>
+<li class="listitem">
+Company
+</li>
+<li class="listitem">
+First name
+</li>
+<li class="listitem">
+Last name
+</li>
+<li class="listitem">
+Country
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<p>Elastic can also access data from native integration features, including <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/platform-logs-overview" class="ulink" target="_top">resource and activity log data</a>. This data is available to Elastic only if you enable it. By default, Elastic does not have access to this information.</p>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-cli-api"></a>Can I deploy Elasticsearch using the Azure CLI, REST API, or an ARM Template?
+</span>
+</dt>
+<dd>
+<p>
+Currently, Elasticsearch cannot be deployed on Azure using these methods. However, you can use one of these official Azure SDKs:
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a href="https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/elastic" class="ulink" target="_top">Python</a>
+</li>
+<li class="listitem">
+<a href="https://github.com/Azure/azure-sdk-for-java/tree/azure-resourcemanager-elastic_1.0.0-beta.1/sdk/elastic" class="ulink" target="_top">Java</a>
+</li>
+<li class="listitem">
+<a href="https://github.com/Azure/azure-sdk-for-net/tree/main/sdk/elastic/Microsoft.Azure.Management.Elastic" class="ulink" target="_top">.NET</a>
+</li>
+</ul>
+</div>
+<p>The following methods are also available to create your deployments:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+The Azure console
+</li>
+<li class="listitem">
+The Elastic Cloud <a href="https://cloud.elastic.co?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">console</a>
+</li>
+<li class="listitem">
+The Elastic Cloud <a class="xref" href="ec-restful-api.html" title="RESTful API">RESTful API</a>
+</li>
+<li class="listitem">
+The Elastic Cloud <a href="/guide/en/ecctl/current/index.html" class="ulink" target="_top">command line tool</a>
+</li>
+<li class="listitem">
+The Elastic Cloud <a href="https://registry.terraform.io/providers/elastic/ec/latest/docs" class="ulink" target="_top">Terraform provider</a>
+</li>
+</ul>
+</div>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-migrate"></a>How do I migrate my data from the classic Azure marketplace account to the native integration?
+</span>
+</dt>
+<dd>
+<p>
+It&#8217;s easy. You&#8217;ll first need to create a new account configured with Azure native integration, and then you can perform the migration as follows:
+</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+From your classic Azure marketplace account, navigate to your deployment and <a class="xref" href="ec-azure-snapshotting.html" title="Configure a snapshot repository using Azure Blob storage">configure a custom snapshot repository using Azure Blog Storage</a>.
+</li>
+<li class="listitem">
+Using the newly configured snapshot repository, <a href="/guide/en/elasticsearch/reference/8.2/snapshots-take-snapshot.html" class="ulink" target="_top">create a snapshot</a> of the data that you want to migrate.
+</li>
+<li class="listitem">
+Navigate to Azure and log in as the user that you want to manage the Elasticsearch resources.
+</li>
+<li class="listitem">
+Before proceeding, ensure your new account is configured according to the <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-get-started">prerequisites</a>.
+</li>
+<li class="listitem">
+Create a <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-get-started">new Elasticsearch resource</a> for each existing deployment that needs to be migrated from the classic Azure account.
+</li>
+<li class="listitem">
+In the new Elasticsearch resource, follow the steps in <a class="xref" href="ec-migrating-data.html#ec-restore-snapshots" title="Restore from a snapshot">Restore from a snapshot</a> to register the custom snapshot repository from Step 1.
+</li>
+<li class="listitem">
+In the same set of steps, restore the snapshot data from the snapshot repository that you registered.
+</li>
+<li class="listitem">
+Confirm that your data has moved successfully into your new Elasticsearch resource on Azure.
+</li>
+<li class="listitem">
+To remove the old Azure subscription and the old deployments, go to the <a href="https://portal.azure.com/#blade/HubsExtension/BrowseResourceBlade/resourceType/Microsoft.SaaS%2Fresources" class="ulink" target="_top">Azure SaaS page</a> and unsubscribe from the <code class="literal">Elastic Cloud (managed Elasticsearch)</code> marketplace subscription. This action will trigger the existing deployments to be terminated.
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</div>
+<h4><a id="ec-azure-integration-managing-deployment"></a>Managing your Elastic Cloud deployment<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-marketplace-azure-native.asciidoc">edit</a></h4>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-whats-included"></a>What is included in my Elastic Cloud deployment?
+</span>
+</dt>
+<dd>
+<p>
+Each Elastic Cloud deployment includes:
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+An Elasticsearch cluster
+</li>
+<li class="listitem">
+A Kibana instance which provides data visualization and a front-end for the Elastic Stack
+</li>
+<li class="listitem">
+An APM server that allows you to easily collect application traces
+</li>
+<li class="listitem">
+An Enterprise Search instance that allows you to easily build a search experience with an intuitive interface
+</li>
+</ul>
+</div>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-how-to-access"></a>How can I access my Elastic Cloud deployment?
+</span>
+</dt>
+<dd>
+<p>
+There are a few ways. First, you need to navigate to the deployment overview page in Azure:
+</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Open the Elastic Cloud <span class="strong strong"><strong>list deployments</strong></span> page in Azure. From here, you can view any existing Elastic Cloud deployments that you have created.
+</li>
+<li class="listitem">
+<p>Select a deployment to open the deployment overview page.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure003.png" alt="The deployment overview page in Azure">
+</div>
+</div>
+<p>You now have a few options to access your deployment:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<span class="strong strong"><strong>Elasticsearch endpoint</strong></span> - the URL for the Elasticsearch cluster itself
+</li>
+<li class="listitem">
+<span class="strong strong"><strong>Kibana endpoint</strong></span> - the UI for the Elastic Stack, a great way for new users to get started
+</li>
+<li class="listitem">
+<span class="strong strong"><strong>Elastic Cloud</strong></span> - Open the <span class="strong strong"><strong>Advanced Settings</strong></span> link to access your deployment in the Elastic Cloud console, where you can make changes such as resizing or upgrading your deployment.
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-modify-deployment"></a>How can I modify my Elastic Cloud deployment?
+</span>
+</dt>
+<dd>
+<p>
+You can modify your Elastic Cloud deployment in the Elastic Cloud console, which you can access from the Azure UI through the <span class="strong strong"><strong>Advanced Settings</strong></span> link on the deployment overview page. In the Elastic Cloud console you can perform a number of actions against your deployment, including:
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="ec-customize-deployment-components.html" title="How can I customize the components of my deployment?">Re-size</a> to increase or decrease the amount of RAM, CPU, and storage available to your deployment, or to add additional availability zones.
+</li>
+<li class="listitem">
+<a class="xref" href="ec-upgrade-deployment.html" title="Upgrade versions">Upgrade</a> your deployment to a new Elastic Stack version.
+</li>
+<li class="listitem">
+Enable or disable individual Elastic Stack components such as APM, Machine Learning, and Enterprise Search.
+</li>
+<li class="listitem">
+<a class="xref" href="ec-editing-user-settings.html" title="Edit your user settings">Update Elastic Stack user settings</a> in the component YML files.
+</li>
+<li class="listitem">
+<a class="xref" href="ec-adding-plugins.html" title="Add plugins and extensions">Add or remove custom plugins</a>.
+</li>
+<li class="listitem">
+<a class="xref" href="ec-traffic-filtering-deployment-configuration.html" title="Traffic Filtering">Configure IP filtering</a>.
+</li>
+<li class="listitem">
+<a class="xref" href="ec-enable-logging-and-monitoring.html" title="Enable logging and monitoring">Monitor your Elastic Cloud deployment</a> to ensure it remains healthy.
+</li>
+<li class="listitem">
+Add or remove API keys to use the <a class="xref" href="ec-restful-api.html" title="RESTful API">REST API</a>.
+</li>
+<li class="listitem">
+<a class="xref" href="ec-getting-started.html" title="Getting started">And more</a>
+</li>
+</ul>
+</div>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-delete-deployment"></a>How can I delete my Elastic Cloud deployment?
+</span>
+</dt>
+<dd>
+<p>
+You can delete your deployment directly from the Azure console. The delete operation, when evoked from Azure, will perform clean-up activities in the Elastic console to ensure any running components are removed, so that no additional charges occur.
+</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure007.png" alt="The deployment overview page in Azure with the Delete button highlighted">
+</div>
+</div>
+</dd>
+</dl>
+</div>
+<h4><a id="ec-azure-logs-and-metrics"></a>Configuring logs and metrics<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-marketplace-azure-native.asciidoc">edit</a></h4>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-monitor"></a>How do I monitor my existing Azure services?
+</span>
+</dt>
+<dd>
+<p>
+The Elastic Cloud native Azure integration greatly simplifies logging for Azure services with the Elastic Stack. This integration supports the easy setup of Azure platform logs, including:
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Azure subscription logs
+</li>
+<li class="listitem">
+Azure resources logs (check <a href="https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/resource-logs-categories?WT.mc_id=Portal-Azure_Marketplace_Elastic" class="ulink" target="_top">Supported categories for Azure Resource Logs</a> for examples)
+</li>
+</ul>
+</div>
+<p>The following log types are not supported as part of this integration:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Azure tenant logs
+</li>
+<li class="listitem">
+Logs from Azure compute services, such as Virtual Machines
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>If your Azure resources and Elastic deployment are in different subscriptions, before creating diagnostic settings confirm that the <code class="literal">Microsoft.Elastic</code> resource provider is registered in the subscription in which the Azure resources exist. If not, register the resource provider following these steps:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+In Azure, navigate to <span class="strong strong"><strong>Subscriptions &#8594; Resource providers</strong></span>.
+</li>
+<li class="listitem">
+Search for <code class="literal">Microsoft.Elastic</code> and check that it is registered.
+</li>
+</ol>
+</div>
+<p>If you already created diagnostic settings before the <code class="literal">Microsoft.Elastic</code> resource provider was registered, delete and add the diagnostic setting again.</p>
+</div>
+</div>
+<p>In the Azure console, you can configure ingestion of Azure logs into either a new or existing Elastic Cloud deployment:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+When you create a new deployment, from the <span class="strong strong"><strong>Logs &amp; metrics</strong></span> tab in Azure you can specify the log type and a key/value tag pair. Any Azure resources that match on the tag value will automatically send log data to the Elastic Cloud deployment, once it’s been created.
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure004.png" alt="The Logs &amp; Metrics tab on the Create Elastic Resource page">
+</div>
+</div>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+For existing deployments, you can configure Azure logs from the deployment overview page in the Azure console.
+</li>
+</ul>
+</div>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Note that following restrictions for logging:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Only logs from non-compute Azure services are ingested as part of the configuration detailed in this document. Logs from compute services, such as Virtual Machines, into the Elastic Stack will be added in a future release.
+</li>
+</ul>
+</div>
+<div id="ec-supported-regions" class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p>The Azure services must be running in one of the following regions:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Eastus
+</li>
+<li class="listitem">
+Eastus2
+</li>
+<li class="listitem">
+Westus2
+</li>
+<li class="listitem">
+Centralus
+</li>
+<li class="listitem">
+Southcentralus
+</li>
+<li class="listitem">
+Uksouth
+</li>
+<li class="listitem">
+Francecentral
+</li>
+<li class="listitem">
+Japaneast
+</li>
+<li class="listitem">
+Southeastasia
+</li>
+<li class="listitem">
+Westeurope
+</li>
+<li class="listitem">
+Australiaeast
+</li>
+<li class="listitem">
+Northeurope
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<p>All regions will be supported in the future.</p>
+</div>
+</div>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Your Azure logs may sometimes contain references to a user <code class="literal">Liftr_Elastic</code>. This user is created automatically by Azure as part of the integration with Elastic Cloud.</p>
+</div>
+</div>
+<p>To check which of your Azure resources are currently being monitored, navigate to your Elasticsearch deployment and open the <span class="strong strong"><strong>Monitored resources</strong></span> tab. Each resource shows one of the following status indicators:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<em>Sending</em> - Logs are currently being sent to the Elasticsearch cluster.
+</li>
+<li class="listitem">
+<em>Logs not configured</em> - Log collection is currently not configured for the resource. Open the <span class="strong strong"><strong>Edit tags</strong></span> link to configure which logs are collected. For details about tagging resources, check <a href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/tag-resources?tabs=json" class="ulink" target="_top">Use tags to organize your Azure resources and management hierarchy</a> in the Azure documentation.
+</li>
+<li class="listitem">
+<em>N/A</em> - Monitoring is not available for this resource type.
+</li>
+<li class="listitem">
+<em>Limit reached</em> - Azure resources can send diagnostic data to a maximum of five outputs. Data is not being sent to the Elasticsearch cluster because the output limit has already been reached.
+</li>
+<li class="listitem">
+<em>Failed</em> - Logs are configured but failed to ship to the Elasticsearch cluster. For help resolving this problem you can <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-support">contact Support</a>.
+</li>
+<li class="listitem">
+<em>Region not supported</em> - The Azure resource must be in one of the <a class="xref" href="ec-azure-marketplace-native.html#ec-supported-regions">supported regions</a>.
+</li>
+</ul>
+</div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-ingest-metrics"></a>How do I ingest metrics from my Azure services?
+</span>
+</dt>
+<dd>
+Metrics are not supported as part of the current native integration. This will be implemented in a future phase. Metrics can still be collected from all Azure services using Metricbeat. For details, check <a href="/guide/en/observability/8.2/monitor-azure.html#azure-step-four" class="ulink" target="_top">Ingest other Azure metrics using the Metricbeat Azure module</a>.
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-vm-extensions"></a>How can I monitor my Azure virtual machines in Elasticsearch?
+</span>
+</dt>
+<dd>
+<p>
+You can monitor your Azure virtual machines by installing the Elastic Agent VM extension. Once enabled, the VM extension downloads the Elastic Agent, installs it, and enrols it to the Fleet Server. The Elastic Agent will then send system related logs and metrics to the Elastic Cloud cluster where you can find pre-built system dashboards showing the health and performance of your virtual machines.
+</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure010.png" alt="A dashboard showing system metrics for the VM" width="such as CPU usage" height="Memory usage">
+</div>
+</div>
+<p><span class="strong strong"><strong>Enabling and disabling VM extensions</strong></span></p>
+<p>To enable or disable a VM extension:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+In Azure, navigate to your Elasticsearch deployment.
+</li>
+<li class="listitem">
+Select the <span class="strong strong"><strong>Virtual machines</strong></span> tab
+</li>
+<li class="listitem">
+Select one or more virtual machines
+</li>
+<li class="listitem">
+Choose <span class="strong strong"><strong>Install Extension</strong></span> or <span class="strong strong"><strong>Uninstall Extension</strong></span>.
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure011.png" alt="The Virtual Machines page in Azure">
+</div>
+</div>
+<p>While it&#8217;s possible to enable or disable a VM extension directly from the VM itself, we recommend always enabling or disabling your Elasticsearch VM extensions from within the context of your Elasticsearch deployment.</p>
+<p><span class="strong strong"><strong>Managing the Elastic Agent VM extension</strong></span></p>
+<p>Once installed on the virtual machine, you can manage Elastic Agent either from Fleet or locally on the host where it&#8217;s installed. We recommend managing the VM extension through Fleet, because it makes handling and upgrading the agents considerably easier. For more information on the Elastic Agent, check <a href="/guide/en/fleet/8.2/elastic-agent-installation.html" class="ulink" target="_top">Manage your Elastic Agents</a>.</p>
+<p><span class="strong strong"><strong>Operating system compatibility matrix</strong></span></p>
+<p>The Azure Elastic Agent VM extension is supported on the following operating systems:</p>
+<div class="informaltable">
+<table border="1" cellpadding="4px">
+<colgroup>
+<col class="col_1"/>
+<col class="col_2"/>
+</colgroup>
+<thead>
+<tr>
+<th align="left" valign="top"><span class="strong strong"><strong>Platform</strong></span></th>
+<th align="left" valign="top"><span class="strong strong"><strong>Version</strong></span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="top"><p>Windows</p></td>
+<td align="left" valign="top"><p>2008r2+</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p>CentOS</p></td>
+<td align="left" valign="top"><p>6.10+</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p>Debian</p></td>
+<td align="left" valign="top"><p>9,10</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p>Oracle</p></td>
+<td align="left" valign="top"><p>6.8+</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p>RHEL</p></td>
+<td align="left" valign="top"><p>7+</p></td>
+</tr>
+<tr>
+<td align="left" valign="top"><p>Ubuntu</p></td>
+<td align="left" valign="top"><p>16+</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd>
+</dl>
+</div>
+<h4><a id="ec-azure-integration-troubleshooting"></a>Troubleshooting<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-marketplace-azure-native.asciidoc">edit</a></h4>
+<p>This section describes some scenarios that you may experience onboarding to Elastic Cloud through the Azure console. If you’re running into issues you can always <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-support">get support</a>.</p>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-authorization-access"></a>I receive an error message about not having the required authorization.
+</span>
+</dt>
+<dd>
+<p>
+When trying to access Elastic Cloud resources, you may get an error message indicating that <em>the user must have the required authorization.</em>
+</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure026.png" alt="Error message displayed in the Elastic Cloud console: To access the resource {resource-name}" width="the user must have the required authorization.">
+</div>
+</div>
+<p>Elastic is not currently integrated with Azure user management, so sharing deployment resources through the Cloud console with other Azure users is not possible. However, sharing direct access to these resources is possible. For details, check <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-azure-user-management">Is the Elasticsearch native integration connected with Azure user management?</a>.</p>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-deployment-failed-traffic-filter"></a>My Elastic Cloud deployment creation failed.
+</span>
+</dt>
+<dd>
+<p>
+When you attempt to create a new Elastic Cloud deployment, the deployment creation may proceed normally at first and then fail with a <code class="literal">Your deployment failed</code> error. In this case, the process results with a status message like the following:
+</p>
+<div class="pre_wrapper lang-txt">
+<pre class="programlisting prettyprint lang-txt">{
+  "code": "DeploymentFailed",
+  "message": "At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/DeployOperations for usage details.",
+  "details": [
+    {
+      "code": "500",
+      "message": "An error occurred during deployment creation. Please try again. If the problem persists, please contact support@elastic.co."
+    }
+  ]</pre>
+</div>
+<p>One possible cause of a deployment creation failure is the default traffic filtering rules. A deployment will fail to create if you previously created a traffic filter and enabled the <span class="strong strong"><strong>Include by default</strong></span> option. When this option is enabled, traffic to the deployment is blocked, including even traffic that is part of the native integration with Azure. As a result, some of the integration components are not successfully provisioned and the deployment creation fails.</p>
+<p>Follow these steps to resolve the problem:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Login to the <a href="https://cloud.elastic.co?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">Elasticsearch Service Console</a>.
+</li>
+<li class="listitem">
+Go to the <a href="https://cloud.elastic.co/deployment-features/traffic-filters" class="ulink" target="_top">Traffic filters page</a>.
+</li>
+<li class="listitem">
+<p>Edit the traffic filter and disable the <span class="strong strong"><strong>Include by default</strong></span> option.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure-traffic-filter-option.png" alt="The Include by default option under Add to Deployments on the Traffic Filter page">
+</div>
+</div>
+</li>
+<li class="listitem">
+In Azure, create a new Elastic Cloud deployment.
+</li>
+<li class="listitem">
+After the deployment has been created successfully, go back to the <a href="https://cloud.elastic.co/deployment-features/traffic-filters" class="ulink" target="_top">Traffic filters page</a> in Elastic Cloud and re-enable the <span class="strong strong"><strong>Include by default</strong></span> option.
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</div>
+<p>If your deployment still does not create successfully, <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-support">contact the Elastic Support Team</a> for assistance.</p>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-failed-sso"></a>I can&#8217;t SSO into my Elastic Cloud deployment.
+</span>
+</dt>
+<dd>
+<p>
+When you try to access your Elastic Cloud deployment using single sign-on, the access may fail due to missing permission required by your Azure environment.
+</p>
+<p>To resolve the problem, contact your Azure administrator and request SSO access to Elastic from your Azure account.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure-sso-access.png" alt="A UI dialog indicating that the Elasticsearch app in Azure requires Admin approval for SSO access.">
+</div>
+</div>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-logs-not-ingested"></a>My Azure Cloud Native integration logs are not being ingested.
+</span>
+</dt>
+<dd>
+When you set up monitoring for your Azure services, if your Azure and Elastic resources are in different subscriptions, you need to make sure that the <code class="literal">Microsoft.Elastic</code> resource provider is registered in the subscription in which the Azure resources exist. Check <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-monitor">How do I monitor my existing Azure services?</a> for details.
+</dd>
+</dl>
+</div>
+<h4><a id="ec-getting-support"></a>Getting support<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-marketplace-azure-native.asciidoc">edit</a></h4>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="azure-integration-support"></a>How do I get support?
+</span>
+</dt>
+<dd>
+<p>
+Support is provided by Elastic. To open a support case:
+</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Navigate to the deployment overview page in the Azure console.
+</li>
+<li class="listitem">
+Open the Support tab.
+</li>
+<li class="listitem">
+<p>Open the link to launch the Elastic console where you can provide further details.</p>
+<p>A member of the Elastic Support team will respond based on the SLA response time of your subscription.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ec-marketplace-azure005.png" alt="The New Support Request page in Azure" width="from the menu under Support + Troubleshooting">
+</div>
+</div>
+</li>
+</ol>
+</div>
+<p>In case your Elastic Cloud resource is not fully set up and you&#8217;re not able to access the Support page, you can always send an email to <a href="mailto:support@elastic.co" class="ulink" target="_top">support@elastic.co</a>.</p>
+</dd>
+<dt>
+<span class="term">
+<a id="azure-integration-change-level"></a>How can I change my subscription level / support level?
+</span>
+</dt>
+<dd>
+Your Elastic subscription level includes the support level. Check <a class="xref" href="ec-azure-marketplace-native.html#azure-integration-change-subscription">How can I change my Elastic Cloud subscription level?</a> to make an update.
+</dd>
+</dl>
+</div>
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="ec-billing-aws.html">« AWS Marketplace</a>
+</span>
+<span class="next">
+<a href="ec-billing-gcp.html">GCP Marketplace: Billing and native integrations »</a>
+</span>
+</div>
+</div>
+
+                  <!-- end body -->
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4" id="right_col">
+                  <div id="rtpcontainer" style="display: block;">
+                    <div class="mktg-promo">
+                      <h3>Most Popular</h3>
+                      <ul class="icons">
+                        <li class="icon-elasticsearch-white"><a href="https://www.elastic.co/webinars/getting-started-elasticsearch?baymax=default&elektra=docs&storm=top-video">Get Started with Elasticsearch: Video</a></li>
+                        <li class="icon-kibana-white"><a href="https://www.elastic.co/webinars/getting-started-kibana?baymax=default&elektra=docs&storm=top-video">Intro to Kibana: Video</a></li>
+                        <li class="icon-logstash-white"><a href="https://www.elastic.co/webinars/introduction-elk-stack?baymax=default&elektra=docs&storm=top-video">ELK for Logs & Metrics: Video</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+
+<div id='elastic-footer'></div>
+<script src='https://www.elastic.co/elastic-footer.js'></script>
+<!-- Footer Section end-->
+
+      </section>
+    </div>
+
+<script src="/guide/static/jquery.js"></script>
+<script type="text/javascript" src="/guide/static/docs.js"></script>
+<script type="text/javascript">
+  window.initial_state = {"alternatives":{"console":{"php":{"hasAny":true},"go":{"hasAny":true},"ruby":{"hasAny":true},"java":{"hasAny":true},"javascript":{"hasAny":true},"python":{"hasAny":true},"csharp":{"hasAny":true}}}}</script>
+  </body>
+</html>

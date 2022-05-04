@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JVM heap usage exceeds the allowed threshold on master nodes | Elasticsearch Service Documentation [master] | Elastic</title>
+<link rel="home" href="index.html" title="Elasticsearch Service Documentation [master]"/>
+<link rel="up" href="ec-scenario_why_is_my_master_node_unavailable.html" title="Scenario: Why is my master node unavailable?"/>
+<link rel="prev" href="ec-multiple-node-deployment-disk-used.html" title="Full disk on multiple-nodes deployment"/>
+<link rel="next" href="ec-cpu-usage-exceed-allowed-threshold.html" title="CPU usage exceeds the allowed threshold on master nodes"/>
+<meta name="DC.type" content="Learn/Docs/Cloud/Reference/master"/>
+<meta name="DC.subject" content="Elastic Cloud"/>
+<meta name="DC.identifier" content="master"/>
+</head>
+<body><div class="page_header">
+You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Elasticsearch Service Documentation [master]</a></span>
+»
+<span class="breadcrumb-link"><a href="ec-monitoring.html">Keeping your deployment healthy</a></span>
+»
+<span class="breadcrumb-link"><a href="ec-scenario_why_is_my_master_node_unavailable.html">Scenario: Why is my master node unavailable?</a></span>
+»
+<span class="breadcrumb-node">JVM heap usage exceeds the allowed threshold on master nodes</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="ec-multiple-node-deployment-disk-used.html">« Full disk on multiple-nodes deployment</a>
+</span>
+<span class="next">
+<a href="ec-cpu-usage-exceed-allowed-threshold.html">CPU usage exceeds the allowed threshold on master nodes »</a>
+</span>
+</div>
+<div class="section">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="ec-jvm-heap-usage-exceed-allowed-threshold"></a>JVM heap usage exceeds the allowed threshold on master nodes<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/shared/ec-ce-monitoring-scenarios.asciidoc">edit</a></h2>
+</div></div></div>
+<p><span class="strong strong"><strong>Health check</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Got to the <span class="strong strong"><strong>Performance</strong></span> page from your deployment menu, or use <a href="/guide/en/kibana/8.2/xpack-monitoring.html" class="ulink" target="_top">Stack Monitoring</a>.
+</li>
+</ul>
+</div>
+<p><span class="strong strong"><strong>Possible cause</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+The master node is overwhelmed by a large number of snapshots or shards.
+</li>
+<li class="listitem">
+<p>The memory available on the master node is overwhelmed by these tasks:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p>External tasks initiated by clients</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Index, search, update
+</li>
+<li class="listitem">
+Frequent updates of PUT template
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>Internal tasks initiated by users</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Machine Learning, Watcher, monitoring
+</li>
+<li class="listitem">
+Ingest pipeline
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>Internal tasks initiated by Elasticsearch</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Nodes joining and leaving caused by hardware failure
+</li>
+<li class="listitem">
+Shard allocation caused by nodes joining and leaving
+</li>
+<li class="listitem">
+Configure <a class="xref" href="ec-configure-index-management.html" title="Configure index management">index lifecycle management (ILM)</a> policies.
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<p><span class="strong strong"><strong>Resolution</strong></span></p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Upgrade the cluster to the latest version.
+</li>
+<li class="listitem">
+<p>If the master node is overwhelmed by external tasks initiated by clients:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Stop ingest/search/update from the client. Enable ingest/search-based autoscaling.
+</li>
+<li class="listitem">
+Stop Beats to avoid frequent updates of PUT template.
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>If the master node is overwhelmed by internal tasks initiated by users:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Check <a href="/guide/en/elasticsearch/reference/8.2/cat-pending-tasks.html" class="ulink" target="_top">cluster-level pending tasks</a>.
+</li>
+<li class="listitem">
+Stop Machine Learning, Watcher, monitoring
+</li>
+<li class="listitem">
+Modify the ingest pipeline to use less memory
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+<p>If the master node is overwhelmed by internal tasks initiated by Elasticsearch:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+For nodes joining and leaving, this should resolve itself. If increasing the master nodes size doesn’t resolve the issue, contact support.
+</li>
+<li class="listitem">
+<p>For shard allocation, inspect the progress of shards recovery.</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Make sure <code class="literal">indices.recovery.max_concurrent_operations</code> is not aggressive, which could cause the master to be unavailable.
+</li>
+<li class="listitem">
+Make sure <code class="literal">indices.recovery.max_bytes_per_sec</code> is set adequately to avoid impact on ingest/search workload.
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+Check <a class="xref" href="ec-configure-index-management.html" title="Configure index management">index lifecycle management (ILM)</a> policies to avoid indices rollover/relocate that are concurrent and aggressive.
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+If the master node is overwhelmed by a large number of snapshots, reduce the number of snapshots in the repo.
+</li>
+<li class="listitem">
+If the master node is overwhelmed by a large number of shards, reduce the number of shards on the node.
+</li>
+</ul>
+</div>
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="ec-multiple-node-deployment-disk-used.html">« Full disk on multiple-nodes deployment</a>
+</span>
+<span class="next">
+<a href="ec-cpu-usage-exceed-allowed-threshold.html">CPU usage exceeds the allowed threshold on master nodes »</a>
+</span>
+</div>
+</div>
+</body>
+</html>

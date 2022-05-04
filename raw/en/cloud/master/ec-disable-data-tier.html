@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Disable an Elasticsearch data tier | Elasticsearch Service Documentation [master] | Elastic</title>
+<link rel="home" href="index.html" title="Elasticsearch Service Documentation [master]"/>
+<link rel="up" href="ec-prepare-production.html" title="Preparing for production"/>
+<link rel="prev" href="ec-watcher.html" title="Enable Watcher"/>
+<link rel="next" href="ec-disable-non-searchable-snapshot-data-tier.html" title="Non-searchable snapshot data tier"/>
+<meta name="DC.type" content="Learn/Docs/Cloud/Reference/master"/>
+<meta name="DC.subject" content="Elastic Cloud"/>
+<meta name="DC.identifier" content="master"/>
+</head>
+<body><div class="page_header">
+You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Elasticsearch Service Documentation [master]</a></span>
+»
+<span class="breadcrumb-link"><a href="ec-prepare-production.html">Preparing for production</a></span>
+»
+<span class="breadcrumb-node">Disable an Elasticsearch data tier</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="ec-watcher.html">« Enable Watcher</a>
+</span>
+<span class="next">
+<a href="ec-disable-non-searchable-snapshot-data-tier.html">Non-searchable snapshot data tier »</a>
+</span>
+</div>
+<div class="chapter">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="ec-disable-data-tier"></a>Disable an Elasticsearch data tier<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/shared/ec-ce-disable-data-tier.asciidoc">edit</a></h2>
+</div></div></div>
+<p>The process of disabling a data tier depends on whether we are dealing with searchable snapshots or regular indices.</p>
+<p>The hot and warm tiers store regular indices, while the frozen tier stores searchable snapshots.
+However, the cold tier can store either regular indices or searchable snapshots.
+To check if a cold tier contains searchable snapshots perform the following request:</p>
+<div class="pre_wrapper lang-sh">
+<pre class="programlisting prettyprint lang-sh">GET /_cat/indices/restored-*</pre>
+</div>
+
+
+
+
+
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="ec-watcher.html">« Enable Watcher</a>
+</span>
+<span class="next">
+<a href="ec-disable-non-searchable-snapshot-data-tier.html">Non-searchable snapshot data tier »</a>
+</span>
+</div>
+</div>
+</body>
+</html>

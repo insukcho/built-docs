@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trust management | Elasticsearch Service Documentation [master] | Elastic</title>
+<link rel="home" href="index.html" title="Elasticsearch Service Documentation [master]"/>
+<link rel="up" href="ec-security.html" title="Securing your deployment"/>
+<link rel="prev" href="ec-securing-clusters-JWT.html" title="Secure your clusters with JWT"/>
+<link rel="next" href="ec-traffic-filtering-deployment-configuration.html" title="Traffic Filtering"/>
+<meta name="DC.type" content="Learn/Docs/Cloud/Reference/master"/>
+<meta name="DC.subject" content="Elastic Cloud"/>
+<meta name="DC.identifier" content="master"/>
+</head>
+<body><div class="page_header">
+You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Elasticsearch Service Documentation [master]</a></span>
+»
+<span class="breadcrumb-link"><a href="ec-security.html">Securing your deployment</a></span>
+»
+<span class="breadcrumb-node">Trust management</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="ec-securing-clusters-JWT.html">« Secure your clusters with JWT</a>
+</span>
+<span class="next">
+<a href="ec-traffic-filtering-deployment-configuration.html">Traffic Filtering »</a>
+</span>
+</div>
+<div class="chapter">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="ec-trust-management"></a>Trust management<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/shared/ec-ce-trust-management.asciidoc">edit</a></h2>
+</div></div></div>
+<p>In order to establish a remote connection between two remote clusters, they must both trust each other. Trust is bi-directional: If one of the clusters doesn&#8217;t trust the other, the remote connection won&#8217;t be established.</p>
+<p>Mutual trust between two clusters is required to <a class="xref" href="ec-enable-ccs.html" title="Enable cross-cluster search and cross-cluster replication">enable cross-cluster search and cross-cluster replication</a>.</p>
+<p>Trust can be configured individually for each deployment.</p>
+<h3><a id="ec-trust-account"></a>Default trust behavior in your account<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/shared/ec-ce-trust-management.asciidoc">edit</a></h3>
+<p>By default, any deployment that you create trusts all other deployments in the same account. You can change this behavior in the <a href="https://cloud.elastic.co?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">Elasticsearch Service Console</a> under <span class="strong strong"><strong>Features</strong></span> &gt; <span class="strong strong"><strong>Trust</strong></span>, so that when a new deployment is created it does not trust any other deployment.
+You can choose one of the following options:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Trust all my deployments - New deployments will by default trust any other deployment from your account (even deployments that don&#8217;t exist when the deployment is created).
+</li>
+<li class="listitem">
+Trust no deployment - New deployments won&#8217;t trust any other deployment when they are created. (This can be changed later in the <a class="xref" href="ec-trust-management.html#ec-trust-deployment" title="Update the trust settings of a deployment">deployment trust settings</a>)
+</li>
+</ul>
+</div>
+<div class="imageblock screenshot">
+<div class="content">
+<img src="images/ec-account-trust-management.png" alt="Trust management at the account Level">
+</div>
+</div>
+<p>Note the following behaviours with this trust setting:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Changing the trust settings affects only deployments that you create in the future. The level of trust of existing deployments is not modified by this setting.
+</li>
+<li class="listitem">
+Deployments created before the Elasticsearch Service February 2021 release trust only themselves.
+You need to update the trust setting for each deployment that you want to either use as a remote cluster or configure to work with a remote cluster.
+</li>
+</ul>
+</div>
+<h3><a id="ec-trust-deployment"></a>Update the trust settings of a deployment<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/shared/ec-ce-trust-management.asciidoc">edit</a></h3>
+<p>To configure the trust settings for a deployment:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the <a href="https://cloud.elastic.co?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">Elasticsearch Service Console</a>.
+</li>
+<li class="listitem">
+<p>Find your deployment on the home page in the Elasticsearch Service card and click the gear icon to access it directly. Or, select Elasticsearch Service to go to the deployments page to view all of your deployments.</p>
+<p>On the deployments page you can narrow your deployments by name, ID, or choose from several other filters. To customize your view, use a combination of filters, or change the format from a grid to a list.</p>
+</li>
+<li class="listitem">
+From the <span class="strong strong"><strong>Security</strong></span> menu, select <span class="strong strong"><strong>Trusted deployments &gt; Create trust</strong></span>.
+</li>
+<li class="listitem">
+<p>Choose one of following options to configure the level of trust on each of your deployments:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+All deployments - This deployment trusts all other deployments in your account, including new deployments when they are created.
+</li>
+<li class="listitem">
+Specific deployments - Choose which of the existing deployments you want to trust in your account.
+</li>
+<li class="listitem">
+None - No deployment is trusted.
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="imageblock screenshot">
+<div class="content">
+<img src="images/ec-deployment-trust-management.png" alt="Trust Management at the Deployment Level">
+</div>
+</div>
+<h3><a id="ec-trust-other-account"></a>Trust between organizations<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/shared/ec-ce-trust-management.asciidoc">edit</a></h3>
+<p>A deployment can be configured to trust all or specific deployments in another <a class="xref" href="ec-organizations.html" title="Inviting members to your organization">organization</a>. To add cross-organization trust:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the <a href="https://cloud.elastic.co?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">Elasticsearch Service Console</a>.
+</li>
+<li class="listitem">
+<p>Find your deployment on the home page in the Elasticsearch Service card and click the gear icon to access it directly. Or, select Elasticsearch Service to go to the deployments page to view all of your deployments.</p>
+<p>On the deployments page you can narrow your deployments by name, ID, or choose from several other filters. To customize your view, use a combination of filters, or change the format from a grid to a list.</p>
+</li>
+<li class="listitem">
+From the <span class="strong strong"><strong>Security</strong></span> menu, select <span class="strong strong"><strong>Create trust</strong></span>.
+</li>
+<li class="listitem">
+Enter the ID of the organization with which you want to establish trust.
+</li>
+<li class="listitem">
+<p>Choose one of following options to configure the level of trust with the other organization:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+All deployments - This deployment trusts all deployments in the other organization, including new deployments when they are created.
+</li>
+<li class="listitem">
+Specific deployments - Specify which of the existing deployments you want to trust in the other organization. The full deployment ID must be entered for each deployment. The easiest way to do this is to copy and paste the ID from the browser&#8217;s location bar when viewing the target deployment&#8217;s Overview page.
+</li>
+<li class="listitem">
+None - No deployment is trusted.
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+Perform the same steps in the opposite direction, so that the deployments in both organizations are configured to trust each other.
+</li>
+</ol>
+</div>
+<p>Note that the organization ID and deployment IDs must be entered fully and correctly. For security reasons, no verification of the IDs is possible. If cross-organization trust does not appear to be working, double-checking the IDs is a good place to start.</p>
+<div class="imageblock screenshot">
+<div class="content">
+<img src="images/ec-deployment-other-org-trust-management.png" alt="Trust management for a different organization">
+</div>
+</div>
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="ec-securing-clusters-JWT.html">« Secure your clusters with JWT</a>
+</span>
+<span class="next">
+<a href="ec-traffic-filtering-deployment-configuration.html">Traffic Filtering »</a>
+</span>
+</div>
+</div>
+</body>
+</html>
