@@ -130,7 +130,7 @@
 </div>
 <div class="section">
 <div class="titlepage"><div><div>
-<h2 class="title"><a id="ec-manage-kibana-settings"></a>Edit Kibana user settings<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/ms-74/docs/saas/ec-editing-user-settings.asciidoc">edit</a></h2>
+<h2 class="title"><a id="ec-manage-kibana-settings"></a>Edit Kibana user settings<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-editing-user-settings.asciidoc">edit</a></h2>
 </div></div></div>
 <p>Elasticsearch Service supports most of the standard Kibana and X-Pack settings. Through a YAML editor in the console, you can append Kibana properties to the <code class="literal">kibana.yml</code> file. Your changes to the configuration file are read on startup.</p>
 <div class="important admon">
@@ -170,7 +170,7 @@ Select <span class="strong strong"><strong>Save changes</strong></span>.
 <p>If a setting is not supported by Elasticsearch Service, you will get an error message when you try to save.</p>
 </div>
 </div>
-<h4><a id="ec-kibana-config"></a>Supported Kibana settings<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/ms-74/docs/saas/ec-editing-user-settings.asciidoc">edit</a></h4>
+<h4><a id="ec-kibana-config"></a>Supported Kibana settings<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-editing-user-settings.asciidoc">edit</a></h4>
 <p><span class="strong strong"><strong>For version 8.2.0 and later</strong></span>, the following settings are supported:</p>
 <div class="variablelist">
 <dl class="variablelist">
@@ -894,7 +894,7 @@ To learn more, check <a href="/guide/en/kibana/8.2/security-settings-kb.html" cl
 </dd>
 </dl>
 </div>
-<h4><a id="ec-xpack-config"></a>X-Pack configuration settings<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/ms-74/docs/saas/ec-editing-user-settings.asciidoc">edit</a></h4>
+<h4><a id="ec-xpack-config"></a>X-Pack configuration settings<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/cloud/edit/master/docs/saas/ec-editing-user-settings.asciidoc">edit</a></h4>
 <p>You can configure the following X-Pack settings from the Kibana <span class="strong strong"><strong>User Settings</strong></span> editor.</p>
 <p><span class="strong strong"><strong>For version 8.2 and later:</strong></span></p>
 <div class="variablelist">
@@ -960,7 +960,21 @@ Note: this setting is not available in versions 8.0.0 through 8.1.1.
 </dt>
 <dd>
 Sets the amount of event loop delay during a task execution which will cause a warning to be logged. Defaults to 5000 milliseconds (5 seconds).
-Note: this setting is not available in versions 8.0.0 through 8.1.1.
+Note: this setting is not available in versions 8.0.0 through 8.1.1. As such, this setting should be removed before upgrading from 7.17 to 8.0 or 8.1.0. It is possible to configure the settings in 7.17.2 and then upgrade to 8.2.0 directly.
+</dd>
+</dl>
+</div>
+<p><span class="strong strong"><strong>For version 7.17.4 and later:</strong></span></p>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<code class="literal">xpack.actions.email.domain_allowlist</code>
+</span>
+</dt>
+<dd>
+A list of allowed email domains which can be used with the email connector. When this setting is not used, all email domains are allowed. When this setting is used, if any email is attempted to be sent that (a) includes an addressee with an email domain that is not in the allowlist, or (b) includes a from address domain that is not in the allowlist, it will fail with a message indicating the email is not allowed.
+Note: this setting is not available in versions 8.0.0 through 8.2.0. As such, this setting should be removed before upgrading from 7.17 to 8.0, 8.1 or 8.2. It is possible to configure the settings in 7.17.4 and then upgrade to 8.3.0 directly.
 </dd>
 </dl>
 </div>
