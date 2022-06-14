@@ -2531,7 +2531,9 @@ cloud:
   'Elasticsearch Add-On for Heroku - Hosted Elasticsearch and Kibana for Heroku Users/docs/heroku/ms-75': 3b4e052b7e6225c16844c3e6de0f1f9b0c1c733c
   'Elasticsearch Add-On for Heroku - Hosted Elasticsearch and Kibana for Heroku Users/docs/saas/ms-75': 3b4e052b7e6225c16844c3e6de0f1f9b0c1c733c
   'Elasticsearch Add-On for Heroku - Hosted Elasticsearch and Kibana for Heroku Users/docs/shared/ms-75': 3b4e052b7e6225c16844c3e6de0f1f9b0c1c733c
+  'Elasticsearch Service - Hosted Elastic Stack/docs/saas/master': local
   'Elasticsearch Service - Hosted Elastic Stack/docs/saas/ms-75': 3b4e052b7e6225c16844c3e6de0f1f9b0c1c733c
+  'Elasticsearch Service - Hosted Elastic Stack/docs/shared/master': local
   'Elasticsearch Service - Hosted Elastic Stack/docs/shared/ms-75': 3b4e052b7e6225c16844c3e6de0f1f9b0c1c733c
 cloud-assets:
   'Elastic Cloud Enterprise - Elastic Cloud on your Infrastructure/docs/master': cbd3a011bad373554cf7d8e2981723a2b34555bc
