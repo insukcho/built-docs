@@ -1,4 +1,16 @@
-POST /_security/oidc/prepare
+POST /_security/role/example1
 {
-  "realm" : "oidc1"
+  "indices" : [
+    {
+      "names" : [ "my-index-000001" ],
+      "privileges" : [ "read" ],
+      "query" : {
+        "template" : {
+          "source" : {
+            "term" : { "acl.username" : "{{_user.username}}" }
+          }
+        }
+      }
+    }
+  ]
 }

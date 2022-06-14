@@ -1,1 +1,1 @@
-GET /_cat/health?v=true&ts=false
+POST /_cluster/voting_config_exclusions?node_names=nodeName1,nodeName2

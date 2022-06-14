@@ -1,4 +1,7 @@
-POST test/_update/1
+GET /my-index-000001/_termvectors
 {
-  "script" : "ctx._source.remove('new_field')"
+  "doc" : {
+    "fullname" : "John Doe",
+    "text" : "test test test"
+  }
 }

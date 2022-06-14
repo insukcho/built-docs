@@ -89,19 +89,19 @@ or a range of versions followed by a colon.</p>
 <li class="listitem">
 <p>Apply a setting to a specific version:</p>
 <div class="pre_wrapper lang-text">
-<pre class="programlisting prettyprint lang-text">17:-Xmx2g</pre>
+<pre class="programlisting prettyprint lang-text">8:-Xmx2g</pre>
 </div>
 </li>
 <li class="listitem">
 <p>Apply a setting to a range of versions:</p>
 <div class="pre_wrapper lang-text">
-<pre class="programlisting prettyprint lang-text">17-18:-Xmx2g</pre>
+<pre class="programlisting prettyprint lang-text">8-9:-Xmx2g</pre>
 </div>
 <p>To apply a setting to a specific version and any later versions,
 omit the upper bound of the range.
 For example, this setting applies to Java 8 and later:</p>
 <div class="pre_wrapper lang-text">
-<pre class="programlisting prettyprint lang-text">17-:-Xmx2g</pre>
+<pre class="programlisting prettyprint lang-text">8-:-Xmx2g</pre>
 </div>
 </li>
 </ul>
@@ -141,6 +141,13 @@ you can also set JVM options through the <code class="literal">ES_JAVA_OPTS</cod
 <p>By default, Elasticsearch automatically sets the JVM heap size based on a node&#8217;s
 <a class="xref" href="modules-node.html#node-roles" title="Node roles">roles</a> and total memory.
 Using the default sizing is recommended for most production environments.</p>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Automatic heap sizing requires the <a class="xref" href="setup.html#jvm-version" title="Java (JVM) Version">bundled JDK</a> or, if using
+a custom JRE location, a Java 14 or later JRE.</p>
+</div>
+</div>
 <p>To override the default heap size, set the minimum and maximum heap size
 settings, <code class="literal">Xms</code> and <code class="literal">Xmx</code>. The minimum and maximum values must be the same.</p>
 <p>The heap size should be based on the available RAM:</p>
@@ -171,12 +178,6 @@ threshold, check the Elasticsearch log for an entry like this:</p>
 <div class="pre_wrapper lang-txt">
 <pre class="programlisting prettyprint lang-txt">heap size [1.9gb], compressed ordinary object pointers [true]</pre>
 </div>
-<p>Or check the <code class="literal">jvm.using_compressed_ordinary_object_pointers</code> value for the nodes using the <a class="xref" href="cluster-nodes-info.html" title="Nodes info API">nodes info API</a>:</p>
-<a id="7cd23457e220c8b64c5b0041d2acc27a"></a>
-<div class="pre_wrapper lang-console">
-<pre class="programlisting prettyprint lang-console">GET _nodes/_all/jvm</pre>
-</div>
-<div class="console_widget" data-snippet="snippets/34.console"></div>
 </li>
 </ul>
 </div>
@@ -206,27 +207,6 @@ options. We do not recommend using <code class="literal">ES_JAVA_OPTS</code> in 
 using the service manager. See <a class="xref" href="zip-windows.html#windows-service" title="Install and run Elasticsearch as a service on Windows">Install and run Elasticsearch as a service on Windows</a>.</p>
 </div>
 </div>
-<div class="section">
-<div class="titlepage"><div><div>
-<h4 class="title"><a id="readiness-tcp-port"></a>Enable the Elasticsearch TCP readiness port<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/setup/advanced-configuration.asciidoc">edit</a></h4>
-</div></div></div>
-<p>preview::["This functionality is in technical preview and may be changed or removed in a future release.
-It is intended for internal, experimental use. Features in technical preview are not subject to the support
-SLA of official GA features."]</p>
-<p>If configured, a node can open a TCP port when the node is in a ready state. A node is deemed
-ready when it has successfully joined a cluster. In a single node configuration, the node is
-said to be ready, when it&#8217;s able to accept requests.</p>
-<p>To enable the readiness TCP port, use the <code class="literal">readiness.port</code> setting. The port is
-always bound to the loopback address, which defaults to the IPv4 loopback address <code class="literal">127.0.0.1</code>.
-To bind the readiness port to the IPv6 loopback address <code class="literal">::1</code>,
-add <code class="literal">-Djava.net.preferIPv6Addresses=true</code> to the <a class="xref" href="advanced-configuration.html#set-jvm-options" title="Set JVM options">JVM options</a>.</p>
-<p>If the node leaves the cluster, or the <a class="xref" href="put-shutdown.html" title="Put shutdown API">Shutdown API</a> is used to mark the node
-for shutdown, the readiness port is immediately closed.</p>
-<p>A successful connection to the readiness TCP port signals that the Elasticsearch node is ready. When a client
-connects to the readiness port, the server simply terminates the socket connection. No data is sent back
-to the client. If a client cannot connect to the readiness port, the node is not ready.</p>
-</div>
-
 </div>
 
 </div>

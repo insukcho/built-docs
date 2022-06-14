@@ -1,1 +1,8 @@
-DELETE /_ingest/pipeline/*
+POST _ml/datafeeds/datafeed-total-requests/_update
+{
+  "query": {
+    "term": {
+      "level": "error"
+    }
+  }
+}

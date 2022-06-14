@@ -1,1 +1,1 @@
-POST /_forcemerge
+POST /_index_template/_simulate/template_1

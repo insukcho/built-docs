@@ -1,12 +1,7 @@
-GET my-index-000001/_search?size=0
+POST /sales/_search?size=0&filter_path=aggregations
 {
+  "query": { "term": { "type": "t-shirt" } },
   "aggs": {
-    "by_day": {
-      "date_histogram": {
-        "field":     "date",
-        "calendar_interval":  "day",
-        "time_zone": "-01:00"
-      }
-    }
+    "avg_price": { "avg": { "field": "price" } }
   }
 }

@@ -1,1 +1,6 @@
-GET /_snapshot/my_repository/my_snapshot
+PUT /_cluster/settings
+{
+  "transient": {
+    "xpack.security.audit.logfile.events.emit_request_body": false
+  }
+}

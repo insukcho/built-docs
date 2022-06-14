@@ -1,28 +1,7 @@
-PUT _component_template/component_template1
-{
-  "template": {
-    "mappings": {
-      "properties": {
-        "@timestamp": {
-          "type": "date"
-        }
-      }
-    }
-  }
-}
-
-PUT _component_template/runtime_component_template
-{
-  "template": {
-    "mappings": {
-      "runtime": {
-        "day_of_week": {
-          "type": "keyword",
-          "script": {
-            "source": "emit(doc['@timestamp'].value.dayOfWeekEnum.getDisplayName(TextStyle.FULL, Locale.ROOT))"
-          }
-        }
-      }
-    }
-  }
-}
+PUT /my-data-stream/_bulk?refresh
+{"create":{ }}
+{ "@timestamp": "2099-03-08T11:04:05.000Z", "user": { "id": "vlb44hny" }, "message": "Login attempt failed" }
+{"create":{ }}
+{ "@timestamp": "2099-03-08T11:06:07.000Z", "user": { "id": "8a4f500d" }, "message": "Login successful" }
+{"create":{ }}
+{ "@timestamp": "2099-03-09T11:07:08.000Z", "user": { "id": "l7gk7f82" }, "message": "Logout successful" }

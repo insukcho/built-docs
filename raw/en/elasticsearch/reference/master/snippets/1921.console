@@ -1,1 +1,1 @@
-GET /_cluster/state/_all/foo,bar
+POST /_data_stream/_promote/my-data-stream

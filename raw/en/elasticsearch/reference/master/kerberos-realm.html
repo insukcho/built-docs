@@ -6,7 +6,7 @@
 <link rel="home" href="index.html" title="Elasticsearch Guide [master]"/>
 <link rel="up" href="setting-up-authentication.html" title="User authentication"/>
 <link rel="prev" href="saml-realm.html" title="SAML authentication"/>
-<link rel="next" href="jwt-auth-realm.html" title="JWT authentication"/>
+<link rel="next" href="custom-realms.html" title="Integrating with other authentication systems"/>
 <meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master"/>
 <meta name="DC.subject" content="Elasticsearch"/>
 <meta name="DC.identifier" content="master"/>
@@ -31,7 +31,7 @@ Not what you want? See the
 <a href="saml-realm.html">« SAML authentication</a>
 </span>
 <span class="next">
-<a href="jwt-auth-realm.html">JWT authentication »</a>
+<a href="custom-realms.html">Integrating with other authentication systems »</a>
 </span>
 </div>
 <div class="section xpack">
@@ -322,7 +322,7 @@ identify users by their <code class="literal">username</code> field.</p>
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/1653.console"></div>
+<div class="console_widget" data-snippet="snippets/1637.console"></div>
 <p>In case you want to support Kerberos cross realm authentication you may
 need to map roles based on the Kerberos realm name. For such scenarios
 following are the additional user metadata available for role mapping:
@@ -359,7 +359,7 @@ need to enable the relevant authentication provider in Kibana configuration. See
 <a href="saml-realm.html">« SAML authentication</a>
 </span>
 <span class="next">
-<a href="jwt-auth-realm.html">JWT authentication »</a>
+<a href="custom-realms.html">Integrating with other authentication systems »</a>
 </span>
 </div>
 </div>

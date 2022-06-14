@@ -1,10 +1,10 @@
-POST /my-index-000001/_mtermvectors
+PUT /_index_template/template_1
 {
-  "ids": [ "1", "2" ],
-  "parameters": {
-    "fields": [
-      "message"
-    ],
-    "term_statistics": true
+  "index_patterns" : ["te*"],
+  "priority" : 1,
+  "template": {
+    "settings" : {
+      "number_of_shards" : 2
+    }
   }
 }

@@ -1,5 +1,35 @@
-PUT place_path_category/_doc/1
+POST /_security/role_mapping/mapping8
 {
-  "suggest": ["timmy's", "starbucks", "dunkin donuts"],
-  "cat": ["cafe", "food"]
+  "roles": [ "superuser" ],
+  "enabled": true,
+  "rules": {
+    "all": [
+      {
+        "any": [
+          {
+            "field": {
+              "dn": "*,ou=admin,dc=example,dc=com"
+            }
+          },
+          {
+            "field": {
+              "username": [ "es-admin", "es-system" ]
+            }
+          }
+        ]
+      },
+      {
+        "field": {
+          "groups": "cn=people,dc=example,dc=com"
+        }
+      },
+      {
+        "except": {
+          "field": {
+            "metadata.terminated_date": null
+          }
+        }
+      }
+    ]
+  }
 }

@@ -1,1 +1,6 @@
-DELETE _ml/anomaly_detectors/farequote/model_snapshots/1491948163
+PUT /_nodes/USpTGYaBSIKbgSUJR2Z9lg/shutdown
+{
+  "type": "restart",
+  "reason": "Demonstrating how the node shutdown API works",
+  "allocation_delay": "10m"
+}

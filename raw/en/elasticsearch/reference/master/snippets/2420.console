@@ -1,23 +1,4 @@
-POST _ml/data_frame/_evaluate
+DELETE /_search/scroll
 {
-  "index": "student_performance_mathematics_reg",
-  "query": {
-    "term": {
-      "ml.is_training": {
-        "value": true
-      }
-    }
-  },
-  "evaluation": {
-    "regression": {
-      "actual_field": "G3",
-      "predicted_field": "ml.G3_prediction",
-      "metrics": {
-        "r_squared": {},
-        "mse": {},
-        "msle": {},
-        "huber": {}
-      }
-    }
-  }
+  "scroll_id" : "DXF1ZXJ5QW5kRmV0Y2gBAAAAAAAAAD4WYm9laVYtZndUQlNsdDcwakFMNjU1QQ=="
 }

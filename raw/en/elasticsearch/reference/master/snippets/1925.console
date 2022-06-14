@@ -1,6 +1,8 @@
-PUT /_cluster/settings
+POST my-index-000001/_doc?routing=kimchy
 {
-  "persistent" : {
-    "indices.recovery.max_bytes_per_sec" : "50mb"
+  "@timestamp": "2099-11-15T13:12:00",
+  "message": "GET /search HTTP/1.1 200 1070000",
+  "user": {
+    "id": "kimchy"
   }
 }

@@ -1,1 +1,4 @@
-POST _ilm/start
+POST _ml/anomaly_detectors/low_request_rate/_open
+{
+  "timeout": "35m"
+}

@@ -1,14 +1,9 @@
-POST _reindex
+POST /my_source_index/_clone/my_target_index
 {
-  "source": {
-    "index": "my-index-000001"
+  "settings": {
+    "index.number_of_shards": 5
   },
-  "dest": {
-    "index": "my-new-index-000001",
-    "version_type": "external"
-  },
-  "script": {
-    "source": "if (ctx._source.foo == 'bar') {ctx._version++; ctx._source.remove('foo')}",
-    "lang": "painless"
+  "aliases": {
+    "my_search_indices": {}
   }
 }

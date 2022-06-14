@@ -1,1 +1,1 @@
-GET /_cat/segments?v=true
+POST /follower_index/_ccr/pause_follow

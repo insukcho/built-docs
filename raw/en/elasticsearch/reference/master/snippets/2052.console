@@ -1,1 +1,8 @@
-POST my-index-000001/_update_by_query?scroll_size=100
+PUT /_enrich/policy/my-policy
+{
+  "match": {
+    "indices": "users",
+    "match_field": "email",
+    "enrich_fields": ["first_name", "last_name", "city", "zip", "state"]
+  }
+}

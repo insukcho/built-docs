@@ -1,1 +1,1 @@
-DELETE /_license
+DELETE _ml/data_frame/analytics/loganalytics

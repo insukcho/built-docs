@@ -117,8 +117,8 @@ performance using this approach.</p>
 <p>This functionality is in technical preview and may be changed or removed in a future release. Elastic will apply best effort to fix any issues, but features in technical preview are not subject to the support SLA of official GA features.</p>
 </div>
 </div>
-<p>To run an approximate kNN search, use the <a class="xref" href="knn-search-api.html" title="kNN search API">kNN search API</a>
-to search a <code class="literal">dense_vector</code> field with indexing enabled.</p>
+<p>To run an approximate kNN search, use the kNN search API to search a
+<code class="literal">dense_vector</code> field with indexing enabled.</p>
 <div class="olist orderedlist">
 <ol class="orderedlist">
 <li class="listitem">
@@ -156,7 +156,7 @@ parameter documentation.
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/849.console"></div>
+<div class="console_widget" data-snippet="snippets/842.console"></div>
 </li>
 <li class="listitem">
 <p>Index your data.</p>
@@ -171,7 +171,7 @@ parameter documentation.
 { "my-image-vector": [0.5, 111.3, -13.0, 14.8, -156.0], "my-tag": "rabbit.jpg" }
 ...</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/850.console"></div>
+<div class="console_widget" data-snippet="snippets/843.console"></div>
 </li>
 <li class="listitem">
 <p>Run the search using the <a class="xref" href="knn-search-api.html" title="kNN search API">kNN search API</a>.</p>
@@ -191,7 +191,7 @@ parameter documentation.
   ]
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/851.console"></div>
+<div class="console_widget" data-snippet="snippets/844.console"></div>
 </li>
 </ol>
 </div>
@@ -240,11 +240,16 @@ You can&#8217;t run an approximate kNN search on a <code class="literal">dense_v
 <a class="xref" href="nested.html" title="Nested field type"><code class="literal">nested</code></a> mapping.
 </li>
 <li class="listitem">
-
-Elasticsearch uses the <a href="https://arxiv.org/abs/1603.09320" class="ulink" target="_top">HNSW algorithm</a> to support
+You can&#8217;t currently use the Query DSL to filter documents for an approximate
+kNN search. If you need to filter the documents, consider using exact kNN
+instead.
+</li>
+<li class="listitem">
+<p></p>
+<p>Elasticsearch uses the <a href="https://arxiv.org/abs/1603.09320" class="ulink" target="_top">HNSW algorithm</a> to support
 efficient kNN search. Like most kNN algorithms, HNSW is an approximate method
 that sacrifices result accuracy for improved search speed. This means the
-results returned are not always the true <em>k</em> closest neighbors.
+results returned are not always the true <em>k</em> closest neighbors.</p>
 </li>
 </ul>
 </div>
@@ -274,7 +279,7 @@ the field for approximate kNN, omit the <code class="literal">index</code> mappi
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/852.console"></div>
+<div class="console_widget" data-snippet="snippets/845.console"></div>
 </li>
 <li class="listitem">
 <p>Index your data.</p>
@@ -289,7 +294,7 @@ the field for approximate kNN, omit the <code class="literal">index</code> mappi
 { "my-product-vector": [0.5, 111.3, -13.0, 14.8, -156.0], "my-price": 1099 }
 ...</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/853.console"></div>
+<div class="console_widget" data-snippet="snippets/846.console"></div>
 </li>
 <li class="listitem">
 <p>Use the <a class="xref" href="search-search.html" title="Search API">search API</a> to run a <code class="literal">script_score</code> query containing
@@ -331,7 +336,7 @@ significantly increase search latency.</p>
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/854.console"></div>
+<div class="console_widget" data-snippet="snippets/847.console"></div>
 </li>
 </ol>
 </div>

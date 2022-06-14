@@ -1,1 +1,1 @@
-GET /_dangling
+GET /_ingest/pipeline/my-pipeline-id

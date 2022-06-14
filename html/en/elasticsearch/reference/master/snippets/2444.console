@@ -1,1 +1,47 @@
-POST _ml/trained_models/elastic__distilbert-base-uncased-finetuned-conll03-english/deployment/_start?wait_for=started&timeout=1m
+PUT place
+{
+  "mappings": {
+    "properties": {
+      "suggest": {
+        "type": "completion",
+        "contexts": [
+          {                                
+            "name": "place_type",
+            "type": "category"
+          },
+          {                                
+            "name": "location",
+            "type": "geo",
+            "precision": 4
+          }
+        ]
+      }
+    }
+  }
+}
+PUT place_path_category
+{
+  "mappings": {
+    "properties": {
+      "suggest": {
+        "type": "completion",
+        "contexts": [
+          {                          
+            "name": "place_type",
+            "type": "category",
+            "path": "cat"
+          },
+          {                          
+            "name": "location",
+            "type": "geo",
+            "precision": 4,
+            "path": "loc"
+          }
+        ]
+      },
+      "loc": {
+        "type": "geo_point"
+      }
+    }
+  }
+}

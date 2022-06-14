@@ -1,5 +1,4 @@
-PUT _ml/datafeeds/datafeed-total-requests
+POST _ml/trained_models/model2/deployment/_infer
 {
-  "job_id": "total-requests",
-  "indices": ["server-metrics"]
+	"docs": [{"text_field": "The movie was awesome!!"}]
 }

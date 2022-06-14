@@ -1,6 +1,15 @@
-PUT _watcher/watch/cluster_health_watch
+GET index/_search
 {
-  "trigger" : {
-    "schedule" : { "interval" : "10s" }
+  "query": {
+    "constant_score": {
+      "filter": {
+        "range": {
+          "my_date": {
+            "gte": "now-1h/m",
+            "lte": "now/m"
+          }
+        }
+      }
+    }
   }
 }

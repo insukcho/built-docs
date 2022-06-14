@@ -1,8 +1,5 @@
-POST my-index-000001/_update_by_query?conflicts=proceed
+PUT products/_doc/1567
 {
-  "query": {
-    "term": {
-      "user.id": "kimchy"
-    }
-  }
+  "product" : "r2d2",
+  "details" : "A resourceful astromech droid"
 }

@@ -1,11 +1,4 @@
-PUT index
+PUT _settings
 {
-  "mappings": {
-    "properties": {
-      "foo": {
-        "type": "integer",
-        "index": false
-      }
-    }
-  }
+  "index.number_of_replicas": 1
 }

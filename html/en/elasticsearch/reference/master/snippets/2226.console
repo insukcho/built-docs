@@ -1,1 +1,6 @@
-GET publications/_mapping/field/a*
+PUT /my-index-000001/_settings
+{
+  "index" : {
+    "refresh_interval" : null
+  }
+}

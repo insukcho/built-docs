@@ -1,6 +1,5 @@
-POST /my_source_index/_split/my_target_index
+PUT _ml/datafeeds/datafeed-total-requests
 {
-  "settings": {
-    "index.number_of_shards": 2
-  }
+  "job_id": "total-requests",
+  "indices": ["server-metrics"]
 }

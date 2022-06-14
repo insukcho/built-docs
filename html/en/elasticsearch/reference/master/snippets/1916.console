@@ -1,1 +1,1 @@
-GET _internal/_health/data
+GET /_data_stream/my-data-stream

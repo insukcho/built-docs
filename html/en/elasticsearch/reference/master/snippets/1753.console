@@ -1,1 +1,1 @@
-GET _cat/nodes?v=true&h=heap.max
+POST my-index/_shrink/my-shrunken-index

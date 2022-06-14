@@ -1,1 +1,6 @@
-GET /sensor_rollup/_rollup/data
+GET /my-index-000001/_explain/0
+{
+  "query" : {
+    "match" : { "message" : "elasticsearch" }
+  }
+}

@@ -1,13 +1,10 @@
-POST /_security/role_mapping/mapping5
+GET /_security/_query/api_key
 {
-  "role_templates": [
-    {
-      "template": { "source": "{{#tojson}}groups{{/tojson}}" },
-      "format" : "json"
+  "query": {
+    "ids": {
+      "values": [
+        "VuaCfGcBCdbkQm-e5aOx"
+      ]
     }
-  ],
-  "rules": {
-    "field" : { "realm.name" : "saml1" }
-  },
-  "enabled": true
+  }
 }

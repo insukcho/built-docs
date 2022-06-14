@@ -1,15 +1,15 @@
-GET /seats/_search
+GET seats/_search
 {
   "query": {
-    "function_score": {
-      "query": {
-        "match": {
-          "sold": "false"
-        }
-      },
-      "script_score": {
+    "bool": {
+      "filter": {
         "script": {
-          "source": "1.0 / doc['row'].value"
+          "script": {
+            "source": "doc['sold'].value == false && doc['cost'].value < params.cost",
+            "params": {
+              "cost": 25
+            }
+          }
         }
       }
     }

@@ -1,13 +1,5 @@
-POST _ml/data_frame/_evaluate
-{
-   "index": "animal_classification",
-   "evaluation": {
-      "classification": {
-         "actual_field": "animal_class",
-         "predicted_field": "ml.animal_class_prediction",
-         "metrics": {
-           "multiclass_confusion_matrix" : {}
-         }
-      }
-   }
-}
+GET my-index/_msearch/template
+{ }
+{ "id": "my-search-template", "params": { "query_string": "hello world", "from": 0, "size": 10 }}
+{ }
+{ "id": "my-other-search-template", "params": { "query_type": "match_all" }}

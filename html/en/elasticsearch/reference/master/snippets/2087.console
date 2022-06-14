@@ -1,11 +1,8 @@
-POST _reindex
+GET /_analyze
 {
-  "source": {
-    "index": "source",
-    "size": 100
-  },
-  "dest": {
-    "index": "dest",
-    "routing": "=cat"
-  }
+  "tokenizer" : "standard",
+  "filter" : ["snowball"],
+  "text" : "detailed output",
+  "explain" : true,
+  "attributes" : ["keyword"]
 }

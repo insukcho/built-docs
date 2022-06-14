@@ -133,14 +133,6 @@ shortened node ID. Defaults to <code class="literal">false</code>.
 </dd>
 <dt>
 <span class="term">
-<code class="literal">heap.max</code>, <code class="literal">hm</code>, <code class="literal">heapMax</code>
-</span>
-</dt>
-<dd>
-(Default) Total heap, such as <code class="literal">4gb</code>.
-</dd>
-<dt>
-<span class="term">
 <code class="literal">ram.percent</code>, <code class="literal">rp</code>, <code class="literal">ramPercent</code>
 </span>
 </dt>
@@ -889,7 +881,7 @@ that are <span class="strong strong"><strong>not</strong></span> loaded into mem
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">GET /_cat/nodes?v=true</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/1886.console"></div>
+<div class="console_widget" data-snippet="snippets/1820.console"></div>
 <p>The API returns the following response:</p>
 <div class="pre_wrapper lang-txt">
 <pre class="programlisting prettyprint lang-txt">ip        heap.percent ram.percent cpu load_1m load_5m load_15m node.role master name
@@ -911,7 +903,7 @@ monitoring an entire cluster, particularly large ones.</p>
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">GET /_cat/nodes?v=true&amp;h=id,ip,port,v,m</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/1887.console"></div>
+<div class="console_widget" data-snippet="snippets/1821.console"></div>
 <p>The API returns the following response:</p>
 <div class="pre_wrapper lang-txt">
 <pre class="programlisting prettyprint lang-txt">id   ip        port  v         m

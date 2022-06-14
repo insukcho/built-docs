@@ -1,37 +1,15 @@
-POST /_ingest/pipeline/_simulate?verbose=true
+PUT _ml/data_frame/analytics/house_price_regression_analysis
 {
-  "pipeline" :
-  {
-    "description": "_description",
-    "processors": [
-      {
-        "set" : {
-          "field" : "field2",
-          "value" : "_value2"
-        }
-      },
-      {
-        "set" : {
-          "field" : "field3",
-          "value" : "_value3"
-        }
-      }
-    ]
+  "source": {
+    "index": "houses_sold_last_10_yrs"
   },
-  "docs": [
+  "dest": {
+    "index": "house_price_predictions"
+  },
+  "analysis":
     {
-      "_index": "index",
-      "_id": "id",
-      "_source": {
-        "foo": "bar"
-      }
-    },
-    {
-      "_index": "index",
-      "_id": "id",
-      "_source": {
-        "foo": "rab"
+      "regression": {
+        "dependent_variable": "price"
       }
     }
-  ]
 }

@@ -1,20 +1,20 @@
-POST /_security/role/my_analyst_role?refresh=true
+PUT _watcher/watch/cluster_health_watch
 {
-  "cluster": [ "monitor"],
-  "indices": [
-    {
-      "names": [ "index1", "index2" ],
-      "privileges": ["manage"]
+  "trigger" : {
+    "schedule" : { "interval" : "10s" }
+  },
+  "input" : {
+    "http" : {
+      "request" : {
+       "host" : "localhost",
+       "port" : 9200,
+       "path" : "/_cluster/health"
+      }
     }
-  ],
-  "applications": [
-    {
-      "application": "myapp",
-      "privileges": [ "read" ],
-      "resources": [ "*" ]
+  },
+  "condition" : {
+    "compare" : {
+      "ctx.payload.status" : { "eq" : "red" }
     }
-  ],
-  "metadata" : {
-    "version" : 1
   }
 }

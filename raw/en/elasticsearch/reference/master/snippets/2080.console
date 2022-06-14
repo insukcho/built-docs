@@ -1,9 +1,7 @@
-POST _reindex
+GET /_analyze
 {
-  "source": {
-    "index": "my-index-000001"
-  },
-  "dest": {
-    "index": "my-new-index-000001"
-  }
+  "tokenizer" : "keyword",
+  "filter" : ["lowercase"],
+  "char_filter" : ["html_strip"],
+  "text" : "this is a <b>test</b>"
 }

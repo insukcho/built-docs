@@ -4,12 +4,9 @@ PUT _ilm/policy/my_policy
     "phases": {
       "warm": {
         "actions": {
-          "allocate" : {
-            "number_of_replicas": 1,
-            "require" : {
-              "box_type": "cold"
-            }
-        }
+          "shrink" : {
+            "number_of_shards": 1
+          }
         }
       }
     }

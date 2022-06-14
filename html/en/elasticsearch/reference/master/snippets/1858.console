@@ -1,1 +1,6 @@
-GET /_autoscaling/capacity/
+PUT /_cluster/settings
+{
+  "transient" : {
+    "indices.recovery.*" : null
+  }
+}

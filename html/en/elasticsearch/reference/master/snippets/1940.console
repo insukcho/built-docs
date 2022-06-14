@@ -1,1 +1,1 @@
-GET /_nodes/stats?metric=ingest&filter_path=nodes.*.ingest.pipelines
+HEAD my-index-000001/_source/1

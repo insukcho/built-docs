@@ -215,9 +215,6 @@ Registered snapshot repositories
 <li class="listitem">
 Node configuration files
 </li>
-<li class="listitem">
-<a class="xref" href="security-files.html" title="Security files">Security configuration files</a>
-</li>
 </ul>
 </div>
 <h3><a id="feature-state"></a>Feature states<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/snapshot-restore/index.asciidoc">edit</a></h3>
@@ -357,20 +354,18 @@ version, the restore attempt will fail.</p>
 <col class="col_3"/>
 <col class="col_4"/>
 <col class="col_5"/>
-<col class="col_6"/>
 </colgroup>
 <tbody>
 <tr>
 <td align="center" valign="top"><p></p></td>
-<td align="center" colspan="5" valign="top"><p><span class="strong strong"><strong>Cluster version</strong></span></p></td>
+<td align="center" colspan="4" valign="top"><p><span class="strong strong"><strong>Cluster version</strong></span></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p><span class="strong strong"><strong>Index creation version</strong></span></p></td>
 <td align="center" valign="top"><p>6.8</p></td>
 <td align="center" valign="top"><p>7.0–7.1</p></td>
 <td align="center" valign="top"><p>7.2–7.17</p></td>
-<td align="center" valign="top"><p>8.0–8.2</p></td>
-<td align="center" valign="top"><p>8.3-8.4</p></td>
+<td align="center" valign="top"><p>8.0–8.4</p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p>5.0–5.6</p></td>
@@ -378,7 +373,6 @@ version, the restore attempt will fail.</p>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span><sup class="footnote" id="_footnote_archive">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p>6.0–6.7</p></td>
@@ -386,7 +380,6 @@ version, the restore attempt will fail.</p>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span><sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p>6.8</p></td>
@@ -394,12 +387,10 @@ version, the restore attempt will fail.</p>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span><sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p></td>
 </tr>
 <tr>
 <td align="center" valign="top"><p>7.0–7.1</p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
@@ -410,22 +401,12 @@ version, the restore attempt will fail.</p>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 </tr>
 <tr>
-<td align="center" valign="top"><p>8.0–8.2</p></td>
+<td align="center" valign="top"><p>8.0–8.4</p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
-</tr>
-<tr>
-<td align="center" valign="top"><p>8.3–8.4</p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-no.png" alt="No" width="20" height="15"></span></p></td>
-<td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 <td align="center" valign="top"><p><span class="image"><img src="https://doc-icons.s3.us-east-2.amazonaws.com/icon-yes.png" alt="Yes" width="20" height="15"></span></p></td>
 </tr>
 </tbody>
@@ -481,8 +462,6 @@ they were when you took the backup.
 </li>
 </ol>
 </div>
-<p>Additionally, snapshots may contain security-sensitive information, which you
-may wish to <a class="xref" href="snapshots-take-snapshot.html#cluster-state-snapshots" title="Dedicated cluster state snapshots">store in a dedicated repository</a>.</p>
 </div>
 </div>
 

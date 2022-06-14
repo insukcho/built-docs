@@ -1,16 +1,5 @@
-PUT /_security/privilege
+POST /_security/oidc/prepare
 {
-  "app01": {
-    "read": {
-      "actions": [ "action:login", "data:read/*" ]
-    },
-    "write": {
-      "actions": [ "action:login", "data:write/*" ]
-    }
-  },
-  "app02": {
-    "all": {
-      "actions": [ "*" ]
-    }
-  }
+  "iss" : "http://127.0.0.1:8080",
+  "login_hint": "this_is_an_opaque_string"
 }

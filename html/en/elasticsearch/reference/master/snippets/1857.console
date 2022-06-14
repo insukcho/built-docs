@@ -1,8 +1,6 @@
-PUT /_autoscaling/policy/my_autoscaling_policy
+PUT /_cluster/settings
 {
-  "roles" : [ "data_hot" ],
-  "deciders": {
-    "fixed": {
-    }
+  "transient" : {
+    "indices.recovery.max_bytes_per_sec" : null
   }
 }

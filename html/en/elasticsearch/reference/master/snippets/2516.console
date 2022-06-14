@@ -1,14 +1,19 @@
-POST music/_search?pretty
+POST /_security/role_mapping/mapping4
 {
-  "suggest": {
-    "song-suggest": {
-      "prefix": "nor",
-      "completion": {
-        "field": "suggest",
-        "fuzzy": {
-          "fuzziness": 2
+  "roles": [ "superuser" ],
+  "enabled": true,
+  "rules": {
+    "any": [
+      {
+        "field": {
+          "username": "esadmin"
+        }
+      },
+      {
+        "field": {
+          "groups": "cn=admins,dc=example,dc=com"
         }
       }
-    }
+    ]
   }
 }

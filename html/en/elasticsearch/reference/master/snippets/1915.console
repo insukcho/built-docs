@@ -1,1 +1,1 @@
-GET _internal/_health
+DELETE /_data_stream/my-data-stream

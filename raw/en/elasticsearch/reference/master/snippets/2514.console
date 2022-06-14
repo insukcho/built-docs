@@ -1,13 +1,8 @@
-POST music/_search
+POST /_security/role_mapping/mapping2
 {
-  "_source": "suggest",    
-  "suggest": {
-    "song-suggest": {
-      "prefix": "nir",
-      "completion": {
-        "field": "suggest",
-        "size": 5          
-      }
-    }
+  "roles": [ "user", "admin" ],
+  "enabled": true,
+  "rules": {
+     "field" : { "username" : [ "esadmin01", "esadmin02" ] }
   }
 }

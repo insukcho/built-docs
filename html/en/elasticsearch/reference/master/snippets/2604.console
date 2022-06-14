@@ -1,1 +1,1 @@
-DELETE /_security/user/jacknich
+POST /_snapshot/my_repository/_verify

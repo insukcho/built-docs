@@ -1,20 +1,13 @@
-PUT my-index-000001
+PUT my-index-2
 {
   "mappings": {
     "properties": {
-      "date": {
-        "type":   "date",
-        "format": "strict_date_optional_time||epoch_second"
+      "my_vector": {
+        "type": "dense_vector",
+        "dims": 3,
+        "index": true,
+        "similarity": "dot_product"
       }
     }
   }
-}
-
-PUT my-index-000001/_doc/example?refresh
-{ "date": 1618321898 }
-
-POST my-index-000001/_search
-{
-  "fields": [ {"field": "date"}],
-  "_source": false
 }

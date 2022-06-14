@@ -1,18 +1,28 @@
-PUT /_internal/desired_nodes/Ywkh3INLQcuPT49f6kcppA/101
+POST my-index-000001/_delete_by_query
 {
-    "nodes" : [
-        {
-            "settings" : {
-                 "node.name" : "instance-000187",
-                 "node.external_id": "instance-000187",
-                 "node.roles" : ["data_hot", "master"],
-                 "node.attr.data" : "hot",
-                 "node.attr.logical_availability_zone" : "zone-0"
-            },
-            "processors_range" : {"min": 8.0, "max": 10.0},
-            "memory" : "58gb",
-            "storage" : "2tb",
-            "node_version" : "{version}"
-        }
-    ]
+  "slice": {
+    "id": 0,
+    "max": 2
+  },
+  "query": {
+    "range": {
+      "http.response.bytes": {
+        "lt": 2000000
+      }
+    }
+  }
+}
+POST my-index-000001/_delete_by_query
+{
+  "slice": {
+    "id": 1,
+    "max": 2
+  },
+  "query": {
+    "range": {
+      "http.response.bytes": {
+        "lt": 2000000
+      }
+    }
+  }
 }

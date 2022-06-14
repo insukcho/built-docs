@@ -1,31 +1,5 @@
-GET museums/_mvt/location/13/4207/2692
+POST /_security/oauth2/token
 {
-  "grid_agg": "geotile",
-  "grid_precision": 2,
-  "fields": [
-    "name",
-    "price"
-  ],
-  "query": {
-    "term": {
-      "included": true
-    }
-  },
-  "aggs": {
-    "min_price": {
-      "min": {
-        "field": "price"
-      }
-    },
-    "max_price": {
-      "max": {
-        "field": "price"
-      }
-    },
-    "avg_price": {
-      "avg": {
-        "field": "price"
-      }
-    }
-  }
+  "grant_type": "refresh_token",
+  "refresh_token": "vLBPvmAB6KvwvJZr27cS"
 }

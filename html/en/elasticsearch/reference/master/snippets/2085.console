@@ -1,1 +1,5 @@
-POST my-new-index-000001/_search?size=0&filter_path=hits.total
+GET /analyze_sample/_analyze
+{
+  "normalizer" : "my_normalizer",
+  "text" : "BaR"
+}

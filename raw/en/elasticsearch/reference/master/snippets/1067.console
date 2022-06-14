@@ -1,6 +1,12 @@
-PUT /job-candidates/_doc/2?refresh
+POST /sales/_search?size=0
 {
-  "name": "Jason Response",
-  "programming_languages": [ "java", "php" ],
-  "required_matches": 2
+  "aggs": {
+    "sales_over_time": {
+      "auto_date_histogram": {
+        "field": "date",
+        "buckets": 5,
+        "format": "yyyy-MM-dd"
+      }
+    }
+  }
 }

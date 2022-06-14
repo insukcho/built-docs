@@ -7,7 +7,7 @@
 <link rel="home" href="index.html" title="Elasticsearch Guide [master]"/>
 <link rel="up" href="ml-df-trained-models-apis.html" title="Machine learning trained model APIs"/>
 <link rel="prev" href="get-trained-models.html" title="Get trained models API"/>
-<link rel="next" href="infer-trained-model.html" title="Infer trained model API"/>
+<link rel="next" href="infer-trained-model-deployment.html" title="Infer trained model deployment API"/>
 <meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master"/>
 <meta name="DC.subject" content="Elasticsearch"/>
 <meta name="DC.identifier" content="master"/>
@@ -129,7 +129,7 @@ Not what you want? See the
 <a href="get-trained-models.html">« Get trained models API</a>
 </span>
 <span class="next">
-<a href="infer-trained-model.html">Infer trained model API »</a>
+<a href="infer-trained-model-deployment.html">Infer trained model deployment API »</a>
 </span>
 </div>
 <div class="section xpack">
@@ -372,12 +372,30 @@ The sum of <code class="literal">inference_count</code> for all nodes in the dep
 </dd>
 <dt>
 <span class="term">
+<code class="literal">inference_threads</code>
+</span>
+</dt>
+<dd>
+(integer)
+The number of threads used by the inference process.
+</dd>
+<dt>
+<span class="term">
 <code class="literal">model_id</code>
 </span>
 </dt>
 <dd>
 (string)
 The unique identifier of the trained model.
+</dd>
+<dt>
+<span class="term">
+<code class="literal">model_threads</code>
+</span>
+</dt>
+<dd>
+(integer)
+The number of threads used when sending inference requests to the model.
 </dd>
 <dt>
 <span class="term">
@@ -434,12 +452,34 @@ The total number of inference calls made against this node for this model.
 </dd>
 <dt>
 <span class="term">
+<code class="literal">inference_threads</code>
+</span>
+</dt>
+<dd>
+(integer)
+The number of threads used by the inference process.
+This value is limited by the number of hardware threads on the node;
+it might therefore differ from the <code class="literal">inference_threads</code> value in the <a class="xref" href="start-trained-model-deployment.html" title="Start trained model deployment API">Start trained model deployment</a> API.
+</dd>
+<dt>
+<span class="term">
 <code class="literal">last_access</code>
 </span>
 </dt>
 <dd>
 (long)
 The epoch time stamp of the last inference call for the model on this node.
+</dd>
+<dt>
+<span class="term">
+<code class="literal">model_threads</code>
+</span>
+</dt>
+<dd>
+(integer)
+The number of threads used when sending inference requests to the model.
+This value is limited by the number of hardware threads on the node;
+it might therefore differ from the <code class="literal">model_threads</code> value in the <a class="xref" href="start-trained-model-deployment.html" title="Start trained model deployment API">Start trained model deployment</a> API.
 </dd>
 <dt>
 <span class="term">
@@ -504,17 +544,6 @@ The host and port where transport HTTP connections are accepted.
 </div>
 </div>
 </details>
-</dd>
-<dt>
-<span class="term">
-<code class="literal">number_of_allocations</code>
-</span>
-</dt>
-<dd>
-(integer)
-The number of allocations assigned to this node.
-This value is limited by the number of hardware threads on the node;
-it might therefore differ from the <code class="literal">number_of_allocations</code> value in the <a class="xref" href="start-trained-model-deployment.html" title="Start trained model deployment API">Start trained model deployment</a> API.
 </dd>
 <dt>
 <span class="term">
@@ -612,17 +641,6 @@ The epoch timestamp when the allocation started.
 </dd>
 <dt>
 <span class="term">
-<code class="literal">threads_per_allocation</code>
-</span>
-</dt>
-<dd>
-(integer)
-The number of threads for each allocation during inference.
-This value is limited by the number of hardware threads on the node;
-it might therefore differ from the <code class="literal">threads_per_allocation</code> value in the <a class="xref" href="start-trained-model-deployment.html" title="Start trained model deployment API">Start trained model deployment</a> API.
-</dd>
-<dt>
-<span class="term">
 <code class="literal">timeout_count</code>
 </span>
 </dt>
@@ -643,15 +661,6 @@ The number of requests processed in the last 1 minute.
 </div>
 </div>
 </details>
-</dd>
-<dt>
-<span class="term">
-<code class="literal">number_of_allocations</code>
-</span>
-</dt>
-<dd>
-(integer)
-The requested number of allocations for the trained model deployment.
 </dd>
 <dt>
 <span class="term">
@@ -718,15 +727,6 @@ The overall state of the deployment. The values may be:
 </li>
 </ul>
 </div>
-</dd>
-<dt>
-<span class="term">
-<code class="literal">threads_per_allocation</code>
-</span>
-</dt>
-<dd>
-(integer)
-The number of threads per allocation used by the inference process.
 </dd>
 <dt>
 <span class="term">
@@ -927,7 +927,7 @@ resources that match the request or only partial matches for the request.
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">GET _ml/trained_models/_stats</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/2437.console"></div>
+<div class="console_widget" data-snippet="snippets/2365.console"></div>
 <p>The API returns the following results:</p>
 <a id="b0a253a5d3a2bc2bb5050675c1730f50"></a>
 <div class="pre_wrapper lang-console-result">
@@ -996,7 +996,7 @@ resources that match the request or only partial matches for the request.
 <a href="get-trained-models.html">« Get trained models API</a>
 </span>
 <span class="next">
-<a href="infer-trained-model.html">Infer trained model API »</a>
+<a href="infer-trained-model-deployment.html">Infer trained model deployment API »</a>
 </span>
 </div>
 </div>

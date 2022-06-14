@@ -1,6 +1,4 @@
-PUT /_security/role_mapping/basic_user
+GET /_watcher/_query/watches
 {
-  "roles" : [ "user" ],
-  "rules" : { "field" : { "dn" : "cn=John Doe,ou=example,o=com" } },
-  "enabled": true
+  "size" : 100
 }

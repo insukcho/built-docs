@@ -1,15 +1,5 @@
-POST _reindex
+GET /_analyze
 {
-  "source": {
-    "index": "source",
-    "query": {
-      "match": {
-        "company": "cat"
-      }
-    }
-  },
-  "dest": {
-    "index": "dest",
-    "routing": "=cat"
-  }
+  "filter" : ["lowercase"],
+  "text" : "BaR"
 }

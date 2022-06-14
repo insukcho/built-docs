@@ -1,8 +1,8 @@
-POST _ml/datafeeds/datafeed-total-requests/_update
+GET /my-index-000001/_search?from=40&size=20
 {
   "query": {
     "term": {
-      "level": "error"
+      "user.id": "kimchy"
     }
   }
 }

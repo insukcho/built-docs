@@ -1,8 +1,12 @@
-PUT my-index-000001/_doc/1?op_type=create
+GET /test/_mget?stored_fields=field1,field2
 {
-  "@timestamp": "2099-11-15T13:12:00",
-  "message": "GET /search HTTP/1.1 200 1070000",
-  "user": {
-    "id": "kimchy"
-  }
+  "docs": [
+    {
+      "_id": "1"
+    },
+    {
+      "_id": "2",
+      "stored_fields": [ "field3", "field4" ]
+    }
+  ]
 }

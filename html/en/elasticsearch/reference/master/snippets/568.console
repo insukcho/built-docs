@@ -1,6 +1,18 @@
-GET /_analyze
+PUT my-index-000001/_doc/1?refresh
 {
-  "tokenizer": "keyword",
-  "filter": [ "word_delimiter" ],
-  "text": "Neil's-Super-Duper-XL500--42+AutoCoder"
+  "text": "The fooBarBaz method"
+}
+
+GET my-index-000001/_search
+{
+  "query": {
+    "match": {
+      "text": "bar"
+    }
+  },
+  "highlight": {
+    "fields": {
+      "text": {}
+    }
+  }
 }

@@ -1,1 +1,1 @@
-GET /_enrich/_stats
+DELETE /my-index-000001

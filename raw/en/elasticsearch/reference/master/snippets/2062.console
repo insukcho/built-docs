@@ -1,6 +1,6 @@
-POST my-index-000001/_update_by_query?refresh&slices=5
+GET /my-data-stream/_eql/search
 {
-  "script": {
-    "source": "ctx._source['extra'] = 'test'"
-  }
+  "query": """
+    process where process.name == "regsvr32.exe"
+  """
 }

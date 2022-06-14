@@ -5,7 +5,7 @@
 <title>Start trained model deployment API | Elasticsearch Guide [master] | Elastic</title>
 <link rel="home" href="index.html" title="Elasticsearch Guide [master]"/>
 <link rel="up" href="ml-df-trained-models-apis.html" title="Machine learning trained model APIs"/>
-<link rel="prev" href="infer-trained-model.html" title="Infer trained model API"/>
+<link rel="prev" href="infer-trained-model-deployment.html" title="Infer trained model deployment API"/>
 <link rel="next" href="stop-trained-model-deployment.html" title="Stop trained model deployment API"/>
 <meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master"/>
 <meta name="DC.subject" content="Elasticsearch"/>
@@ -28,7 +28,7 @@ Not what you want? See the
 </div>
 <div class="navheader">
 <span class="prev">
-<a href="infer-trained-model.html">« Infer trained model API</a>
+<a href="infer-trained-model-deployment.html">« Infer trained model deployment API</a>
 </span>
 <span class="next">
 <a href="stop-trained-model-deployment.html">Stop trained model deployment API »</a>
@@ -39,13 +39,13 @@ Not what you want? See the
 <h2 class="title"><a id="start-trained-model-deployment"></a>Start trained model deployment API<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ml/trained-models/apis/start-trained-model-deployment.asciidoc">edit</a></h2>
 </div></div></div>
 
-<p>Starts a new trained model deployment.</p>
 <div class="warning admon">
 <div class="icon"></div>
 <div class="admon_content">
 <p>This functionality is in technical preview and may be changed or removed in a future release. Elastic will apply best effort to fix any issues, but features in technical preview are not subject to the support SLA of official GA features.</p>
 </div>
 </div>
+<p>Starts a new trained model deployment.</p>
 <div class="section">
 <div class="titlepage"><div><div>
 <h3 class="title"><a id="start-trained-model-deployment-request"></a>Request<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ml/trained-models/apis/start-trained-model-deployment.asciidoc">edit</a></h3>
@@ -68,7 +68,7 @@ Not what you want? See the
 <p>Currently only <code class="literal">pytorch</code> models are supported for deployment. When deployed,
 the model attempts allocation to every machine learning node. Once deployed
 the model can be used by the <a class="xref" href="inference-processor.html" title="Inference processor">Inference processor</a>
-in an ingest pipeline or directly in the <a class="xref" href="infer-trained-model.html" title="Infer trained model API">Infer trained model</a> API.</p>
+in an ingest pipeline or directly in the <a class="xref" href="infer-trained-model-deployment.html" title="Infer trained model deployment API">Infer trained model deployment</a> API.</p>
 </div>
 
 <div class="section">
@@ -98,28 +98,43 @@ The unique identifier of the trained model.
 <dl class="variablelist">
 <dt>
 <span class="term">
-<code class="literal">number_of_allocations</code>
+<code class="literal">inference_threads</code>
 </span>
 </dt>
 <dd>
-<p>
 (Optional, integer)
-The number of model allocations on each node where the model is deployed.
-All allocations on a node share the same copy of the model in memory but use
-a separate set of threads to evaluate the model.
+Sets the number of threads used by the inference process. This generally increases
+the inference speed. The inference process is a compute-bound process; any number
+greater than the number of available hardware threads on the machine does not increase the
+inference speed. If this setting is greater than the number of hardware threads
+it will automatically be changed to a value less than the number of hardware threads.
+Defaults to 1.
+</dd>
+<dt>
+<span class="term">
+<code class="literal">model_threads</code>
+</span>
+</dt>
+<dd>
+(Optional, integer)
+The number of threads used when sending inference requests to the model.
 Increasing this value generally increases the throughput.
 If this setting is greater than the number of hardware threads
 it will automatically be changed to a value less than the number of hardware threads.
 Defaults to 1.
-</p>
+</dd>
+</dl>
+</div>
 <div class="note admon">
 <div class="icon"></div>
 <div class="admon_content">
-<p>If the sum of <code class="literal">threads_per_allocation</code> and <code class="literal">number_of_allocations</code> is greater
-than the number of hardware threads, the <code class="literal">threads_per_allocation</code> value is reduced.</p>
+<p>Either one of <code class="literal">inference_threads</code> and <code class="literal">model_threads</code> may be greater than one, not both.
+Increase <code class="literal">inference_threads</code> to optimize for latency. Increase <code class="literal">model_threads</code> to optimize
+for throughput.</p>
 </div>
 </div>
-</dd>
+<div class="variablelist">
+<dl class="variablelist">
 <dt>
 <span class="term">
 <code class="literal">queue_capacity</code>
@@ -131,20 +146,6 @@ Controls how many inference requests are allowed in the queue at a time.
 Every machine learning node in the cluster where the model can be allocated
 has a queue of this size; when the number of requests exceeds the total value,
 new requests are rejected with a 429 error. Defaults to 1024.
-</dd>
-<dt>
-<span class="term">
-<code class="literal">threads_per_allocation</code>
-</span>
-</dt>
-<dd>
-(Optional, integer)
-Sets the number of threads used by each model allocation during inference. This generally increases
-the inference speed. The inference process is a compute-bound process; any number
-greater than the number of available hardware threads on the machine does not increase the
-inference speed. If this setting is greater than the number of hardware threads
-it will automatically be changed to a value less than the number of hardware threads.
-Defaults to 1.
 </dd>
 <dt>
 <span class="term">
@@ -183,18 +184,15 @@ valid nodes.
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">POST _ml/trained_models/elastic__distilbert-base-uncased-finetuned-conll03-english/deployment/_start?wait_for=started&amp;timeout=1m</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/2444.console"></div>
+<div class="console_widget" data-snippet="snippets/2370.console"></div>
 <p>The API returns the following results:</p>
-<a id="11d24459b9864356692dea49a1fc73ff"></a>
+<a id="c4e7228fc3b8c5268758e54e551de971"></a>
 <div class="pre_wrapper lang-console-result">
 <pre class="programlisting prettyprint lang-console-result">{
-    "assignment": {
+    "allocation": {
         "task_parameters": {
             "model_id": "elastic__distilbert-base-uncased-finetuned-conll03-english",
-            "model_bytes": 265632637,
-            "threads_per_allocation" : 1,
-            "number_of_allocations" : 1,
-            "queue_capacity" : 1024
+            "model_bytes": 265632637
         },
         "routing_table": {
             "uckeG3R8TLe2MMNBQ6AGrw": {
@@ -202,8 +200,8 @@ valid nodes.
                 "reason": ""
             }
         },
-        "assignment_state": "started",
-        "start_time": "2022-11-02T11:50:34.766591Z"
+        "allocation_state": "started",
+        "start_time": "2021-11-02T11:50:34.766591Z"
     }
 }</pre>
 </div>
@@ -212,7 +210,7 @@ valid nodes.
 </div>
 <div class="navfooter">
 <span class="prev">
-<a href="infer-trained-model.html">« Infer trained model API</a>
+<a href="infer-trained-model-deployment.html">« Infer trained model deployment API</a>
 </span>
 <span class="next">
 <a href="stop-trained-model-deployment.html">Stop trained model deployment API »</a>

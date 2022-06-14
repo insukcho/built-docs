@@ -110,8 +110,7 @@ master-eligible nodes.</p>
 </dt>
 <dd>
 A comma-separated list of the names of the nodes to exclude from the voting
-configuration. If specified, you may not also specify <code class="literal">?node_ids</code>. Only applies
-to the <code class="literal">POST</code> form of this API.
+configuration. If specified, you may not also specify <code class="literal">?node_ids</code>.
 </dd>
 <dt>
 <span class="term">
@@ -121,7 +120,6 @@ to the <code class="literal">POST</code> form of this API.
 <dd>
 A comma-separated list of the persistent ids of the nodes to exclude from the
 voting configuration. If specified, you may not also specify <code class="literal">?node_names</code>.
-Only applies to the <code class="literal">POST</code> form of this API.
 </dd>
 <dt>
 <span class="term">
@@ -134,17 +132,7 @@ exclusion, the API waits for the specified nodes to be excluded from the voting
 configuration before returning. The period of time to wait is specified by the
 <code class="literal">?timeout</code> query parameter. If the timeout expires before the appropriate
 condition is satisfied, the request fails and returns an error. Defaults to
-<code class="literal">30s</code>. Only applies to the <code class="literal">POST</code> form of this API.
-</dd>
-<dt>
-<span class="term">
-<code class="literal">master_timeout</code>
-</span>
-</dt>
-<dd>
-(Optional, <a class="xref" href="api-conventions.html#time-units" title="Time units">time units</a>) Defines how long to wait while trying to
-route the request to the current master node in the cluster. Defaults to <code class="literal">30s</code>.
-Applies to both <code class="literal">POST</code> and <code class="literal">DELETE</code> forms of this API.
+<code class="literal">30s</code>.
 </dd>
 <dt>
 <span class="term">
@@ -157,7 +145,7 @@ removed from the cluster before clearing the voting configuration exclusions
 list. Defaults to <code class="literal">true</code>, meaning that all excluded nodes must be removed from
 the cluster before this API takes any action. If set to <code class="literal">false</code> then the voting
 configuration exclusions list is cleared even if some excluded nodes are still
-in the cluster. Only applies to the <code class="literal">DELETE</code> form of this API.
+in the cluster.
 </dd>
 </dl>
 </div>
@@ -173,13 +161,13 @@ exclusions list:</p>
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">POST /_cluster/voting_config_exclusions?node_names=nodeName1,nodeName2</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/1951.console"></div>
+<div class="console_widget" data-snippet="snippets/1881.console"></div>
 <p>Remove all exclusions from the list:</p>
 <a id="25cb9e1da00dfd971065ce182467434d"></a>
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">DELETE /_cluster/voting_config_exclusions</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/1952.console"></div>
+<div class="console_widget" data-snippet="snippets/1882.console"></div>
 </div>
 
 </div>

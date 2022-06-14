@@ -1,12 +1,10 @@
-POST _ml/trained_models/model2/_infer
+POST music/_search?pretty
 {
-  "docs": [{"text_field": "The Amazon rainforest covers most of the Amazon basin in South America"}],
-  "inference_config": {
-    "ner": {
-      "tokenization": {
-        "bert": {
-          "truncate": "first"
-        }
+  "suggest": {
+    "song-suggest": {
+      "regex": "n[ever|i]r",
+      "completion": {
+        "field": "suggest"
       }
     }
   }

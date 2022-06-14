@@ -1,1 +1,1 @@
-GET _cluster/health
+POST /_ccr/auto_follow/my_auto_follow_pattern/resume

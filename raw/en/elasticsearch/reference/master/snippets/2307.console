@@ -1,14 +1,4 @@
-PUT /my-index-000001
+POST _ml/anomaly_detectors/low_request_rate/_flush
 {
-  "mappings": {
-    "properties": {
-      "name": {
-        "properties": {
-          "first": {
-            "type": "text"
-          }
-        }
-      }
-    }
-  }
+  "calc_interim": true
 }

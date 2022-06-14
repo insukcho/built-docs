@@ -1,14 +1,4 @@
-POST _reindex
+GET /analyze_sample/_analyze
 {
-  "source": {
-    "index": "my-index-000001",
-    "query": {
-      "term": {
-        "user.id": "kimchy"
-      }
-    }
-  },
-  "dest": {
-    "index": "my-new-index-000001"
-  }
+  "text" : "this is a test"
 }

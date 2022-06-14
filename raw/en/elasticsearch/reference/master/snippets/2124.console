@@ -1,8 +1,17 @@
-PUT /_enrich/policy/my-policy
+PUT _template/template_1
 {
-  "match": {
-    "indices": "users",
-    "match_field": "email",
-    "enrich_fields": ["first_name", "last_name", "city", "zip", "state"]
+  "index_patterns" : ["te*"],
+  "settings" : {
+    "number_of_shards" : 1
+  },
+  "aliases" : {
+    "alias1" : {},
+    "alias2" : {
+      "filter" : {
+        "term" : {"user.id" : "kimchy" }
+      },
+      "routing" : "shard-1"
+    },
+    "{index}-alias" : {}
   }
 }

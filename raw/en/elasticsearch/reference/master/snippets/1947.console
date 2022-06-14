@@ -1,1 +1,1 @@
-POST _tasks/oTUltX4IQMOUUVeiohTt8A:12345/_cancel
+DELETE /my-index-000001/_doc/1?timeout=5m

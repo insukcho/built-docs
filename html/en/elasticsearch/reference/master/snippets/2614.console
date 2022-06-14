@@ -1,1 +1,1 @@
-GET /_security/api_key?username=myuser
+GET /_snapshot/my_repository/my_snapshot

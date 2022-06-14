@@ -1,1 +1,1 @@
-GET _cat/ml/anomaly_detectors?h=id,s,dpr,mb&v=true
+GET _tasks/oTUltX4IQMOUUVeiohTt8A:124

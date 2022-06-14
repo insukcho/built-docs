@@ -1,14 +1,10 @@
-PUT _watcher/watch/cluster_health_watch
+PUT index
 {
-  "trigger" : {
-    "schedule" : { "interval" : "10s" }
-  },
-  "input" : {
-    "http" : {
-      "request" : {
-        "host" : "localhost",
-        "port" : 9200,
-        "path" : "/_cluster/health"
+  "mappings": {
+    "properties": {
+      "foo": {
+        "type": "keyword",
+        "eager_global_ordinals": true
       }
     }
   }

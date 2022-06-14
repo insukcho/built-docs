@@ -1,6 +1,9 @@
-PUT _cluster/settings
+POST _reindex
 {
-  "persistent": {
-    "archived.*": null
+  "source": {
+    "index": "my-index"
+  },
+  "dest": {
+    "index": "reindexed-my-index"
   }
 }

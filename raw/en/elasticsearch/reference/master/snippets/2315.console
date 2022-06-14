@@ -1,10 +1,5 @@
-PUT /my-new-index-000001
+GET _ml/anomaly_detectors/high_sum_total_sales/results/influencers
 {
-  "mappings" : {
-    "properties": {
-      "user_id": {
-        "type": "keyword"
-      }
-    }
-  }
+  "sort": "influencer_score",
+  "desc": true
 }

@@ -1,1 +1,10 @@
-PUT /_snapshot/my_repository/my_snapshot
+PUT _cluster/settings
+{
+  "persistent": {
+    "cluster.indices.close.enable": false,
+    "indices.recovery.max_bytes_per_sec": "50mb"
+  },
+  "transient": {
+    "*": null
+  }
+}

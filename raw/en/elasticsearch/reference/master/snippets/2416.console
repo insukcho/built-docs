@@ -1,16 +1,10 @@
-PUT _ml/data_frame/analytics/loan_classification
+GET my-index/_knn_search
 {
-  "source" : {
-    "index": "loan-applicants"
+  "knn": {
+    "field": "image_vector",
+    "query_vector": [0.3, 0.1, 1.2],
+    "k": 10,
+    "num_candidates": 100
   },
-  "dest" : {
-    "index": "loan-applicants-classified"
-  },
-  "analysis" : {
-    "classification": {
-      "dependent_variable": "label",
-      "training_percent": 75,
-      "num_top_classes": 2
-    }
-  }
+  "_source": ["name", "file_type"]
 }

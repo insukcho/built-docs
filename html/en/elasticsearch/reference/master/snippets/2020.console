@@ -1,8 +1,9 @@
-POST /my-index-000001/_delete_by_query
+POST _reindex
 {
-  "query": {
-    "match": {
-      "user.id": "elkbee"
-    }
+  "source": {
+    "index": ["my-index-000001", "my-index-000002"]
+  },
+  "dest": {
+    "index": "my-new-index-000002"
   }
 }

@@ -1,7 +1,41 @@
-POST logs/_doc
+PUT index
 {
-  "timestamp": "2015-05-17T18:12:07.613Z",
-  "request": "GET index.html",
-  "status_code": 404,
-  "message": "Error: File not found"
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "english_exact": {
+          "tokenizer": "standard",
+          "filter": [
+            "lowercase"
+          ]
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "body": {
+        "type": "text",
+        "analyzer": "english",
+        "fields": {
+          "exact": {
+            "type": "text",
+            "analyzer": "english_exact"
+          }
+        }
+      }
+    }
+  }
 }
+
+PUT index/_doc/1
+{
+  "body": "Ski resort"
+}
+
+PUT index/_doc/2
+{
+  "body": "A pair of skis"
+}
+
+POST index/_refresh

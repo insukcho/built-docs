@@ -1,11 +1,33 @@
-GET sensor-1,sensor_rollup/_rollup_search
+GET /my-index-000001/_search
 {
-  "size": 0,
-  "aggregations": {
-    "max_temperature": {
-      "max": {
-        "field": "temperature"
+  "profile": true,
+  "query": {
+    "term": {
+      "user.id": {
+        "value": "elkbee"
       }
+    }
+  },
+  "aggs": {
+    "my_scoped_agg": {
+      "terms": {
+        "field": "http.response.status_code"
+      }
+    },
+    "my_global_agg": {
+      "global": {},
+      "aggs": {
+        "my_level_agg": {
+          "terms": {
+            "field": "http.response.status_code"
+          }
+        }
+      }
+    }
+  },
+  "post_filter": {
+    "match": {
+      "message": "search"
     }
   }
 }

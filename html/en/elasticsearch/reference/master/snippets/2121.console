@@ -1,5 +1,5 @@
-PUT products/_doc/1567
+PUT /_index_template/template_1
 {
-  "product" : "r2d2",
-  "details" : "A resourceful astromech droid"
+  "index_patterns": ["logs-*"],
+  "data_stream": { }
 }

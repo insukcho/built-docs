@@ -1,10 +1,6 @@
-POST _reindex
+PUT /analyze_sample
 {
-  "source": {
-    "index": "source"
-  },
-  "dest": {
-    "index": "dest",
-    "pipeline": "some_ingest_pipeline"
+  "settings" : {
+    "index.analyze.max_token_count" : 20000
   }
 }

@@ -1,31 +1,8 @@
-PUT index
+POST /my-data-stream/_doc/
 {
-  "settings": {
-    "analysis": {
-      "char_filter": {
-        "quote": {
-          "type": "mapping",
-          "mappings": [
-            "« => \"",
-            "» => \""
-          ]
-        }
-      },
-      "normalizer": {
-        "my_normalizer": {
-          "type": "custom",
-          "char_filter": ["quote"],
-          "filter": ["lowercase", "asciifolding"]
-        }
-      }
-    }
+  "@timestamp": "2099-03-08T11:06:07.000Z",
+  "user": {
+    "id": "8a4f500d"
   },
-  "mappings": {
-    "properties": {
-      "foo": {
-        "type": "keyword",
-        "normalizer": "my_normalizer"
-      }
-    }
-  }
+  "message": "Login successful"
 }

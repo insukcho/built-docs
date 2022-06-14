@@ -1,5 +1,9 @@
-PUT my-index-000001/_doc/1
+POST _reindex?slices=5&refresh
 {
-  "counter": 1,
-  "tags": [ "production" ]
+  "source": {
+    "index": "my-index-000001"
+  },
+  "dest": {
+    "index": "my-new-index-000001"
+  }
 }

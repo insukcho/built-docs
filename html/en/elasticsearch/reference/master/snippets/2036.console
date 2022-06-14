@@ -1,10 +1,11 @@
-POST test/_update/1
+PUT /my-index-000001/_doc/1
 {
-  "script": {
-    "source": "ctx._source.tags.add(params.tag)",
-    "lang": "painless",
-    "params": {
-      "tag": "blue"
-    }
-  }
+  "fullname" : "John Doe",
+  "text" : "test test test "
+}
+
+PUT /my-index-000001/_doc/2?refresh=wait_for
+{
+  "fullname" : "Jane Doe",
+  "text" : "Another test ..."
 }

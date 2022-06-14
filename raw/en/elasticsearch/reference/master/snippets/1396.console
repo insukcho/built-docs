@@ -1,9 +1,4 @@
-GET /my-data-stream/_eql/search
+POST /_sql?format=txt
 {
-  "query": """
-    sequence by process.pid
-      [process where process.name == "regsvr32.exe"]
-      [library where dll.name == "scrobj.dll"]
-      [network where true]
-  """
+	"query": "SELECT YEAR(release_date) AS year FROM library WHERE page_count > 300 AND author = 'Frank Herbert' GROUP BY year HAVING COUNT(*) > 0"
 }

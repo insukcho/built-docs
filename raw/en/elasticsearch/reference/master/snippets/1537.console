@@ -1,1 +1,1 @@
-GET _cluster/settings
+GET sample_weblogs_by_clientip/_search

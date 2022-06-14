@@ -1,2 +1,6 @@
-GET metricbeat-2016.05.30-1/_doc/1
-GET metricbeat-2016.05.31-1/_doc/1
+PUT /my_source_index/_settings
+{
+  "settings": {
+    "index.blocks.write": true
+  }
+}

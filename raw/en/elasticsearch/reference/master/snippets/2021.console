@@ -1,6 +1,10 @@
-POST my-index-000001/_delete_by_query?conflicts=proceed
+POST _reindex
 {
-  "query": {
-    "match_all": {}
+  "source": {
+    "index": "my-index-000001",
+    "_source": ["user.id", "_doc"]
+  },
+  "dest": {
+    "index": "my-new-index-000001"
   }
 }

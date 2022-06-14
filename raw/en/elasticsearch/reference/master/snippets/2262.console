@@ -1,1 +1,1 @@
-GET /_stats/merge,refresh
+DELETE /_ingest/pipeline/*

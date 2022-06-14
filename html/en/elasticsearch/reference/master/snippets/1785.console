@@ -1,12 +1,7 @@
-PUT _settings
-{
-  "index.max_result_window": 5000
-}
-
-PUT _cluster/settings
-{
-  "persistent": {
-    "search.max_buckets": 20000,
-    "search.allow_expensive_queries": false
-  }
-}
+POST /library/_doc?refresh
+{"title": "Book #1", "rating": 200.1}
+POST /library/_doc?refresh
+{"title": "Book #2", "rating": 1.7}
+POST /library/_doc?refresh
+{"title": "Book #3", "rating": 0.1}
+GET /_search?filter_path=hits.hits._source&_source=title&sort=rating:desc

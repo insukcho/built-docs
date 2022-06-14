@@ -6,8 +6,8 @@
 <title>Update user profile data API | Elasticsearch Guide [master] | Elastic</title>
 <link rel="home" href="index.html" title="Elasticsearch Guide [master]"/>
 <link rel="up" href="security-api.html" title="Security APIs"/>
-<link rel="prev" href="security-api-suggest-user-profile.html" title="Suggest user profile API"/>
-<link rel="next" href="security-api-has-privileges-user-profile.html" title="Has privileges user profile API"/>
+<link rel="prev" href="security-api-ssl.html" title="SSL certificate API"/>
+<link rel="next" href="snapshot-restore-apis.html" title="Snapshot and restore APIs"/>
 <meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master"/>
 <meta name="DC.subject" content="Elasticsearch"/>
 <meta name="DC.identifier" content="master"/>
@@ -126,30 +126,30 @@ Not what you want? See the
 </div>
 <div class="navheader">
 <span class="prev">
-<a href="security-api-suggest-user-profile.html">« Suggest user profile API</a>
+<a href="security-api-ssl.html">« SSL certificate API</a>
 </span>
 <span class="next">
-<a href="security-api-has-privileges-user-profile.html">Has privileges user profile API »</a>
+<a href="snapshot-restore-apis.html">Snapshot and restore APIs »</a>
 </span>
 </div>
 <div class="section xpack">
 <div class="titlepage"><div><div>
 <h2 class="title"><a id="security-api-update-user-profile-data"></a>Update user profile data API<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/x-pack/docs/en/rest-api/security/update-user-profile-data.asciidoc">edit</a></h2>
 </div></div></div>
-
 <div class="warning admon">
 <div class="icon"></div>
 <div class="admon_content">
 <p>This functionality is in beta and is subject to change. The design and code is less mature than official GA features and is being provided as-is with no warranties. Beta features are not subject to the support SLA of official GA features.</p>
 </div>
 </div>
+
 <p>Updates specific data for the user profile that&#8217;s associated with the specified
 unique ID.</p>
 <div class="section">
 <div class="titlepage"><div><div>
 <h3 class="title"><a id="security-api-update-user-profile-data-request"></a>Request<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/x-pack/docs/en/rest-api/security/update-user-profile-data.asciidoc">edit</a></h3>
 </div></div></div>
-<p><code class="literal">POST /_security/profile/&lt;uid&gt;/_data</code></p>
+<p><code class="literal">POST /_security/profile/_data/&lt;uid&gt;</code></p>
 </div>
 
 <div class="section">
@@ -174,11 +174,11 @@ referenced in the request.
 <div class="titlepage"><div><div>
 <h3 class="title"><a id="security-api-update-user-profile-data-desc"></a>Description<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/x-pack/docs/en/rest-api/security/update-user-profile-data.asciidoc">edit</a></h3>
 </div></div></div>
-<p>The update user profile API updates the <code class="literal">labels</code> and <code class="literal">data</code> fields of an
+<p>The update user profile API updates the <code class="literal">access</code> and <code class="literal">data</code> fields of an
 existing user profile document with JSON objects. New keys and their values are
 added to the profile document, and conflicting keys are replaced by data that&#8217;s
 included in the request.</p>
-<p>For both <code class="literal">labels</code> and <code class="literal">data</code>, content is namespaced by the top-level fields.
+<p>For both <code class="literal">access</code> and <code class="literal">data</code>, content is namespaced by the top-level fields.
 The <code class="literal">update_profile_data</code> global privilege grants privileges for updating only
 the allowed namespaces.</p>
 </div>
@@ -256,13 +256,13 @@ Valid values: <code class="literal">true</code>, <code class="literal">false</co
 <dl class="variablelist">
 <dt>
 <span class="term">
-<code class="literal">labels</code>
+<code class="literal">access</code>
 </span>
 </dt>
 <dd>
 (Required*, object)
 Searchable data that you want to associate with the user profile.
-This field supports a nested data structure. Within the <code class="literal">labels</code> object,
+This field supports a nested data structure. Within the <code class="literal">access</code> object,
 top-level keys cannot begin with an underscore (<code class="literal">_</code>) or contain a period (<code class="literal">.</code>).
 </dd>
 <dt>
@@ -301,13 +301,15 @@ indicating that the request is acknowledged:</p>
 <h3 class="title"><a id="security-api-update-user-profile-data-example"></a>Examples<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/x-pack/docs/en/rest-api/security/update-user-profile-data.asciidoc">edit</a></h3>
 </div></div></div>
 <p>The following request updates a profile document for a <code class="literal">uid</code> matching
-<code class="literal">u_P_0BMHgaOK3p7k-PFWUCbw9dQ-UFjt01oWJ_Dp2PmPc_0</code>:</p>
-<a id="ba21a7fbb74180ff138d97032f28ace7"></a>
+<code class="literal">u_kd2JMqwUQwSCCOxMv7M1vw</code>:</p>
+<a id="450a31b0ab227deceb6749fa99a37ad8"></a>
 <div class="pre_wrapper lang-console">
-<pre class="programlisting prettyprint lang-console">POST /_security/profile/u_P_0BMHgaOK3p7k-PFWUCbw9dQ-UFjt01oWJ_Dp2PmPc_0/_data
+<pre class="programlisting prettyprint lang-console">POST /_security/profile/_data/u_kd2JMqwUQwSCCOxMv7M1vw
 {
-  "labels": {
-    "direction": "east"
+  "access": {
+    "app1": {
+      "tag": "prod"
+    }
   },
   "data": {
     "app1": {
@@ -316,14 +318,16 @@ indicating that the request is acknowledged:</p>
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/2678.console"></div>
+<div class="console_widget" data-snippet="snippets/2601.console"></div>
 <p>You can update the profile data to replace some keys and add new keys:</p>
-<a id="32b7963c5cabbe9cc7d15da62f5edda9"></a>
+<a id="fe7a971c906d68a3bef8d2ce728151ee"></a>
 <div class="pre_wrapper lang-console">
-<pre class="programlisting prettyprint lang-console">POST /_security/profile/u_P_0BMHgaOK3p7k-PFWUCbw9dQ-UFjt01oWJ_Dp2PmPc_0/_data
+<pre class="programlisting prettyprint lang-console">POST /_security/profile/_data/u_kd2JMqwUQwSCCOxMv7M1vw
 {
-  "labels": {
-    "direction": "west"
+  "access": {
+    "app1": {
+      "tag": "dev"
+    }
   },
   "data": {
     "app1": {
@@ -332,31 +336,28 @@ indicating that the request is acknowledged:</p>
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/2679.console"></div>
-<p>If you get the profile now, the consolidated profile data is returned:</p>
-<a id="4f666d710758578e2582850dac3ad144"></a>
-<div class="pre_wrapper lang-console">
-<pre class="programlisting prettyprint lang-console">GET /_security/profile/u_P_0BMHgaOK3p7k-PFWUCbw9dQ-UFjt01oWJ_Dp2PmPc_0?data=*</pre>
-</div>
-<div class="console_widget" data-snippet="snippets/2680.console"></div>
-<a id="d0f3a7443cac1b64e23d34220260a578"></a>
-<div class="pre_wrapper lang-console-result">
-<pre class="programlisting prettyprint lang-console-result">{
-  "u_P_0BMHgaOK3p7k-PFWUCbw9dQ-UFjt01oWJ_Dp2PmPc_0": {
-    "uid": "u_P_0BMHgaOK3p7k-PFWUCbw9dQ-UFjt01oWJ_Dp2PmPc_0",
+<div class="console_widget" data-snippet="snippets/2602.console"></div>
+<p>If you run the request again, the consolidated profile data is returned:</p>
+<div class="pre_wrapper lang-js">
+<pre class="programlisting prettyprint lang-js">{
+  "u_kd2JMqwUQwSCCOxMv7M1vw": {
+    "uid": "u_kd2JMqwUQwSCCOxMv7M1vw",
     "enabled": true,
     "last_synchronized": 1642650651037,
     "user": {
-      "username": "jackrea",
+      "username": "jacknich",
       "roles": [
-        "admin"
+        "admin", "other_role1"
       ],
-      "realm_name": "native",
-      "full_name": "Jack Reacher",
-      "email": "jackrea@example.com"
+      "realm_name": "native1",
+      "full_name": "Jack Nicholson",
+      "email": "jacknich@example.com",
+      "active": true
     },
-    "labels": {
-      "direction": "west"
+    "access": {
+      "app1": {
+        "tag": "dev"
+      }
     },
     "data": {
       "app1": {
@@ -365,8 +366,8 @@ indicating that the request is acknowledged:</p>
       }
     },
     "_doc": {
-      "_primary_term": 88,
-      "_seq_no": 66
+      "_primary_term": 1,
+      "_seq_no": 0
     }
   }
 }</pre>
@@ -376,10 +377,10 @@ indicating that the request is acknowledged:</p>
 </div>
 <div class="navfooter">
 <span class="prev">
-<a href="security-api-suggest-user-profile.html">« Suggest user profile API</a>
+<a href="security-api-ssl.html">« SSL certificate API</a>
 </span>
 <span class="next">
-<a href="security-api-has-privileges-user-profile.html">Has privileges user profile API »</a>
+<a href="snapshot-restore-apis.html">Snapshot and restore APIs »</a>
 </span>
 </div>
 </div>

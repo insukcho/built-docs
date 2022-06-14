@@ -1,1 +1,6 @@
-POST /_cluster/voting_config_exclusions?node_names=nodeName1,nodeName2
+POST /my-index-000001,my-index-000002/_delete_by_query
+{
+  "query": {
+    "match_all": {}
+  }
+}

@@ -1,1 +1,1 @@
-GET _ml/data_frame/analytics/loganalytics
+GET /my-index-000001/_search_shards

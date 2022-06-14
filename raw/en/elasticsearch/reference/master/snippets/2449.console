@@ -1,6 +1,18 @@
-PUT /_nodes/USpTGYaBSIKbgSUJR2Z9lg/shutdown
+PUT place/_doc/1
 {
-  "type": "restart",
-  "reason": "Demonstrating how the node shutdown API works",
-  "allocation_delay": "20m"
+  "suggest": {
+    "input": "timmy's",
+    "contexts": {
+      "location": [
+        {
+          "lat": 43.6624803,
+          "lon": -79.3863353
+        },
+        {
+          "lat": 43.6624718,
+          "lon": -79.3873227
+        }
+      ]
+    }
+  }
 }

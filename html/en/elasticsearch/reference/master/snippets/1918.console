@@ -1,1 +1,1 @@
-GET _internal/_health?explain=false
+POST /_data_stream/_migrate/my-logs

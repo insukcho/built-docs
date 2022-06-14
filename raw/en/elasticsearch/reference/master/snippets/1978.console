@@ -1,1 +1,8 @@
-DELETE /_ccr/auto_follow/<auto_follow_pattern_name>
+POST my-index-000001/_update_by_query?conflicts=proceed
+{
+  "query": {
+    "term": {
+      "user.id": "kimchy"
+    }
+  }
+}

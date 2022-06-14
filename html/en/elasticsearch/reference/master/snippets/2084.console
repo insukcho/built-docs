@@ -1,9 +1,5 @@
-POST _reindex?slices=5&refresh
+GET /analyze_sample/_analyze
 {
-  "source": {
-    "index": "my-index-000001"
-  },
-  "dest": {
-    "index": "my-new-index-000001"
-  }
+  "field" : "obj1.field1",
+  "text" : "this is a test"
 }

@@ -1,4 +1,31 @@
-POST _ml/anomaly_detectors/low_request_rate/_forecast
+PUT /my-index-000001
 {
-  "duration": "10d"
+  "settings": {
+    "index": {
+      "analysis": {
+        "analyzer": {
+          "my_synonyms": {
+            "tokenizer": "whitespace",
+            "filter": [ "synonym" ]
+          }
+        },
+        "filter": {
+          "synonym": {
+            "type": "synonym_graph",
+            "synonyms_path": "analysis/synonym.txt", 
+            "updateable": true                       
+          }
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "text",
+        "analyzer": "standard",
+        "search_analyzer": "my_synonyms"             
+      }
+    }
+  }
 }

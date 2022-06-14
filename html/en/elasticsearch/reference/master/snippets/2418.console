@@ -1,10 +1,15 @@
-POST _ml/data_frame/_evaluate
+GET my-index/_knn_search
 {
-  "index": "my_analytics_dest_index",
-  "evaluation": {
-    "outlier_detection": {
-      "actual_field": "is_outlier",
-      "predicted_probability_field": "ml.outlier_score"
+  "knn": {
+    "field": "image_vector",
+    "query_vector": [0.3, 0.1, 1.2],
+    "k": 5,
+    "num_candidates": 50
+  },
+  "filter": {
+    "term": {
+      "file_type": "svg"
     }
-  }
+  },
+  "_source": ["name"]
 }

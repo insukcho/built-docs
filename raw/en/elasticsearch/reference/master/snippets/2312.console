@@ -1,9 +1,6 @@
-PUT /my-index-000001/_mapping
+GET _ml/anomaly_detectors/esxi_log/results/categories
 {
-  "properties": {
-    "user_id": {
-      "type": "keyword",
-      "ignore_above": 100
-    }
+  "page":{
+    "size": 1
   }
 }

@@ -1,6 +1,6 @@
-PUT /_cluster/settings
+PUT my-index-000001/_doc/1?version=2&version_type=external
 {
-  "transient" : {
-    "indices.recovery.max_bytes_per_sec" : null
+  "user": {
+    "id": "elkbee"
   }
 }

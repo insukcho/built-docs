@@ -1,3 +1,15 @@
-GET _tasks
-GET _tasks?nodes=nodeId1,nodeId2
-GET _tasks?nodes=nodeId1,nodeId2&actions=cluster:*
+PUT my-index-000001
+{
+   "mappings": {
+       "properties": {
+          "counter": {
+             "type": "integer",
+             "store": false
+          },
+          "tags": {
+             "type": "keyword",
+             "store": true
+          }
+       }
+   }
+}

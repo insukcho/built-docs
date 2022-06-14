@@ -1,6 +1,1 @@
-PUT _cluster/settings
-{
-  "persistent" : {
-    "cluster.routing.allocation.enable" : "all"
-  }
-}
+GET /_cat/nodeattrs?v=true&h=name,pid,attr,value

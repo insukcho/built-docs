@@ -1,6 +1,5 @@
-PUT /_cluster/settings
+PUT _ingest/pipeline/my-pipeline-id
 {
-  "persistent": {
-    "indices.lifecycle.poll_interval": "1m"
-  }
+  "version": 1,
+  "processors": [ ... ]
 }

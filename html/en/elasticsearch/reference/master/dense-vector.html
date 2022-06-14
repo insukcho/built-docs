@@ -182,7 +182,7 @@ PUT my-index/_doc/2
   "my_vector" : [-0.5, 10, 10]
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/172.console"></div>
+<div class="console_widget" data-snippet="snippets/169.console"></div>
 <div class="note admon">
 <div class="icon"></div>
 <div class="admon_content">
@@ -221,18 +221,18 @@ data structure to support fast kNN retrieval through the
         "type": "dense_vector",
         "dims": 3,
         "index": true,
-        "similarity": "dot_product" <a id="CO45-1"></a><i class="conum" data-value="1"></i>
+        "similarity": "dot_product" <a id="CO44-1"></a><i class="conum" data-value="1"></i>
       }
     }
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/173.console"></div>
+<div class="console_widget" data-snippet="snippets/170.console"></div>
 <div class="calloutlist">
 <table border="0" summary="Callout list">
 <tr>
 <td align="left" valign="top" width="5%">
-<p><a href="#CO45-1"><i class="conum" data-value="1"></i></a></p>
+<p><a href="#CO44-1"><i class="conum" data-value="1"></i></a></p>
 </td>
 <td align="left" valign="top">
 <p>When <code class="literal">index</code> is enabled, you must define the vector similarity to use in kNN search</p>
@@ -269,8 +269,7 @@ can take substantial time to ingest documents that contain vector fields with
 </dt>
 <dd>
 (Required, integer)
-Number of vector dimensions. Can&#8217;t exceed <code class="literal">1024</code> for indexed vectors
-(<code class="literal">"index": true</code>), or <code class="literal">2048</code> for non-indexed vectors.
+Number of vector dimensions. Can&#8217;t exceed <code class="literal">2048</code>.
 </dd>
 <dt>
 <span class="term">

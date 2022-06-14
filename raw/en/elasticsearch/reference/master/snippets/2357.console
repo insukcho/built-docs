@@ -1,1 +1,1 @@
-GET _ml/info
+POST _ml/data_frame/analytics/loganalytics/_stop

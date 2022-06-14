@@ -1,10 +1,23 @@
-PUT /my-index-000001/
+POST /_ingest/pipeline/_simulate?verbose
 {
-  "mappings": {
-    "properties": {
-      "message": {
-        "type" : "keyword"
+  "pipeline": {
+    "processors": [
+      {
+        "script": {
+          "lang": "painless",
+          "source": """
+            long bytes = Processors.bytes(ctx.size);
+            ctx.size_in_bytes = bytes;
+          """
+        }
+      }
+    ]
+  },
+  "docs": [
+    {
+      "_source": {
+        "size": "1kb"
       }
     }
-  }
+  ]
 }

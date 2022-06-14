@@ -1,13 +1,32 @@
-PUT /my-data-stream/_mapping?write_index_only=true
+PUT _component_template/my-weather-sensor-mappings
 {
-  "properties": {
-    "host": {
+  "template": {
+    "mappings": {
       "properties": {
-        "ip": {
-          "type": "ip",
-          "ignore_malformed": true
+        "sensor_id": {
+          "type": "keyword",
+          "time_series_dimension": true
+        },
+        "location": {
+          "type": "keyword",
+          "time_series_dimension": true
+        },
+        "temperature": {
+          "type": "half_float",
+          "time_series_metric": "gauge"
+        },
+        "humidity": {
+          "type": "half_float",
+          "time_series_metric": "gauge"
+        },
+        "@timestamp": {
+          "type": "date",
+          "format": "strict_date_optional_time"
         }
       }
     }
+  },
+  "_meta": {
+    "description": "Mappings for weather sensor data"
   }
 }

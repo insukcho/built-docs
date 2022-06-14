@@ -1,11 +1,13 @@
-POST music/_search?pretty
+POST /_security/role_mapping/mapping5
 {
-  "suggest": {
-    "song-suggest": {
-      "regex": "n[ever|i]r",
-      "completion": {
-        "field": "suggest"
-      }
+  "role_templates": [
+    {
+      "template": { "source": "{{#tojson}}groups{{/tojson}}" },
+      "format" : "json"
     }
-  }
+  ],
+  "rules": {
+    "field" : { "realm.name" : "saml1" }
+  },
+  "enabled": true
 }

@@ -1,13 +1,14 @@
-POST _ml/trained_models/model2/_infer
+POST music/_search?pretty
 {
-  "docs": [
-    {
-      "text_field": "<long text to extract answer>"
-    }
-  ],
-  "inference_config": {
-    "question_answering": {
-      "question": "<question to be answered>"
+  "suggest": {
+    "song-suggest": {
+      "prefix": "nor",
+      "completion": {
+        "field": "suggest",
+        "fuzzy": {
+          "fuzziness": 2
+        }
+      }
     }
   }
 }

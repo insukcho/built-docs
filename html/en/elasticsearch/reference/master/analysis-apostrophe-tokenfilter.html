@@ -140,7 +140,7 @@ Not what you want? See the
 <p>Strips all characters after an apostrophe, including the apostrophe itself.</p>
 <p>This filter is included in Elasticsearch&#8217;s built-in <a class="xref" href="analysis-lang-analyzer.html#turkish-analyzer" title="turkish analyzer">Turkish language
 analyzer</a>. It uses Lucene&#8217;s
-<a href="https://lucene.apache.org/core/9_2_0/analysis/common/org/apache/lucene/analysis/tr/ApostropheFilter.html" class="ulink" target="_top">ApostropheFilter</a>, which was
+<a href="https://lucene.apache.org/core/9_1_0/analysis/common/org/apache/lucene/analysis/tr/ApostropheFilter.html" class="ulink" target="_top">ApostropheFilter</a>, which was
 built for the Turkish language.</p>
 <div class="section">
 <div class="titlepage"><div><div>
@@ -157,7 +157,7 @@ apostrophe token filter works.</p>
   "text" : "Istanbul'a veya Istanbul'dan"
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/447.console"></div>
+<div class="console_widget" data-snippet="snippets/433.console"></div>
 <p>The filter produces the following tokens:</p>
 <div class="pre_wrapper lang-text">
 <pre class="programlisting prettyprint lang-text">[ Istanbul, veya, Istanbul ]</pre>
@@ -187,7 +187,7 @@ apostrophe token filter to configure a new
   }
 }</pre>
 </div>
-<div class="console_widget" data-snippet="snippets/448.console"></div>
+<div class="console_widget" data-snippet="snippets/434.console"></div>
 </div>
 
 </div>

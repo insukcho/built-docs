@@ -1,6 +1,5 @@
-POST /my-index-000001,my-index-000002/_delete_by_query
+POST my-index-000001/_doc/1?refresh
 {
-  "query": {
-    "match_all": {}
-  }
+  "text": "words words",
+  "flag": "foo"
 }

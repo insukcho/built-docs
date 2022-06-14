@@ -1,5 +1,4 @@
-PUT _ml/filters/safe_domains
+POST _ml/trained_models/model2/deployment/_infer
 {
-  "description": "A list of safe domains",
-  "items": ["*.google.com", "wikipedia.org"]
+	"docs": [{"text_field": "Hi my name is Josh and I live in Berlin"}]
 }

@@ -1,5 +1,16 @@
-PUT /_nodes/USpTGYaBSIKbgSUJR2Z9lg/shutdown
+POST _search?typed_keys
 {
-  "type": "restart",
-  "reason": "Demonstrating how the node shutdown API works"
+  "suggest": {
+    "text" : "some test mssage",
+    "my-first-suggester" : {
+      "term" : {
+        "field" : "message"
+      }
+    },
+    "my-second-suggester" : {
+      "phrase" : {
+        "field" : "message"
+      }
+    }
+  }
 }

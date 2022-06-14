@@ -257,7 +257,7 @@ method if the referenced fields do not have any values.</p>
 </td>
 <td valign="top">
 <p>
-<code class="literal">emit(double lat, double lon)</code>
+<code class="literal">emit(double lat, double long)</code>
 </p>
 </td>
 </tr>
@@ -408,9 +408,8 @@ sorted list of <code class="literal">double</code> values. See
 </span>
 </dt>
 <dd>
-The context for <a href="/guide/en/elasticsearch/reference/master/geo-point.html" class="ulink" target="_top"><code class="literal">geo-point</code> fields</a>. <code class="literal">emit</code> takes two double
-parameters, the latitude and longitude values, and the script returns an object in
-GeoJSON format containing the coordinates for the geo point. See
+The context for <a href="/guide/en/elasticsearch/reference/master/geo-point.html" class="ulink" target="_top"><code class="literal">geo-point</code> fields</a>. <code class="literal">emit</code> takes a
+<code class="literal">geo-point</code> value and the script returns coordinates for the geo point. See
 <a class="xref" href="painless-execute-api.html#painless-runtime-geo" title="geo_point_field">geo_point_field context</a>.
 </dd>
 <dt>
@@ -441,15 +440,6 @@ list of <code class="literal">string</code> values. See
 <dd>
 The context for <code class="literal">long</code> <a href="/guide/en/elasticsearch/reference/master/number.html" class="ulink" target="_top">numeric fields</a>. The script returns a
 sorted list of <code class="literal">long</code> values. See <a class="xref" href="painless-execute-api.html#painless-runtime-long" title="long_field">long_field context</a>.
-</dd>
-<dt>
-<span class="term">
-<code class="literal">composite_field</code>
-</span>
-</dt>
-<dd>
-The context for <code class="literal">composite</code> <a href="/guide/en/elasticsearch/reference/master/runtime.html" class="ulink" target="_top">runtime fields</a>. The script returns a
-map of values. See <a class="xref" href="painless-execute-api.html#painless-runtime-composite" title="composite_field">composite_field context</a>.
 </dd>
 </dl>
 </div>
@@ -1014,7 +1004,7 @@ positions of <code class="literal">lat</code> and <code class="literal">lon</cod
       "lat": {
         "type": "double"
       },
-      "lon": {
+     "lon": {
         "type": "double"
       }
     }
@@ -1023,7 +1013,7 @@ positions of <code class="literal">lat</code> and <code class="literal">lon</cod
 </div>
 <div class="console_widget" data-snippet="snippets/36.console"></div>
 <p>You can then use the <code class="literal">geo_point_field</code> runtime field context to write a script
-that retrieves the <code class="literal">lat</code> and <code class="literal">lon</code> values.</p>
+that retrieves the <code class="literal">lat</code> and <code class="literal">long</code> values.</p>
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">POST /_scripts/painless/_execute
 {
@@ -1043,7 +1033,7 @@ that retrieves the <code class="literal">lat</code> and <code class="literal">lo
 }</pre>
 </div>
 <div class="console_widget" data-snippet="snippets/37.console"></div>
-<p>Because you&#8217;re working with a geo-point field type, the response includes
+<p>Because this you&#8217;re working with a geo-point field type, the response includes
 results that are formatted as <code class="literal">coordinates</code>.</p>
 <div class="pre_wrapper lang-console-result">
 <pre class="programlisting prettyprint lang-console-result">{
@@ -1057,13 +1047,6 @@ results that are formatted as <code class="literal">coordinates</code>.</p>
     }
   ]
 }</pre>
-</div>
-<div class="note admon">
-<div class="icon"></div>
-<div class="admon_content">
-<p>The emit function for <a href="/guide/en/elasticsearch/reference/master/geo-point.html" class="ulink" target="_top">geo-point</a> fields takes two parameters ordered with
-<code class="literal">lat</code> before <code class="literal">lon</code>, but the output GeoJSON format orders the <code class="literal">coordinates</code> as <code class="literal">[ lon, lat ]</code>.</p>
-</div>
 </div>
 </div>
 
@@ -1238,81 +1221,6 @@ field from the <code class="literal">measures</code> object and subtracts it fro
   "result" : [
     8624909
   ]
-}</pre>
-</div>
-</div>
-
-<div class="section">
-<div class="titlepage"><div><div>
-<h4 class="title"><a id="painless-runtime-composite"></a><code class="literal">composite_field</code><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/painless/painless-guide/painless-execute-script.asciidoc">edit</a></h4>
-</div></div></div>
-<p>Let&#8217;s say you have logging data with a raw <code class="literal">message</code> field which you want to split
-in multiple sub-fields that can be accessed separately.</p>
-<p>The following request adds a <code class="literal">message</code> field to the mappings of type <code class="literal">keyword</code>:</p>
-<div class="pre_wrapper lang-console">
-<pre class="programlisting prettyprint lang-console">PUT /my-index-000001/
-{
-  "mappings": {
-    "properties": {
-      "message": {
-        "type" : "keyword"
-      }
-    }
-  }
-}</pre>
-</div>
-<div class="console_widget" data-snippet="snippets/44.console"></div>
-<p>You can then define a script that splits such message field into subfields using
-the grok function:</p>
-<div class="pre_wrapper lang-console">
-<pre class="programlisting prettyprint lang-console">POST /_scripts/painless/_execute
-{
-  "script": {
-    "source": "emit(grok(\"%{COMMONAPACHELOG}\").extract(doc[\"message\"].value));"
-  },
-  "context": "composite_field",
-  "context_setup": {
-    "index": "my-index-000001",
-    "document": {
-      "timestamp":"2020-04-30T14:31:27-05:00",
-      "message":"252.0.0.0 - - [30/Apr/2020:14:31:27 -0500] \"GET /images/hm_bg.jpg HTTP/1.0\" 200 24736"
-    }
-  }
-}</pre>
-</div>
-<div class="console_widget" data-snippet="snippets/45.console"></div>
-<p>The response includes the values that the script emitted:</p>
-<div class="pre_wrapper lang-console-result">
-<pre class="programlisting prettyprint lang-console-result">{
-  "result" : {
-    "composite_field.timestamp" : [
-      "30/Apr/2020:14:31:27 -0500"
-    ],
-    "composite_field.auth" : [
-      "-"
-    ],
-    "composite_field.response" : [
-      "200"
-    ],
-    "composite_field.ident" : [
-      "-"
-    ],
-    "composite_field.httpversion" : [
-      "1.0"
-    ],
-    "composite_field.verb" : [
-      "GET"
-    ],
-    "composite_field.bytes" : [
-      "24736"
-    ],
-    "composite_field.clientip" : [
-      "252.0.0.0"
-    ],
-    "composite_field.request" : [
-      "/images/hm_bg.jpg"
-    ]
-  }
 }</pre>
 </div>
 </div>

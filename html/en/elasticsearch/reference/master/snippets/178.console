@@ -1,12 +1,9 @@
-PUT my-index-000001
+PUT /example
 {
   "mappings": {
     "properties": {
-      "title": {
-        "type": "text"
-      },
-      "labels": {
-        "type": "flattened"
+      "location": {
+        "type": "geo_shape"
       }
     }
   }

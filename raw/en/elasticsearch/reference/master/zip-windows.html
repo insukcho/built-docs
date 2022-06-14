@@ -245,7 +245,7 @@ such as <code class="literal">node.name</code> could be specified on the command
 <p>You can test that your Elasticsearch node is running by sending an HTTPS request to port
 <code class="literal">9200</code> on <code class="literal">localhost</code>:</p>
 <div class="pre_wrapper lang-sh">
-<pre class="programlisting prettyprint lang-sh">curl --cacert %ES_HOME%\config\certs\http_ca.crt -u elastic https://localhost:9200 <a id="CO2-1"></a><i class="conum" data-value="1"></i></pre>
+<pre class="programlisting prettyprint lang-sh">curl --cacert $ES_PATH_CONF\certs\http_ca.crt -u elastic https://localhost:9200 <a id="CO2-1"></a><i class="conum" data-value="1"></i></pre>
 </div>
 <div class="calloutlist">
 <table border="0" summary="Callout list">
@@ -280,11 +280,12 @@ installation, which should return a response like this:</p>
   "cluster_uuid" : "AT69_T_DTp-1qgIJlatQqA",
   "version" : {
     "number" : "8.4.0-SNAPSHOT",
+    "build_flavor" : "default",
     "build_type" : "tar",
     "build_hash" : "f27399d",
     "build_date" : "2016-03-30T09:51:41.449Z",
     "build_snapshot" : false,
-    "lucene_version" : "9.2.0",
+    "lucene_version" : "9.1.0",
     "minimum_wire_compatibility_version" : "1.2.3",
     "minimum_index_compatibility_version" : "1.2.3"
   },
@@ -643,11 +644,8 @@ It is also possible to configure the service after it&#8217;s been installed usi
 <h3 class="title"><a id="_connect_clients_to_elasticsearch_2"></a>Connect clients to Elasticsearch<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/setup/install/connect-clients.asciidoc">edit</a></h3>
 </div></div></div>
 <p>When you start Elasticsearch for the first time, TLS is configured automatically for the
-HTTP layer. A CA certificate is generated and stored on disk at:</p>
-<div class="pre_wrapper lang-sh">
-<pre class="programlisting prettyprint lang-sh">%ES_HOME%\config\certs\http_ca.crt</pre>
-</div>
-<p>The hex-encoded SHA-256 fingerprint of this
+HTTP layer. A CA certificate is generated and stored on disk at
+<code class="literal">$ES_HOME/config/certs/http_ca.crt</code>. The hex-encoded SHA-256 fingerprint of this
 certificate is also output to the terminal. Any clients that connect to Elasticsearch,
 such as the
 <a href="/guide/en/elasticsearch/client/index.html" class="ulink" target="_top">Elasticsearch Clients</a>,
@@ -677,12 +675,9 @@ SHA256 Fingerprint=&lt;fingerprint&gt;</pre>
 </div>
 <h5><a id="_use_the_ca_certificate_2"></a>Use the CA certificate<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/setup/install/connect-clients.asciidoc">edit</a></h5>
 <p>If your library doesn&#8217;t support a method of validating the fingerprint, the
-auto-generated CA certificate is created in the following directory on each Elasticsearch
-node:</p>
-<div class="pre_wrapper lang-sh">
-<pre class="programlisting prettyprint lang-sh">%ES_HOME%\config\certs\http_ca.crt</pre>
-</div>
-<p>Copy the <code class="literal">http_ca.crt</code> file to your machine and configure your client to use this
+auto-generated CA certificate is created in the
+<code class="literal">$ES_HOME/config/certs/</code> directory on each Elasticsearch node. Copy the
+<code class="literal">http_ca.crt</code> file to your machine and configure your client to use this
 certificate to establish trust when it connects to Elasticsearch.</p>
 </div>
 

@@ -1,1 +1,11 @@
-GET my-index-000001/_doc/2?routing=user1&stored_fields=tags,counter
+POST _reindex
+{
+  "source": {
+    "index": "source",
+    "size": 100
+  },
+  "dest": {
+    "index": "dest",
+    "routing": "=cat"
+  }
+}

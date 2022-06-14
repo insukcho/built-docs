@@ -1,1 +1,1 @@
-GET /_enrich/_stats
+DELETE /_index_template/my-index-template

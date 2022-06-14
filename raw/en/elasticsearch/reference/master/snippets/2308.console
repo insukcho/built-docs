@@ -1,12 +1,4 @@
-PUT /my-index-000001/_mapping
+POST _ml/anomaly_detectors/total-requests/_flush
 {
-  "properties": {
-    "name": {
-      "properties": {
-        "last": {
-          "type": "text"
-        }
-      }
-    }
-  }
+  "advance_time": "1514804400000"
 }

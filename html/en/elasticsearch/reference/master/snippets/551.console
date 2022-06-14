@@ -1,16 +1,17 @@
-PUT /test_index
+PUT letter_unique_pos_example
 {
   "settings": {
-    "index": {
-      "analysis": {
-        "filter": {
-          "synonym": {
-            "type": "synonym",
-            "synonyms": [
-              "i-pod, i pod => ipod",
-              "universe, cosmos"
-            ]
-          }
+    "analysis": {
+      "analyzer": {
+        "letter_unique_pos": {
+          "tokenizer": "letter",
+          "filter": [ "unique_pos" ]
+        }
+      },
+      "filter": {
+        "unique_pos": {
+          "type": "unique",
+          "only_on_same_position": true
         }
       }
     }

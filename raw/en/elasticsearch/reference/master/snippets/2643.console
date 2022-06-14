@@ -1,4 +1,4 @@
-DELETE /_security/api_key
+POST _sql?format=txt
 {
-  "username" : "myuser"
+  "query": "SELECT * FROM library ORDER BY page_count DESC LIMIT 5"
 }

@@ -1,1 +1,1 @@
-GET /my-index/_searchable_snapshots/stats
+GET /_security/profile/u_kd2JMqwUQwSCCOxMv7M1vw?data=app1.key1

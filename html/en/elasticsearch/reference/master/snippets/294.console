@@ -1,13 +1,6 @@
-PUT my_index
+PUT my-index-000001/_doc/1?routing=user1&refresh=true
 {
-  "mappings" : {
-    "properties" : {
-      "my_histogram" : {
-        "type" : "histogram"
-      },
-      "my_text" : {
-        "type" : "keyword"
-      }
-    }
-  }
+  "title": "This is a document"
 }
+
+GET my-index-000001/_doc/1?routing=user1

@@ -1,1 +1,1 @@
-GET /my-index-000001/_settings/index.number_of_replicas
+GET _cat/ml/trained_models?h=c,o,l,ct,v&v=ture

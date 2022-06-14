@@ -1,9 +1,5 @@
-GET my-index-000001/_validate/query?explain=true
+POST /_security/api_key
 {
-  "query": {
-    "query_string": {
-      "query": "@timestamp:foo",
-      "lenient": false
-    }
-  }
+  "name": "my-api-key",
+  "role_descriptors": {}
 }

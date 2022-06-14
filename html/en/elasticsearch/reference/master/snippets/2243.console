@@ -1,5 +1,10 @@
-GET /*/_mapping
-
-GET /_all/_mapping
-
-GET /_mapping
+PUT /my-new-index-000001
+{
+  "mappings" : {
+    "properties": {
+      "user_id": {
+        "type": "keyword"
+      }
+    }
+  }
+}

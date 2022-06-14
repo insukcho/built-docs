@@ -1,7 +1,33 @@
-PUT music/_doc/1?refresh
+POST /_security/api_key
 {
-  "suggest" : {
-    "input": [ "Nevermind", "Nirvana" ],
-    "weight" : 34
+  "name": "my-api-key",
+  "expiration": "1d",  
+  "role_descriptors": {
+    "role-a": {
+      "cluster": ["all"],
+      "index": [
+        {
+          "names": ["index-a*"],
+          "privileges": ["read"]
+        }
+      ]
+    },
+    "role-b": {
+      "cluster": ["all"],
+      "index": [
+        {
+          "names": ["index-b*"],
+          "privileges": ["all"]
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "application": "my-application",
+    "environment": {
+       "level": 1,
+       "trusted": true,
+       "tags": ["dev", "staging"]
+    }
   }
 }

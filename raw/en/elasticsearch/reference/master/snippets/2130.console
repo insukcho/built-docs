@@ -1,1 +1,1 @@
-PUT /_enrich/policy/my-policy/_execute
+DELETE my-data-stream/_alias/my-alias

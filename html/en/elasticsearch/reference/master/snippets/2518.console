@@ -1,47 +1,8 @@
-PUT place
+POST /_security/role_mapping/mapping6
 {
-  "mappings": {
-    "properties": {
-      "suggest": {
-        "type": "completion",
-        "contexts": [
-          {                                
-            "name": "place_type",
-            "type": "category"
-          },
-          {                                
-            "name": "location",
-            "type": "geo",
-            "precision": 4
-          }
-        ]
-      }
-    }
-  }
-}
-PUT place_path_category
-{
-  "mappings": {
-    "properties": {
-      "suggest": {
-        "type": "completion",
-        "contexts": [
-          {                          
-            "name": "place_type",
-            "type": "category",
-            "path": "cat"
-          },
-          {                          
-            "name": "location",
-            "type": "geo",
-            "precision": 4,
-            "path": "loc"
-          }
-        ]
-      },
-      "loc": {
-        "type": "geo_point"
-      }
-    }
+  "roles": [ "example-user" ],
+  "enabled": true,
+  "rules": {
+    "field" : { "dn" : "*,ou=subtree,dc=example,dc=com" }
   }
 }

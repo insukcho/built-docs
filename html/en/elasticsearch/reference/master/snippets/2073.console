@@ -1,14 +1,21 @@
-GET /_mget?routing=key1
+POST clicklogs/_graph/explore
 {
-  "docs": [
-    {
-      "_index": "test",
-      "_id": "1",
-      "routing": "key2"
-    },
-    {
-      "_index": "test",
-      "_id": "2"
-    }
-  ]
+   "vertices": [
+      {
+         "field": "product",
+         "include": [ "1854873" ]
+      }
+   ],
+   "connections": {
+      "vertices": [
+         {
+            "field": "query.raw",
+            "exclude": [
+               "midi keyboard",
+               "midi",
+               "synth"
+            ]
+         }
+      ]
+   }
 }

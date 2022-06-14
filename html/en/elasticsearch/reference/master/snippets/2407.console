@@ -1,6 +1,14 @@
-POST _ml/filters/safe_domains/_update
+POST /sales*/_async_search?size=0
 {
-  "description": "Updated list of domains",
-  "add_items": ["*.myorg.com"],
-  "remove_items": ["wikipedia.org"]
+  "sort": [
+    { "date": { "order": "asc" } }
+  ],
+  "aggs": {
+    "sale_date": {
+      "date_histogram": {
+        "field": "date",
+        "calendar_interval": "1d"
+      }
+    }
+  }
 }

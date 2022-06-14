@@ -1,6 +1,17 @@
-PUT _ml/trained_models/elastic__distilbert-base-uncased-finetuned-conll03-english/definition/0
+POST test/_search
 {
-    "definition": "...",
-    "total_definition_length": 265632637,
-    "total_parts": 64
+  "suggest": {
+    "text" : "obel prize",
+    "simple_phrase" : {
+      "phrase" : {
+        "field" : "title.trigram",
+        "size" : 1,
+        "smoothing" : {
+          "laplace" : {
+            "alpha" : 0.7
+          }
+        }
+      }
+    }
+  }
 }

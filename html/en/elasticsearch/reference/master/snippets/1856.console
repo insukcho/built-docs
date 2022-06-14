@@ -1,8 +1,6 @@
-PUT /_autoscaling/policy/<name>
+PUT /_cluster/settings?flat_settings=true
 {
-  "roles": [],
-  "deciders": {
-    "fixed": {
-    }
+  "transient" : {
+    "indices.recovery.max_bytes_per_sec" : "20mb"
   }
 }
