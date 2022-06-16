@@ -421,10 +421,7 @@ Sets the interval at which Kibana tries to remove expired and invalid sessions f
 </dd>
 </dl>
 </div>
-<div class="section">
-<div class="titlepage"><div><div>
-<h3 class="title"><a id="security-encrypted-saved-objects-settings"></a>Encrypted saved objects settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h3>
-</div></div></div>
+<h4><a id="security-encrypted-saved-objects-settings"></a>Encrypted saved objects settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
 <p>These settings control the encryption of saved objects with sensitive data. For more details, refer to <a class="xref" href="xpack-security-secure-saved-objects.html" title="Secure saved objects">Secure saved objects</a>.</p>
 <div class="important admon">
 <div class="icon"></div>
@@ -440,7 +437,7 @@ Sets the interval at which Kibana tries to remove expired and invalid sessions f
 </span>
 </dt>
 <dd>
-An arbitrary string of at least 32 characters that is used to encrypt sensitive properties of saved objects before they&#8217;re stored in Elasticsearch. If not set, Kibana will generate a random key on startup, but certain features won&#8217;t be available until you set the encryption key explicitly.
+An arbitrary string of at least 32 characters that is used to encrypt sensitive properties of saved objects before they&#8217;re stored in Elasticsearch. Certain features won&#8217;t be available until you set the encryption key explicitly.
 </dd>
 <dt>
 <span class="term">
@@ -449,6 +446,26 @@ An arbitrary string of at least 32 characters that is used to encrypt sensitive 
 </dt>
 <dd>
 An optional list of previously used encryption keys. Like <a class="xref" href="security-settings-kb.html#xpack-encryptedSavedObjects-encryptionKey"><code class="literal">xpack.encryptedSavedObjects.encryptionKey</code></a>, these must be at least 32 characters in length. Kibana doesn&#8217;t use these keys for encryption, but may still require them to decrypt some existing saved objects. Use this setting if you wish to change your encryption key, but don&#8217;t want to lose access to saved objects that were previously encrypted with a different key.
+</dd>
+</dl>
+</div>
+<h4><a id="security-reporting-settings"></a>Secure reporting settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<p>These settings control the encryption of report data. For more details, refer to <a class="xref" href="reporting-settings-kb.html" title="Reporting settings in Kibana">Reporting settings</a>.</p>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>In high-availability deployments, make sure you use the same encryption key for all instances of Kibana. Although the keys can be specified in clear text in <code class="literal">kibana.yml</code>, it&#8217;s recommended to store them securely in the <a class="xref" href="secure-settings.html" title="Secure settings">Kibana Keystore</a>.</p>
+</div>
+</div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<a id="xpack-securitySettings-reporting-encryptionKey"></a> <code class="literal">xpack.reporting.encryptionKey</code>
+</span>
+</dt>
+<dd>
+An arbitrary string of at least 32 characters that is used to encrypt sensitive reporting data before being stored in Elasticsearch. By default, Kibana generates a random key when it starts, which causes pending reports to fail after restart. Configure <code class="literal">xpack.reporting.encryptionKey</code> to preserve the same key across multiple restarts and multiple Kibana instances.
 </dd>
 </dl>
 </div>
@@ -561,7 +578,7 @@ Required. Specifies how audit logs should be formatted. Allowed values are <code
 </dd>
 </dl>
 </div>
-<h4><a id="audit-logging-file-appender"></a>File appender<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<h5><a id="audit-logging-file-appender"></a>File appender<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h5>
 <p>The <code class="literal">file</code> appender writes to a file and can be configured using the following settings:</p>
 <div class="variablelist">
 <dl class="variablelist">
@@ -575,7 +592,7 @@ Required. Full file path the log file should be written to.
 </dd>
 </dl>
 </div>
-<h4><a id="audit-logging-rolling-file-appender"></a>Rolling file appender<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<h5><a id="audit-logging-rolling-file-appender"></a>Rolling file appender<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h5>
 <p>The <code class="literal">rolling-file</code> appender writes to a file and rotates it using a rolling strategy, when a particular policy is triggered:</p>
 <div class="variablelist">
 <dl class="variablelist">
@@ -611,7 +628,7 @@ Specifies how the rollover should occur. Only allowed value is currently <code c
 </dd>
 </dl>
 </div>
-<h4><a id="audit-logging-size-limit-policy"></a>Size limit triggering policy<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<h5><a id="audit-logging-size-limit-policy"></a>Size limit triggering policy<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h5>
 <p>The <code class="literal">size-limit</code> triggering policy will rotate the file when it reaches a certain size:</p>
 <div class="variablelist">
 <dl class="variablelist">
@@ -625,7 +642,7 @@ Maximum size the log file should reach before a rollover should be performed. <s
 </dd>
 </dl>
 </div>
-<h4><a id="audit-logging-time-interval-policy"></a>Time interval triggering policy<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<h5><a id="audit-logging-time-interval-policy"></a>Time interval triggering policy<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h5>
 <p>The <code class="literal">time-interval</code> triggering policy will rotate the file every given interval of time:</p>
 <div class="variablelist">
 <dl class="variablelist">
@@ -647,7 +664,7 @@ Whether the interval should be adjusted to cause the next rollover to occur on t
 </dd>
 </dl>
 </div>
-<h4><a id="audit-logging-numeric-strategy"></a>Numeric rolling strategy<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<h5><a id="audit-logging-numeric-strategy"></a>Numeric rolling strategy<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h5>
 <p>The <code class="literal">numeric</code> rolling strategy will suffix the log file with a given pattern when rolling over, and will retain a fixed number of rolled files:</p>
 <div class="variablelist">
 <dl class="variablelist">
@@ -669,7 +686,7 @@ Maximum number of files to keep. Once this number is reached, oldest files will 
 </dd>
 </dl>
 </div>
-<h4><a id="audit-logging-pattern-layout"></a>Pattern layout<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<h5><a id="audit-logging-pattern-layout"></a>Pattern layout<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h5>
 <p>The <code class="literal">pattern</code> layout outputs a string, formatted using a pattern with special placeholders, which will be replaced with data from the actual log message:</p>
 <div class="variablelist">
 <dl class="variablelist">
@@ -691,7 +708,7 @@ Optional. Set to <code class="literal">true</code> to enable highlighting log me
 </dd>
 </dl>
 </div>
-<h4><a id="audit-logging-ignore-filters"></a>Ignore filters<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h4>
+<h5><a id="audit-logging-ignore-filters"></a>Ignore filters<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/settings/security-settings.asciidoc">edit</a></h5>
 <div class="variablelist">
 <dl class="variablelist">
 <dt>
@@ -765,8 +782,6 @@ List of values matched against the <code class="literal">event.outcome</code> fi
 </dd>
 </dl>
 </div>
-</div>
-
 </div>
 <div class="navfooter">
 <span class="prev">
