@@ -5418,7 +5418,7 @@ kibana:
   Installation and Upgrade Guide/docs/7.9: dea16006d4feed2dacaf9cf0b57cd051150a0d59
   Installation and Upgrade Guide/docs/8.0: de3fcfbe27917f7b1ae859287becd6e0cf1f725e
   Installation and Upgrade Guide/docs/8.1: d84f709773c8a0625bbe9dcc33d1031e3abbf9f4
-  Installation and Upgrade Guide/docs/8.2: 962d241e701b68ca756b5199dbf83fbcd905d37f
+  Installation and Upgrade Guide/docs/8.2: local
   Installation and Upgrade Guide/docs/8.3: 204c3362c76fbbd2999d6199df0279791e8bee88
   Installation and Upgrade Guide/docs/main: 6de772db8d869d980da9e5eed98e3045ece24b6e
   Kibana Guide/:(glob)examples/**/*.asciidoc/7.10: 4f78ab390eb82706532a512111c203001ff19e9b
@@ -5431,7 +5431,7 @@ kibana:
   Kibana Guide/:(glob)examples/**/*.asciidoc/7.17: a4d3a4938555da1763e09ee4288df3e0aa8d3846
   Kibana Guide/:(glob)examples/**/*.asciidoc/8.0: de3fcfbe27917f7b1ae859287becd6e0cf1f725e
   Kibana Guide/:(glob)examples/**/*.asciidoc/8.1: d84f709773c8a0625bbe9dcc33d1031e3abbf9f4
-  Kibana Guide/:(glob)examples/**/*.asciidoc/8.2: 962d241e701b68ca756b5199dbf83fbcd905d37f
+  Kibana Guide/:(glob)examples/**/*.asciidoc/8.2: local
   Kibana Guide/:(glob)examples/**/*.asciidoc/8.3: 3ddbaea97ef13fdf35faa04a35fafc54ebf87308
   Kibana Guide/:(glob)examples/**/*.asciidoc/main: a969d42ecfeb5b98b5e5faafe790d33c806ae308
   Kibana Guide/:(glob)src/**/*.asciidoc/7.10: 4f78ab390eb82706532a512111c203001ff19e9b
@@ -5444,7 +5444,7 @@ kibana:
   Kibana Guide/:(glob)src/**/*.asciidoc/7.17: a4d3a4938555da1763e09ee4288df3e0aa8d3846
   Kibana Guide/:(glob)src/**/*.asciidoc/8.0: de3fcfbe27917f7b1ae859287becd6e0cf1f725e
   Kibana Guide/:(glob)src/**/*.asciidoc/8.1: d84f709773c8a0625bbe9dcc33d1031e3abbf9f4
-  Kibana Guide/:(glob)src/**/*.asciidoc/8.2: 962d241e701b68ca756b5199dbf83fbcd905d37f
+  Kibana Guide/:(glob)src/**/*.asciidoc/8.2: local
   Kibana Guide/:(glob)src/**/*.asciidoc/8.3: 3ddbaea97ef13fdf35faa04a35fafc54ebf87308
   Kibana Guide/:(glob)src/**/*.asciidoc/main: a969d42ecfeb5b98b5e5faafe790d33c806ae308
   Kibana Guide/:(glob)x-pack/**/*.asciidoc/7.10: 4f78ab390eb82706532a512111c203001ff19e9b
@@ -5457,7 +5457,7 @@ kibana:
   Kibana Guide/:(glob)x-pack/**/*.asciidoc/7.17: a4d3a4938555da1763e09ee4288df3e0aa8d3846
   Kibana Guide/:(glob)x-pack/**/*.asciidoc/8.0: de3fcfbe27917f7b1ae859287becd6e0cf1f725e
   Kibana Guide/:(glob)x-pack/**/*.asciidoc/8.1: d84f709773c8a0625bbe9dcc33d1031e3abbf9f4
-  Kibana Guide/:(glob)x-pack/**/*.asciidoc/8.2: 962d241e701b68ca756b5199dbf83fbcd905d37f
+  Kibana Guide/:(glob)x-pack/**/*.asciidoc/8.2: local
   Kibana Guide/:(glob)x-pack/**/*.asciidoc/8.3: 3ddbaea97ef13fdf35faa04a35fafc54ebf87308
   Kibana Guide/:(glob)x-pack/**/*.asciidoc/main: a969d42ecfeb5b98b5e5faafe790d33c806ae308
   Kibana Guide/docs/3.0: ab14a2f8f5646e647d1f4c5cad4f8a799dd8a2af
@@ -5504,7 +5504,7 @@ kibana:
   Kibana Guide/docs/7.9: dea16006d4feed2dacaf9cf0b57cd051150a0d59
   Kibana Guide/docs/8.0: de3fcfbe27917f7b1ae859287becd6e0cf1f725e
   Kibana Guide/docs/8.1: d84f709773c8a0625bbe9dcc33d1031e3abbf9f4
-  Kibana Guide/docs/8.2: 962d241e701b68ca756b5199dbf83fbcd905d37f
+  Kibana Guide/docs/8.2: local
   Kibana Guide/docs/8.3: 3ddbaea97ef13fdf35faa04a35fafc54ebf87308
   Kibana Guide/docs/main: a969d42ecfeb5b98b5e5faafe790d33c806ae308
   Kibana 사용자 가이드/docs/kr/5.3: 0d2c9728cdd64e619503715b890c1950db3b9470
@@ -5512,7 +5512,7 @@ kibana:
   Kibanaユーザーガイド/docs/jp/5.3: 0d2c9728cdd64e619503715b890c1950db3b9470
   Kibanaユーザーガイド/docs/jp/5.4: 73d3e96e2b29b571e3c62801bfda04b3474c282c
   link-check-kibana/packages/kbn-doc-links/src/get_doc_links.ts/8.1: d84f709773c8a0625bbe9dcc33d1031e3abbf9f4
-  link-check-kibana/packages/kbn-doc-links/src/get_doc_links.ts/8.2: 21b3712c39a144c8330c1fb81e56c66d861ed8df
+  link-check-kibana/packages/kbn-doc-links/src/get_doc_links.ts/8.2: local
   link-check-kibana/packages/kbn-doc-links/src/get_doc_links.ts/8.3: 8fe43a081dd7d78ce153c3dae1831043d3dbda3c
   link-check-kibana/packages/kbn-doc-links/src/get_doc_links.ts/main: 6de772db8d869d980da9e5eed98e3045ece24b6e
   link-check-kibana/src/core/public/doc_links/doc_links_service.ts/7.13: 81f11145eba21ebb98ad2af0f8693a98ed32642a
