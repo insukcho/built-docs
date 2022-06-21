@@ -196,7 +196,7 @@ response indicates the status of any features that need to be migrated.</p>
 </div>
 <div class="console_widget" data-snippet="snippets/2457.console"></div>
 <p>Example response:</p>
-<a id="ec8ee291bc66fb0f08de263206790bb3"></a>
+<a id="bacdbe93aa3bfe216dd661fac54269d9"></a>
 <div class="pre_wrapper lang-console-result">
 <pre class="programlisting prettyprint lang-console-result">{
   "features" : [
@@ -220,6 +220,12 @@ response indicates the status of any features that need to be migrated.</p>
     },
     {
       "feature_name" : "geoip",
+      "minimum_index_version" : "8.0.0",
+      "migration_status" : "NO_MIGRATION_NEEDED",
+      "indices" : [ ]
+    },
+    {
+      "feature_name" : "indices_write_load",
       "minimum_index_version" : "8.0.0",
       "migration_status" : "NO_MIGRATION_NEEDED",
       "indices" : [ ]
