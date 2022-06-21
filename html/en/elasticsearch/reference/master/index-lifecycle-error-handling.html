@@ -334,7 +334,7 @@ Consider using <a class="xref" href="data-streams.html" title="Data streams">dat
 <h4><a id="_rollover_alias_x_can_point_to_multiple_indices_found_duplicated_alias_x_in_index_template_z"></a>Rollover alias [x] can point to multiple indices, found duplicated alias [x] in index template [z]<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ilm/error-handling.asciidoc">edit</a></h4>
 <p>The target rollover alias is specified in an index template&#8217;s <code class="literal">index.lifecycle.rollover_alias</code> setting.
 You need to explicitly configure this alias <em>one time</em> when you
-<a class="xref" href="getting-started-index-lifecycle-management.html#ilm-gs-alias-bootstrap" title="Bootstrap the initial time series index with a write index alias">bootstrap the initial index</a>.
+<a class="xref" href="getting-started-index-lifecycle-management.html#ilm-gs-alias-bootstrap" title="Bootstrap the initial timestamped index with a write index alias">bootstrap the initial index</a>.
 The rollover action then manages setting and updating the alias to
 <a class="xref" href="indices-rollover-index.html#rollover-index-api-desc" title="Description">roll over</a> to each subsequent index.</p>
 <p>Do not explicitly configure this same alias in the aliases section of an index template.</p>

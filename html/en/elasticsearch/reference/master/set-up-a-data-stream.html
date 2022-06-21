@@ -321,7 +321,7 @@ Management &gt; Index Management</strong></span>. In the <span class="strong str
 template</strong></span>.</p>
 <p>You can also use the <a class="xref" href="indices-put-template.html" title="Create or update index template API">create index template API</a>.
 Include the <code class="literal">data_stream</code> object to enable data streams.</p>
-<a id="c96e5740b79f703c5b77e3ddc9fdf3a0"></a>
+<a id="3fe9225278cf28390bd5026d6bb64e9d"></a>
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">PUT _index_template/my-index-template
 {
@@ -330,7 +330,7 @@ Include the <code class="literal">data_stream</code> object to enable data strea
   "composed_of": [ "my-mappings", "my-settings" ],
   "priority": 500,
   "_meta": {
-    "description": "Template for my time series data",
+    "description": "Template for my timestamped data",
     "my-custom-meta-field": "More arbitrary metadata"
   }
 }</pre>
@@ -373,8 +373,8 @@ backing indices.</p>
 <p>For an example, see <a class="xref" href="securing-aliases.html#data-stream-privileges" title="Data stream privileges">Data stream privileges</a>.</p>
 <h3><a id="convert-index-alias-to-data-stream"></a>Convert an index alias to a data stream<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/data-streams/set-up-a-data-stream.asciidoc">edit</a></h3>
 <p>Prior to Elasticsearch 7.9, you&#8217;d typically use an
-<a class="xref" href="getting-started-index-lifecycle-management.html#manage-time-series-data-without-data-streams" title="Manage time series data without data streams">index alias with a write index</a>
-to manage time series data. Data streams replace this functionality, require
+<a class="xref" href="getting-started-index-lifecycle-management.html#manage-time-series-data-without-data-streams" title="Manage timestamped data without data streams">index alias with a write index</a>
+to manage timestamped data. Data streams replace this functionality, require
 less maintenance, and automatically integrate with <a class="xref" href="data-tiers.html" title="Data tiers">data tiers</a>.</p>
 <p>To convert an index alias with a write index to a data stream with the same
 name, use the <a class="xref" href="indices-migrate-to-data-stream.html" title="Migrate to data stream API">migrate to data stream API</a>.

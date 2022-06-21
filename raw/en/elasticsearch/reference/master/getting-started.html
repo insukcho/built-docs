@@ -291,7 +291,7 @@ your Docker container. Enter the password for the <code class="literal">elastic<
 <h3><a id="add-data"></a>Add data<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/getting-started.asciidoc">edit</a></h3>
 <p>You add data to Elasticsearch as JSON objects called documents. Elasticsearch stores these
 documents in searchable indices.</p>
-<p>For time series data, such as logs and metrics, you typically add documents to a
+<p>For timestamped data, such as logs and metrics, you typically add documents to a
 data stream made up of multiple auto-generated backing indices.</p>
 <p>A data stream requires an index template that matches its name. Elasticsearch uses this
 template to configure the stream&#8217;s backing indices. Documents sent to a data
@@ -724,8 +724,8 @@ docker rm kibana</pre>
 <div class="ulist itemizedlist">
 <ul class="itemizedlist">
 <li class="listitem">
-Get the most out of your time series data by setting up data tiers and
-ILM. See <a class="xref" href="use-elasticsearch-for-time-series-data.html" title="Use Elasticsearch for time series data"><em>Use Elasticsearch for time series data</em></a>.
+Get the most out of your timestamped data by setting up data tiers and
+ILM. See <a class="xref" href="use-elasticsearch-for-time-series-data.html" title="Use Elasticsearch for timestamped data"><em>Use Elasticsearch for timestamped data</em></a>.
 </li>
 <li class="listitem">
 Use Fleet and Elastic Agent to collect logs and metrics directly from your data

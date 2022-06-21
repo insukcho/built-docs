@@ -62,13 +62,13 @@ Configure a <a class="xref" href="remote-clusters.html" title="Remote clusters">
 Create a follower index on a local cluster
 </li>
 <li class="listitem">
-Create an auto-follow pattern to automatically follow time series indices
+Create an auto-follow pattern to automatically follow timestamped indices
 that are periodically created in a remote cluster
 </li>
 </ul>
 </div>
 <p>You can manually create follower indices to replicate specific indices on a
-remote cluster, or configure auto-follow patterns to replicate rolling time series indices.</p>
+remote cluster, or configure auto-follow patterns to replicate rolling timestamped indices.</p>
 <div class="tip admon">
 <div class="icon"></div>
 <div class="admon_content">
@@ -378,14 +378,14 @@ replication.</p>
 
 <div class="section">
 <div class="titlepage"><div><div>
-<h3 class="title"><a id="ccr-getting-started-auto-follow"></a>Create an auto-follow pattern to replicate time series indices<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/getting-started.asciidoc">edit</a></h3>
+<h3 class="title"><a id="ccr-getting-started-auto-follow"></a>Create an auto-follow pattern to replicate timestamped indices<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/getting-started.asciidoc">edit</a></h3>
 </div></div></div>
 <p>You use <a class="xref" href="ccr-auto-follow.html" title="Manage auto-follow patterns">auto-follow patterns</a> to automatically create new
-followers for rolling time series indices. Whenever the name of a new index on
+followers for rolling timestamped indices. Whenever the name of a new index on
 the remote cluster matches the auto-follow pattern, a corresponding follower
 index is added to the local cluster.</p>
 <p>An auto-follow pattern specifies the remote cluster you want to replicate from,
-and one or more index patterns that specify the rolling time series indices you
+and one or more index patterns that specify the rolling timestamped indices you
 want to replicate.</p>
 <p>To create an auto-follow pattern from Stack Management in Kibana:</p>
 <div class="olist orderedlist">

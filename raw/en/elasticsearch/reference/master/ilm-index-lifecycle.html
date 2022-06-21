@@ -65,7 +65,7 @@ needs to be searchable, but it&#8217;s okay if those queries are extremely slow.
 are applicable, what actions are performed in each phase,
 and when it transitions between phases.</p>
 <p>You can manually apply a lifecycle policy when you create an index.
-For time series indices, you need to associate the lifecycle policy with
+For timestamped indices, you need to associate the lifecycle policy with
 the index template used to create new indices in the series.
 When an index rolls over, a manually-applied policy isn&#8217;t automatically applied to the new index.</p>
 <p>If you use Elasticsearch&#8217;s security features, ILM performs operations as the user

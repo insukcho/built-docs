@@ -6,7 +6,7 @@
 <link rel="home" href="index.html" title="Elasticsearch Guide [master]"/>
 <link rel="up" href="how-to.html" title="How to"/>
 <link rel="prev" href="tune-for-disk-usage.html" title="Tune for disk usage"/>
-<link rel="next" href="use-elasticsearch-for-time-series-data.html" title="Use Elasticsearch for time series data"/>
+<link rel="next" href="use-elasticsearch-for-time-series-data.html" title="Use Elasticsearch for timestamped data"/>
 <meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master"/>
 <meta name="DC.subject" content="Elasticsearch"/>
 <meta name="DC.identifier" content="master"/>
@@ -29,7 +29,7 @@ Not what you want? See the
 <a href="tune-for-disk-usage.html">« Tune for disk usage</a>
 </span>
 <span class="next">
-<a href="use-elasticsearch-for-time-series-data.html">Use Elasticsearch for time series data »</a>
+<a href="use-elasticsearch-for-time-series-data.html">Use Elasticsearch for timestamped data »</a>
 </span>
 </div>
 <div class="chapter">
@@ -100,8 +100,8 @@ document will continue to use resources until it&#8217;s removed during a period
 <a class="xref" href="index-modules-merge.html" title="Merge">segment merge</a>.</p>
 <p>When possible, delete entire indices instead. Elasticsearch can immediately remove
 deleted indices directly from the file system and free up resources.</p>
-<h4><a id="use-ds-ilm-for-time-series"></a>Use data streams and ILM for time series data<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/how-to/size-your-shards.asciidoc">edit</a></h4>
-<p><a class="xref" href="data-streams.html" title="Data streams">Data streams</a> let you store time series data across multiple,
+<h4><a id="use-ds-ilm-for-time-series"></a>Use data streams and ILM for timestamped data<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/how-to/size-your-shards.asciidoc">edit</a></h4>
+<p><a class="xref" href="data-streams.html" title="Data streams">Data streams</a> let you store timestamped data across multiple,
 time-based backing indices. You can use <a class="xref" href="index-lifecycle-management.html" title="ILM: Manage the index lifecycle">index lifecycle management
 (ILM)</a> to automatically manage these backing indices.</p>
 <p>One advantage of this setup is
@@ -140,7 +140,7 @@ In contrast, small shards carry proportionally more overhead and are less
 efficient to search. Searching fifty 1GB shards will take substantially more
 resources than searching a single 50GB shard containing the same data.</p>
 <p>There are no hard limits on shard size, but experience shows that shards
-between 10GB and 50GB typically work well for logs and time series data. You
+between 10GB and 50GB typically work well for logs and timestamped data. You
 may be able to use larger shards depending on your network and use case.
 Smaller shards may be appropriate for
 <a href="/guide/en/enterprise-search/master/index.html" class="ulink" target="_top">Enterprise Search</a> and similar use cases.</p>
@@ -273,7 +273,7 @@ are resource-intensive. If possible, run the force merge during off-peak hours.<
 warm phase.</p>
 <h4><a id="combine-smaller-indices"></a>Combine smaller indices<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/how-to/size-your-shards.asciidoc">edit</a></h4>
 <p>You can also use the <a class="xref" href="docs-reindex.html" title="Reindex API">reindex API</a> to combine indices
-with similar mappings into a single large index. For time series data, you could
+with similar mappings into a single large index. For timestamped data, you could
 reindex indices for short time periods into a new index covering a
 longer period. For example, you could reindex daily indices from October with a
 shared index pattern, such as <code class="literal">my-index-2099.10.11</code>, into a monthly
@@ -338,7 +338,7 @@ cluster&#8217;s current shard count after making changes, use the
 <a href="tune-for-disk-usage.html">« Tune for disk usage</a>
 </span>
 <span class="next">
-<a href="use-elasticsearch-for-time-series-data.html">Use Elasticsearch for time series data »</a>
+<a href="use-elasticsearch-for-time-series-data.html">Use Elasticsearch for timestamped data »</a>
 </span>
 </div>
 </div>

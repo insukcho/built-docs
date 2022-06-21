@@ -5,7 +5,7 @@ PUT _index_template/my-index-template
   "composed_of": [ "my-mappings", "my-settings" ],
   "priority": 500,
   "_meta": {
-    "description": "Template for my time series data",
+    "description": "Template for my timestamped data",
     "my-custom-meta-field": "More arbitrary metadata"
   }
 }

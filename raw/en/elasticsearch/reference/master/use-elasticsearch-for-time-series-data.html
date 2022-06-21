@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Use Elasticsearch for time series data | Elasticsearch Guide [master] | Elastic</title>
+<title>Use Elasticsearch for timestamped data | Elasticsearch Guide [master] | Elastic</title>
 <link rel="home" href="index.html" title="Elasticsearch Guide [master]"/>
 <link rel="up" href="how-to.html" title="How to"/>
 <link rel="prev" href="size-your-shards.html" title="Size your shards"/>
@@ -22,7 +22,7 @@ Not what you want? See the
 »
 <span class="breadcrumb-link"><a href="how-to.html">How to</a></span>
 »
-<span class="breadcrumb-node">Use Elasticsearch for time series data</span>
+<span class="breadcrumb-node">Use Elasticsearch for timestamped data</span>
 </div>
 <div class="navheader">
 <span class="prev">
@@ -34,9 +34,9 @@ Not what you want? See the
 </div>
 <div class="chapter">
 <div class="titlepage"><div><div>
-<h2 class="title"><a id="use-elasticsearch-for-time-series-data"></a>Use Elasticsearch for time series data<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/how-to/use-elasticsearch-for-time-series-data.asciidoc">edit</a></h2>
+<h2 class="title"><a id="use-elasticsearch-for-time-series-data"></a>Use Elasticsearch for timestamped data<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/how-to/use-elasticsearch-for-time-series-data.asciidoc">edit</a></h2>
 </div></div></div>
-<p>Elasticsearch offers features to help you store, manage, and search time series data,
+<p>Elasticsearch offers features to help you store, manage, and search timestamped data,
 such as logs and metrics. Once in Elasticsearch, you can analyze and visualize your data
 using Kibana and other Elastic Stack features.</p>
 <h3><a id="set-up-data-tiers"></a>Set up data tiers<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/how-to/use-elasticsearch-for-time-series-data.asciidoc">edit</a></h3>
@@ -48,7 +48,7 @@ optional.</p>
 <p>Use high-performance nodes in the hot and warm tiers for faster
 indexing and faster searches on your most recent data. Use slower, less
 expensive nodes in the cold and frozen tiers to reduce costs.</p>
-<p>The content tier is not typically used for time series data. However, it&#8217;s
+<p>The content tier is not typically used for timestamped data. However, it&#8217;s
 required to create system indices and other indices that aren&#8217;t part of a data
 stream.</p>
 <p>The steps for setting up data tiers vary based on your deployment type:</p>
@@ -496,7 +496,7 @@ Management &gt; Index Management</strong></span>. In the <span class="strong str
 template</strong></span>.</p>
 <p>You can also use the <a class="xref" href="indices-put-template.html" title="Create or update index template API">create index template API</a>.
 Include the <code class="literal">data_stream</code> object to enable data streams.</p>
-<a id="c96e5740b79f703c5b77e3ddc9fdf3a0"></a>
+<a id="3fe9225278cf28390bd5026d6bb64e9d"></a>
 <div class="pre_wrapper lang-console">
 <pre class="programlisting prettyprint lang-console">PUT _index_template/my-index-template
 {
@@ -505,7 +505,7 @@ Include the <code class="literal">data_stream</code> object to enable data strea
   "composed_of": [ "my-mappings", "my-settings" ],
   "priority": 500,
   "_meta": {
-    "description": "Template for my time series data",
+    "description": "Template for my timestamped data",
     "my-custom-meta-field": "More arbitrary metadata"
   }
 }</pre>
