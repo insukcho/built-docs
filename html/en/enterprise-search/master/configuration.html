@@ -340,7 +340,12 @@ Or, adjust Elasticsearch&#8217;s config/elasticsearch.yml instead.</p>
 </span>
 </dt>
 <dd>
-<p>Elasticsearch credentials.</p>
+<p>The username that Enterprise Search should use to make changes within Elasticsearch.
+For example, Enterprise Search operates as this user to create indices when needed.</p>
+<p>The user must have adequate permission within Elasticsearch.
+The easiest way to ensure correct permission is to use a <a class="xref" href="users-access.html#users-access-default-users" title="Default users">default Enterprise Search user</a>.</p>
+<p>Alternatively, choose a user who is assigned the following Elastic Stack roles: <code class="literal">enterprise-search-workplace-search-admin</code> and <code class="literal">enterprise-search-app-search-owner</code>.
+For more details about these roles, refer to the following documentation: <a href="/guide/en/app-search/master/security-and-users.html#security-role-mappings-default" class="ulink" target="_blank" rel="noopener">Default App Search role mappings</a> in the App Search documentation, and <a href="/guide/en/workplace-search/master/workplace-search-security.html#security-role-mappings-default" class="ulink" target="_blank" rel="noopener">Default Workplace Search role mappings</a> in the Workplace Search documentation.</p>
 <p><code class="literal">elasticsearch.username: elastic</code></p>
 </dd>
 </dl>
@@ -354,7 +359,7 @@ Or, adjust Elasticsearch&#8217;s config/elasticsearch.yml instead.</p>
 </span>
 </dt>
 <dd>
-<p>Elasticsearch credentials.</p>
+<p>The password for the username provided in <a class="xref" href="configuration.html#configuration-setting-elasticsearch-username"><code class="literal">elasticsearch.username</code></a>.</p>
 <p><code class="literal">elasticsearch.password: changeme</code></p>
 </dd>
 </dl>
