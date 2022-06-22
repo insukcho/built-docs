@@ -2,19 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Work with snapshots | Elasticsearch Service Documentation | Elastic</title>
-<link rel="home" href="index.html" title="Elasticsearch Service Documentation"/>
+<title>Work with snapshots | Elasticsearch Service Documentation [latest] | Elastic</title>
+<link rel="home" href="index.html" title="Elasticsearch Service Documentation [latest]"/>
 <link rel="up" href="ec-snapshot-restore.html" title="Snapshot and restore"/>
 <link rel="prev" href="ec-azure-snapshotting.html" title="Configure a snapshot repository using Azure Blob storage"/>
 <link rel="next" href="ec-organizations.html" title="Inviting members to your organization"/>
-<meta name="DC.type" content="Learn/Docs/Cloud/Reference"/>
+<meta name="DC.type" content="Learn/Docs/Cloud/Reference/latest"/>
 <meta name="DC.subject" content="Elastic Cloud"/>
 <meta name="DC.identifier" content="latest"/>
 </head>
 <body>
 <div id="content">
 <div class="breadcrumbs">
-<span class="breadcrumb-link"><a href="index.html">Elasticsearch Service Documentation</a></span>
+<span class="breadcrumb-link"><a href="index.html">Elasticsearch Service Documentation [latest]</a></span>
 »
 <span class="breadcrumb-link"><a href="ec-snapshot-restore.html">Snapshot and restore</a></span>
 »
@@ -214,7 +214,7 @@ Test your application against a real live Elasticsearch cluster with actual data
 The cluster is in the same region. For example, a snapshot made in <code class="literal">eu-west-1</code> cannot be restored to <code class="literal">us-east-1</code> at this point. If you need to restore snapshots across regions, use a <a class="xref" href="ec-custom-repository.html" title="Snapshot and restore with custom repositories">custom repository</a>.
 </li>
 <li class="listitem">
-The destination cluster is able to read the indices. You can restore to your Elasticsearch cluster snapshots of indices created back to the previous major version.
+The destination cluster is able to read the indices. You can generally restore to your Elasticsearch cluster snapshots of indices created back to the previous major version, but see the <a href="/guide/en/elasticsearch/reference/8.2/snapshots-restore-snapshot.html#snapshot-restore-version-compatibility" class="ulink" target="_top">version matrix</a> for all the details.
 </li>
 </ul>
 </div>
@@ -224,7 +224,7 @@ The destination cluster is able to read the indices. You can restore to your Ela
 <div class="olist orderedlist">
 <ol class="orderedlist">
 <li class="listitem">
-First, <a class="xref" href="ec-create-deployment.html" title="Create your deployment">create a new deployment</a> and select <span class="strong strong"><strong>Restore snapshot data</strong></span>. Select the deployment that you want to restore a snapshot <em>from</em>. If you don&#8217;t know the exact name, you can enter a few characters and then select from the list of matching deployments.
+First, <a class="xref" href="ec-create-deployment.html" title="Create a deployment">create a new deployment</a> and select <span class="strong strong"><strong>Restore snapshot data</strong></span>. Select the deployment that you want to restore a snapshot <em>from</em>. If you don&#8217;t know the exact name, you can enter a few characters and then select from the list of matching deployments.
 </li>
 <li class="listitem">
 <p>Select the snapshot that you want to restore from. If none is chosen, the latest successful snapshot from the cluster you selected is restored on the new cluster when you create it.</p>
