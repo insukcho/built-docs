@@ -3,11 +3,11 @@
   <head>
     
 <meta charset="UTF-8">
-<title>Configure settings | Observability Guide [master] | Elastic</title>
+<title>Managing data retention | Observability Guide [master] | Elastic</title>
 <link rel="home" href="index.html" title="Observability Guide [master]"/>
 <link rel="up" href="monitor-uptime-synthetics.html" title="Uptime and synthetic monitoring"/>
-<link rel="prev" href="inspect-uptime-duration-anomalies.html" title="Inspect uptime duration anomalies"/>
-<link rel="next" href="manage-synthetics-retention.html" title="Managing data retention"/>
+<link rel="prev" href="configure-uptime-settings.html" title="Configure settings"/>
+<link rel="next" href="troubleshoot-uptime-mapping-issues.html" title="Troubleshoot mapping issues"/>
 <meta name="DC.type" content="Learn/Docs/Observability/Guide/master"/>
 <meta name="DC.subject" content="Observability"/>
 <meta name="DC.identifier" content="master"/>
@@ -120,110 +120,54 @@ Not what you want? See the
 »
 <span class="breadcrumb-link"><a href="monitor-uptime-synthetics.html">Uptime and synthetic monitoring</a></span>
 »
-<span class="breadcrumb-node">Configure settings</span>
+<span class="breadcrumb-node">Managing data retention</span>
 </div>
 <div class="navheader">
 <span class="prev">
-<a href="inspect-uptime-duration-anomalies.html">« Inspect uptime duration anomalies</a>
+<a href="configure-uptime-settings.html">« Configure settings</a>
 </span>
 <span class="next">
-<a href="manage-synthetics-retention.html">Managing data retention »</a>
+<a href="troubleshoot-uptime-mapping-issues.html">Troubleshoot mapping issues »</a>
 </span>
 </div>
 <div class="section">
 <div class="titlepage"><div><div>
-<h2 class="title"><a id="configure-uptime-settings"></a>Configure settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/observability-docs/edit/main/docs/en/observability/configure-uptime-settings.asciidoc">edit</a></h2>
+<h2 class="title"><a id="manage-synthetics-retention"></a>Managing data retention<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/observability-docs/edit/main/docs/en/observability/manage-synthetics-retention.asciidoc">edit</a></h2>
 </div></div></div>
-<p>The <span class="strong strong"><strong>Settings</strong></span> page enables you to change which Heartbeat indices are displayed
-by the Uptime app, configure rule connectors, and set expiration/age thresholds
-for TLS certificates.</p>
-<p>Uptime settings apply to the current space only. To segment
-different uptime use cases and domains, use different settings in other spaces.</p>
-<div class="olist orderedlist">
-<ol class="orderedlist">
-<li class="listitem">
-To access this page, go to <span class="strong strong"><strong>Observability &gt; Uptime</strong></span>.
-</li>
-<li class="listitem">
-<p>At the top of the page, click <span class="strong strong"><strong>Settings</strong></span>.</p>
-<div class="important admon">
-<div class="icon"></div>
-<div class="admon_content">
-<p>To modify items on this page, you must have the <a href="/guide/en/kibana/master/kibana-privileges.html" class="ulink" target="_top"><code class="literal">all</code></a> Uptime
-privilege granted to your role.</p>
-</div>
-</div>
-</li>
-</ol>
-</div>
-<h4><a id="configure-uptime-indices"></a>Configure indices<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/observability-docs/edit/main/docs/en/observability/configure-uptime-settings.asciidoc">edit</a></h4>
-<p>Specify a comma-separated list of index patterns to match indices in Elasticsearch that contain Heartbeat data.</p>
-<div class="note admon">
-<div class="icon"></div>
-<div class="admon_content">
-<p>The pattern set here only restricts what the Uptime app displays. You can still query Elasticsearch for
-data outside of this pattern.</p>
-</div>
-</div>
-<div class="imageblock screenshot">
-<div class="content">
-<img src="images/heartbeat-indices.png" alt="Heartbeat indices">
-</div>
-</div>
-<h4><a id="configure-uptime-alert-connectors"></a>Configure connectors<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/observability-docs/edit/main/docs/en/observability/configure-uptime-settings.asciidoc">edit</a></h4>
-<p><span class="strong strong"><strong>Alerts</strong></span> work by running checks on a schedule to detect conditions defined by a rule. When a condition is met,
-the rule tracks it as an <span class="strong strong"><strong>alert</strong></span> and responds by triggering one or more <span class="strong strong"><strong>actions</strong></span>.
-Actions typically involve interaction with Kibana services or third party integrations. <span class="strong strong"><strong>Connectors</strong></span> allow actions
-to talk to these services and integrations.</p>
-<p>Click <span class="strong strong"><strong>Create connector</strong></span> and follow the prompts to select a connector type and configure its properties.
-After you create a connector, it&#8217;s available to you anytime you set up a rule action in the current space.</p>
-<p>For more information about each connector, see <a href="/guide/en/kibana/master/action-types.html" class="ulink" target="_top">action types and connectors</a>.</p>
-<div class="imageblock screenshot">
-<div class="content">
-<img src="images/alert-connector.png" alt="Rule connector">
-</div>
-</div>
-<h4><a id="configure-cert-thresholds"></a>Configure certificate thresholds<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/observability-docs/edit/main/docs/en/observability/configure-uptime-settings.asciidoc">edit</a></h4>
-<p>You can modify certificate thresholds to control how Uptime displays your TLS values in
-the <a class="xref" href="monitor-uptime-synthetics.html#view-certificate-status" title="TLS Certificates">TLS Certificates</a> page. These settings also determine which certificates are
-selected by any TLS rule you create.</p>
-<div class="informaltable">
-<table border="1" cellpadding="4px">
-<colgroup>
-<col class="col_1"/>
-<col class="col_2"/>
-</colgroup>
-<tbody>
-<tr>
-<td align="left" valign="top"><p><span class="strong strong"><strong>Expiration threshold</strong></span></p></td>
-<td align="left" valign="top"><p>The <code class="literal">expiration</code> threshold specifies when you are notified
-about certificates that are approaching expiration dates. When the value of a certificate&#8217;s remaining valid days falls
-below the <code class="literal">Expiration threshold</code>, it&#8217;s considered a warning state. When you define a
-<a class="xref" href="tls-certificate-alert.html" title="Create a TLS certificate rule">TLS rule</a>, you receive a notification about the certificate.</p></td>
-</tr>
-<tr>
-<td align="left" valign="top"><p><span class="strong strong"><strong>Age limit</strong></span></p></td>
-<td align="left" valign="top"><p>The <code class="literal">age</code> threshold specifies when you are notified about certificates
-that have been valid for too long.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>A standard security requirement is to make sure that your TLS certificates have not been
-valid for longer than a year. To help you keep track of which certificates you may want to refresh,
-modify the <span class="strong strong"><strong>Age limit</strong></span> value to <code class="literal">365</code> days.</p>
-<div class="imageblock screenshot">
-<div class="content">
-<img src="images/cert-expiry-settings.png" alt="Certificate expiry settings">
-</div>
-</div>
+<h4><a id="_overview"></a>Overview<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/observability-docs/edit/main/docs/en/observability/manage-synthetics-retention.asciidoc">edit</a></h4>
+<p>Synthetics browser monitors can require large amounts of storage, this document provides information on how synthetics stores data and how to optimize retention
+to control storage utilization. This usually means altering the retention of browser <code class="literal">network</code> and <code class="literal">screenshot</code> documents.</p>
+<p>All types of checks record <em>core</em> metadata, such as which URL was checked, what the status of the check was, and errors that occurred. This document
+focuses on browser checks, which tend to use much more storage than lightweight checks.
+Browser based checks store two additional types of data beyond the core metadata; <code class="literal">network</code> documents and <code class="literal">screenshot</code> documents.
+These indices are usually many times larger than the core metadata. The relative sizes of each vary depending on the sites being
+checked with network data usually being the larger of the two by a significant factor.</p>
+<p><code class="literal">network</code> documents data consists of detailed metadata around requests for resources required by the pages being checked. An example would be an image,
+a javascript file, or a font referenced and loaded by the page under test.
+For each of these requests the URL, timing, headers, and other metadata are stored. While individually this metadata is small,
+modern websites often request hundreds of additional resources per page load, adding up to a significant amount of storage.</p>
+<p>Screenshot data consists of binary image data used to construct a screenshot and metadata with information related to de-duplicating this data. De-duplication
+efficiency makes screenshot data less burdensome than network data, especially for sites that are mostly visually unchanged across test runs.
+De-duplication works by splitting each captured screenshot into an 8x8 grid of chunks each stored as a separate document keyed by a hash of its pixels.
+This means that across checks to a given site only changes to the visual representation of the site require significant additional storage. If a site has not changed
+visually across runs the only additional storage required is the tiny <code class="literal">screenshot_ref</code> document for that image, which points to the relevant image blocks.</p>
+<h5><a id="_managing_the_lifecycles_of_synthetics_data_streams"></a>Managing the lifecycles of synthetics data streams<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/observability-docs/edit/main/docs/en/observability/manage-synthetics-retention.asciidoc">edit</a></h5>
+<p>Synthetics data is recorded in Elasticsearch [data streams](<a href="/guide/en/elasticsearch/reference/current/data-streams.html" class="ulink" target="_top">https://www.elastic.co/guide/en/elasticsearch/reference/current/data-streams.html</a>), an append-only
+structure in Elasticsearch. Synthetics data streams can be managed via the Elasticsearch API or via [Kibana index management](<a href="/guide/en/elasticsearch/reference/current/index-mgmt.html" class="ulink" target="_top">https://www.elastic.co/guide/en/elasticsearch/reference/current/index-mgmt.html</a>).</p>
+<p>If Synthetics browser data streams are storing data longer than necessary, users can opt to retain <code class="literal">screenshot</code> and <code class="literal">network_info</code> datasets for a shorter period than the core metadata.
+To do so, first navigate to [Kibana index management](<a href="/guide/en/elasticsearch/reference/current/index-mgmt.html" class="ulink" target="_top">https://www.elastic.co/guide/en/elasticsearch/reference/current/index-mgmt.html</a>), then filter the list of data streams for
+those containing the term <em>synthetics</em>. In the UI there will be three sorts of data stream present <code class="literal">synthetics-browser-*</code>, <code class="literal">synthetics-browser.network-*</code>, and <code class="literal">synthetics-browser.screenshot-*</code>. From this page you can retrieve the size of each data stream on disk, as well as which [index life cycle](<a href="/guide/en/elasticsearch/reference/current/set-up-lifecycle-policy.html" class="ulink" target="_top">https://www.elastic.co/guide/en/elasticsearch/reference/current/set-up-lifecycle-policy.html</a>) is associated with it.</p>
+<p>To change the retention period of a given data stream simply edit the life cycle policy associated with it after ensuring that policy does not apply to addition data streams whose
+retention you do not want to change. If the data stream you wish to change shares a life cycle policy with another, [create a new ILM policy](<a href="/guide/en/elasticsearch/reference/current/set-up-lifecycle-policy.html" class="ulink" target="_top">https://www.elastic.co/guide/en/elasticsearch/reference/current/set-up-lifecycle-policy.html</a>), then edit the relevant component template&#8217;s
+index settings. When editing the component template change the <code class="literal">index.lifecycle.name</code> value to point toward your new ILM policy.  For <code class="literal">screenshot</code> documents edit the <code class="literal">synthetics-browser.screenshot@package</code> component template, for <code class="literal">network_info</code> documents edit the <code class="literal">synthetics-browser.network@package</code> template. Check that the settings have taken effect by visiting the data stream management
+page and confirming the attached life cycle policy is correct.</p>
 </div>
 <div class="navfooter">
 <span class="prev">
-<a href="inspect-uptime-duration-anomalies.html">« Inspect uptime duration anomalies</a>
+<a href="configure-uptime-settings.html">« Configure settings</a>
 </span>
 <span class="next">
-<a href="manage-synthetics-retention.html">Managing data retention »</a>
+<a href="troubleshoot-uptime-mapping-issues.html">Troubleshoot mapping issues »</a>
 </span>
 </div>
 </div>
