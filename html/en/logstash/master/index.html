@@ -163,6 +163,8 @@ Not what you want? See the
 </li>
 <li><span class="section"><a href="logstash-settings-file.html">logstash.yml</a></span>
 </li>
+<li><span class="section"><a href="logstash-yml-settings.html">Logstash settings</a></span>
+</li>
 <li><span class="section"><a href="keystore.html">Secrets keystore for secure settings</a></span>
 </li>
 <li><span class="section"><a href="running-logstash-command-line.html">Running Logstash from the Command Line</a></span>
@@ -835,6 +837,21 @@ Not what you want? See the
 </div>
 <!--END_TOC-->
 
+<div id="preamble">
+<div class="sectionbody">
+<p>Default is <code class="literal">false</code>.</p>
+<p>The default size of 64mb is a good value for most users, and changing this value is unlikely to have performance benefits.<br>
+If you change the page capacity of an existing queue, the new size applies only to the new page. Default is <code class="literal">64mb</code>.</p>
+<p>Default is <code class="literal">true</code>.</p>
+<p>Default is 5000.</p>
+<p>Options are "drop_newer" (default) or "drop_older".<br>
+With drop_newer, messages that were inserted most recently are dropped, logging an error line. With drop_older setting, the oldest messages are dropped as new ones are inserted.<br>
+Default value is "drop_newer".</p>
+<p>When configured securely (<code class="literal">api.ssl.enabled: true</code> and <code class="literal">api.auth.type: basic</code>), the HTTP API binds to <em>all</em> available interfaces.<br>
+Default is <code class="literal">"127.0.0.1"</code>.</p>
+<p>Default is <code class="literal">LOGSTASH_HOME/logs</code>.</p>
+</div>
+</div>
 
 
 

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Logstash settings | Logstash Reference [master] | Elastic</title>
+<link rel="home" href="index.html" title="Logstash Reference [master]"/>
+<link rel="up" href="setup-logstash.html" title="Setting Up and Running Logstash"/>
+<link rel="prev" href="logstash-settings-file.html" title="logstash.yml"/>
+<link rel="next" href="keystore.html" title="Secrets keystore for secure settings"/>
+<meta name="DC.type" content="Learn/Docs/Logstash/Reference/master"/>
+<meta name="DC.subject" content="Logstash"/>
+<meta name="DC.identifier" content="master"/>
+</head>
+<body><div class="page_header">
+You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Logstash Reference [master]</a></span>
+»
+<span class="breadcrumb-link"><a href="setup-logstash.html">Setting Up and Running Logstash</a></span>
+»
+<span class="breadcrumb-node">Logstash settings</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="logstash-settings-file.html">« logstash.yml</a>
+</span>
+<span class="next">
+<a href="keystore.html">Secrets keystore for secure settings »</a>
+</span>
+</div>
+<div class="section">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="logstash-yml-settings"></a>Logstash settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h2>
+</div></div></div>
+<p>The <code class="literal">logstash.yml</code> file, located in the Logstash <code class="literal">/config/</code> directory includes these settings.</p>
+<div class="section">
+<div class="titlepage"><div><div>
+<h3 class="title"><a id="settings-general"></a>Set up and general settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h3>
+</div></div></div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+allow_superuser
+</span>
+</dt>
+<dd>
+Allow or block running Logstash as superuser. Default: `true`.
+</dd>
+<dt>
+<span class="term">
+node.name
+</span>
+</dt>
+<dd>
+A descriptive name for the node. Default is machine&#8217;s hostname.
+</dd>
+<dt>
+<span class="term">
+path.data
+</span>
+</dt>
+<dd>
+The directory that Logstash and its plugins use for any persistent needs, such as persistent queue (PQ) data or dead letter queue (DLQ) data. Default is `LOGSTASH_HOME/data`.
+</dd>
+<dt>
+<span class="term">
+path.plugins
+</span>
+</dt>
+<dd>
+File location for custom plugins. You can specify this setting multiple times to include multiple paths. Plugins are expected to be in a specific directory hierarchy: `PATH/logstash/TYPE/NAME.rb` where `TYPE` is `inputs`, `filters`, `outputs`, or `codecs`, and `NAME` is the name of the plugin. This setting is platform-specific. See <a class="xref" href="dir-layout.html" title="Logstash Directory Layout">Logstash Directory Layout</a> for more info.
+</dd>
+<dt>
+<span class="term">
+modules
+</span>
+</dt>
+<dd>
+When configured, modules must be in the nested YAML structure.
+</dd>
+</dl>
+</div>
+</div>
+
+<div class="section">
+<div class="titlepage"><div><div>
+<h3 class="title"><a id="settings-queue"></a>Queue settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h3>
+</div></div></div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+queue.type
+</span>
+</dt>
+<dd>
+The internal queuing model to use for event buffering. Specify `persisted` to enable <a class="xref" href="persistent-queues.html" title="Persistent queues (PQ)">persistent queues</a> for disk-based ACKed queueing, or `memory` for legacy <a class="xref" href="memory-queue.html" title="Memory queue">in-memory based queueing</a>. Default is `memory`.
+</dd>
+</dl>
+</div>
+<div class="section">
+<div class="titlepage"><div><div>
+<h4 class="title"><a id="settings-pq"></a>Persisted queue (PQ) settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h4>
+</div></div></div>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>These settings apply only if <code class="literal">queue.type: persisted</code>.</p>
+</div>
+</div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+path.queue
+</span>
+</dt>
+<dd>
+The directory path where the data files will be stored when persistent queues are enabled (`queue.type: persisted`). Default: `path.data/queue`. Available in`logstash.yml`.
+</dd>
+<dt>
+<span class="term">
+queue.page_capacity
+</span>
+</dt>
+<dd>
+The queue data consists of append-only data files separated into "pages. This option sets the maximum size of the page data files in bytes (`queue.type: persisted`). Available in `logstash.yml` and `pipelines.yml`.
+</dd>
+<dt>
+<span class="term">
+queue.drain
+</span>
+</dt>
+<dd>
+When set to `true`, Logstash waits until the persistent queue is drained before shutting down. The amount of time it takes to drain the queue depends on the number of events that have accumulated in the queue. Tip: Avoid using this setting unless the queue, even when full, is relatively small and can be drained quickly. Default is `false`. Available in`logstash.yml`.
+</dd>
+<dt>
+<span class="term">
+queue.max_events
+</span>
+</dt>
+<dd>
+The maximum number of events not yet read by the pipeline worker (`queue.type: persisted`). The default is `0` (unlimited). We use this setting for internal testing. Users generally shouldn&#8217;t change this value. Available in `logstash.yml` and `pipelines.yml`.
+</dd>
+<dt>
+<span class="term">
+queue.max_bytes
+</span>
+</dt>
+<dd>
+The total capacity of each queue in number of bytes (`queue.type: persisted`). Unless overridden in `pipelines.yml` or central management, each persistent queue will be sized at the value of `queue.max_bytes` specified in `logstash.yml`. Be sure that your disk has sufficient capacity to handle the cumulative total of `queue.max_bytes` across all persistent queues. The total of `queue.max_bytes` for ALL queues should be lower than the capacity of your disk. If both `queue.max_events` and `queue.max_bytes` are specified, Logstash uses whichever criteria is reached first. Default: 1024mb (1gb). Available in `logstash.yml` and `pipelines.yml`.
+</dd>
+<dt>
+<span class="term">
+queue.checkpoint.acks
+</span>
+</dt>
+<dd>
+Sets the maximum number of acked events before forcing a checkpoint (`queue.type: persisted`). Default is 1024. Specify `queue.checkpoint.acks: 0` to set this value to unlimited. Available in `logstash.yml` and `pipelines.yml`.
+</dd>
+<dt>
+<span class="term">
+queue.checkpoint.writes
+</span>
+</dt>
+<dd>
+Sets the maximum number of written events before a forced checkpoint (`queue.type: persisted`). Default is 1024. Specify `queue.checkpoint.writes: 0` to set this value to unlimited. To avoid losing data in the persistent queue, you can set `queue.checkpoint.writes: 1` to force a checkpoint after each event is written. Keep in mind that disk writes have a resource cost. Setting this value to 1 ensures maximum durability, but can severely impact performance. See <a class="xref" href="persistent-queues.html#durability-persistent-queues" title="Controlling durability">Controlling durability</a> to better understand the trade-offs. Available in `logstash.yml` and `pipelines.yml`.
+</dd>
+<dt>
+<span class="term">
+queue.checkpoint.retry
+</span>
+</dt>
+<dd>
+When enabled, Logstash will retry four times per attempted checkpoint write for any checkpoint writes that fail. Any subsequent errors are not retried. This is a workaround for failed checkpoint writes that have been seen only on Windows platform, filesystems with non-standard behavior such as SANs and is not recommended except in those specific circumstances. (queue.type: persisted)+
+</dd>
+<dt>
+<span class="term">
+queue.checkpoint.interval
+</span>
+</dt>
+<dd>
+Sets the interval in milliseconds when a checkpoint is forced on the head page (`queue.type: persisted`). Default is 1000. Set to 0 to eliminate periodic checkpoints. Available in `logstash.yml` and `pipelines.yml`.
+</dd>
+</dl>
+</div>
+</div>
+
+<div class="section">
+<div class="titlepage"><div><div>
+<h4 class="title"><a id="settings-dlq"></a>Dead letter queue (DLQ) settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h4>
+</div></div></div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+dead_letter_queue.enable
+</span>
+</dt>
+<dd>
+Flag to turn on dead letter queue (DLQ) supported by plugins. Default is `false`.
+</dd>
+<dt>
+<span class="term">
+dead_letter_queue.max_bytes
+</span>
+</dt>
+<dd>
+Applies when dead_letter_queue.enable: true. The maximum size of each dead letter queue (DLQ). Entries will be dropped if they would increase the size of the dead letter queue beyond this value. Default is `1024mb`.
+</dd>
+<dt>
+<span class="term">
+dead_letter_queue.flush_interval
+</span>
+</dt>
+<dd>
+Applies when dead_letter_queue.enable: true. The interval in milliseconds a dead letter queue file will be written if no additional DLQ events have been created. A low value means that more, smaller queue files may be written. A larger value introduces more latency between items being "written" to the dead letter queue and available to be read by the dead_letter_queue input.
+</dd>
+<dt>
+<span class="term">
+dead_letter_queue.storage_policy
+</span>
+</dt>
+<dd>
+Applies when dead_letter_queue.enable: true. Defines the action to take when the dead_letter_queue.max_bytes is reached.
+</dd>
+<dt>
+<span class="term">
+path.dead_letter_queue
+</span>
+</dt>
+<dd>
+If `dead_letter_queue.enable: true`, sets the directory path where the data files will be stored. Default is `path.data/dead_letter_queue`.
+</dd>
+</dl>
+</div>
+</div>
+
+</div>
+
+<div class="section">
+<div class="titlepage"><div><div>
+<h3 class="title"><a id="settings-pipeline"></a>Pipeline settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h3>
+</div></div></div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+pipeline.id
+</span>
+</dt>
+<dd>
+The ID of the pipeline. Default: `main`.
+</dd>
+<dt>
+<span class="term">
+pipeline.workers
+</span>
+</dt>
+<dd>
+Set the number of workers that will, in parallel, execute the filters+outputs stage of the pipeline. Defaults to the number of the host&#8217;s CPU cores. If you have modified this setting and see that events are backing up, or that the CPU is not saturated, consider increasing this number to better utilize machine processing power.
+</dd>
+<dt>
+<span class="term">
+pipeline.batch.size
+</span>
+</dt>
+<dd>
+The maximum number of events an individual worker thread should collect from inputs before attempting to execute its filters and outputs. Larger batch sizes are generally more efficient, but come at the cost of increased memory overhead. You may need to increase JVM heap space in the `jvm.options` config file. See <a class="xref" href="config-setting-files.html" title="Logstash Configuration Files">Logstash Configuration Files</a> for more info. Default is 125.
+</dd>
+<dt>
+<span class="term">
+pipeline.batch.delay
+</span>
+</dt>
+<dd>
+How long to wait in milliseconds while polling for the next event before dispatching an undersized batch to filters+outputs. Default is 50.
+</dd>
+<dt>
+<span class="term">
+pipeline.unsafe_shutdown
+</span>
+</dt>
+<dd>
+When set to `true`, forces Logstash to exit during shutdown, even if there are still inflight events in memory. By default, Logstash refuses to quit until all received events have been pushed to the outputs. Default is `false`. WARNING: Enabling this setting can lead to data loss during shutdown.
+</dd>
+<dt>
+<span class="term">
+pipeline.plugin_classloaders
+</span>
+</dt>
+<dd>
+(Beta) Load Java plugins in independent classloaders to isolate their dependencies. Default is `false`.
+</dd>
+<dt>
+<span class="term">
+pipeline.ordered
+</span>
+</dt>
+<dd>
+Set the pipeline event ordering. Options are "auto" (default), "true", "false". Setting this value to "auto" automatically enables ordering if the 'pipeline.workers' setting is also set to '1', and disables otherwise. Setting this value to "true" enforces ordering on the pipeline and prevent logstash from starting if there are multiple workers. Setting this value to "false" disables any extra processing necessary for preserving ordering.
+</dd>
+<dt>
+<span class="term">
+pipeline.separate_logs
+</span>
+</dt>
+<dd>
+Flag to output log lines of each pipeline to a separate log file. If enabled, Logstash creates a different log file for each pipeline, using the pipeline.id as name of the file. When you have many Logstash pipelines, separating each log by pipeline could be helpful in case you need to troubleshoot a single pipeline+
+</dd>
+<dt>
+<span class="term">
+pipeline.ecs_compatibility
+</span>
+</dt>
+<dd>
+Sets the pipeline&#8217;s default value for `ecs_compatibility`, a setting that is available to plugins that implement an ECS Compatibility mode for use with the Elastic Common Schema. Possible values are `disabled`, `v1`, `v8` (default). Pipelines defined before Logstash 8 operate without ECS in mind. To ensure a migrated pipeline continues to operate as it did before your upgrade, opt-OUT of ECS for the individual pipeline in its `pipelines.yml` definition. Setting this value sets the default for _all_ pipelines, including new ones.
+</dd>
+</dl>
+</div>
+</div>
+
+<div class="section">
+<div class="titlepage"><div><div>
+<h3 class="title"><a id="settings-pipeline-config"></a>Pipeline configuration settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h3>
+</div></div></div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+path.config
+</span>
+</dt>
+<dd>
+The path to the Logstash pipeline configuration for the main pipeline. If you specify a directory or wildcard, config files are read from the directory in alphabetical order. This setting is platform-specific. See <a class="xref" href="dir-layout.html" title="Logstash Directory Layout">Logstash Directory Layout</a> for more info.
+</dd>
+<dt>
+<span class="term">
+config.string
+</span>
+</dt>
+<dd>
+A string that contains the pipeline configuration for the main pipeline. Use the same syntax as the config file.
+</dd>
+<dt>
+<span class="term">
+config.test_and_exit
+</span>
+</dt>
+<dd>
+When set to `true`, at startup checks to ensure that the configuration is valid and then exits. Logstash can read multiple config files from a directory. Note that grok patterns are not checked for correctness. If you combine this setting with `log.level: debug`, Logstash logs the combined config file, annotating each config block with the source file it came from. Default is `false`.
+</dd>
+<dt>
+<span class="term">
+config.reload.automatic
+</span>
+</dt>
+<dd>
+Periodically checks to see if the pipeline configuration has changed and reloads the pipeline after changes. This can also be triggered manually through the SIGHUP signal. Default is `false`.
+</dd>
+<dt>
+<span class="term">
+config.reload.interval
+</span>
+</dt>
+<dd>
+How often to check if the pipeline configuration has changed (in seconds). Note that the unit value (s) is required. Values without a qualifier (such as 60) are treated as nanoseconds. Default is 3s. IMPORTANT: Setting the interval this way is not recommended and might change in later versions.
+</dd>
+<dt>
+<span class="term">
+config.debug
+</span>
+</dt>
+<dd>
+When set to `true`, shows the fully compiled configuration as a debug log message. You must also set log.level: debug. Default is `false`. WARNING: The log message will include any password options passed to plugin configs as plaintext, and may result in plaintext passwords appearing in your logs.
+</dd>
+<dt>
+<span class="term">
+config.support_escapes
+</span>
+</dt>
+<dd>
+When enabled, process escaped characters such as \n and \" in strings in the pipeline configuration files. Default is `false`. When set to `true`, quoted strings process these escape sequences: `\n` becomes a literal newline (ASCII 10). `\r` becomes a literal carriage return (ASCII 13). `\t` becomes a literal tab (ASCII 9). `\\` becomes a literal backslash `\`. `\"` becomes a literal double quotation mark. `\'` becomes a literal quotation mark.
+</dd>
+<dt>
+<span class="term">
+config.field_reference.escape_style
+</span>
+</dt>
+<dd>
+[Technical preview]. Provides a way to reference fields that contain <a class="xref" href="field-references-deepdive.html#formal-grammar-escape-sequences" title="Escape Sequences">field reference special characters</a> `[` and `]`. Current options are `percent`, `ampersand`, `none`. The `percent` option: URI-style `%`+`HH` hexadecimal encoding of UTF-8 bytes (`[` &#8594; `%5B`; `]` &#8594; `%5D`). The `ampersand` option is HTML-style `&amp;#`+`DD`+`;` encoding of decimal Unicode code-points (`[` &#8594; `&#91;`; `]` &#8594; `&#93;`). The `none` option means that field names containing special characters _cannot_ be referenced. NOTE: This feature is in technical preview and may change in the future.
+</dd>
+</dl>
+</div>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>The following <code class="literal">config.field_reference.escape_style</code> setting is a duplicate of the previous setting while we resolve formatting issues.</p>
+</div>
+</div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+config.field_reference.escape_style
+</span>
+</dt>
+<dd>
+<p>
+[Technical preview]. Provides a way to reference fields that contain <a class="xref" href="field-references-deepdive.html#formal-grammar-escape-sequences" title="Escape Sequences">field reference special characters</a> <code class="literal">[</code> and <code class="literal">]</code>.<br>
+Current options are:  <br>
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<code class="literal">percent</code>: URI-style <code class="literal">%</code>+<code class="literal">HH</code> hexadecimal encoding of UTF-8 bytes (<code class="literal">[</code> &#8594; <code class="literal">%5B</code>; <code class="literal">]</code> &#8594; <code class="literal">%5D</code>).<br>
+</li>
+<li class="listitem">
+<code class="literal">ampersand</code>: HTML-style <code class="literal">&amp;#</code><code class="literal"><code class="literal">DD</code></code><code class="literal">;</code> encoding of decimal Unicode code-points (<code class="literal">[</code> &#8594; <code class="literal">&amp;#91;</code>; <code class="literal">]</code> &#8594; <code class="literal">&amp;#93;</code>).<br>
+</li>
+<li class="listitem">
+<p><code class="literal">none</code>: field names containing special characters <em>cannot</em> be referenced.</p>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>This feature is in <span class="strong strong"><strong>technical preview</strong></span> and may change in the future.</p>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+<div class="section">
+<div class="titlepage"><div><div>
+<h4 class="title"><a id="settings-api"></a>API settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h4>
+</div></div></div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+api.enabled
+</span>
+</dt>
+<dd>
+The HTTP API is enabled by default. It can be disabled, but features that rely on it will not work as intended. Default is `true`.
+</dd>
+<dt>
+<span class="term">
+api.environment
+</span>
+</dt>
+<dd>
+The API returns the provided string as a part of its response. Setting your environment may help to disambiguate between similarly-named nodes in production vs test environments. Default is `production`.
+</dd>
+<dt>
+<span class="term">
+api.http.host
+</span>
+</dt>
+<dd>
+The bind address for the HTTP API endpoint. By default, the Logstash HTTP API binds only to the local loopback interface.
+</dd>
+<dt>
+<span class="term">
+api.http.port
+</span>
+</dt>
+<dd>
+The bind port for the HTTP API endpoint. Default is `9600-9700`.
+</dd>
+<dt>
+<span class="term">
+api.ssl.enabled
+</span>
+</dt>
+<dd>
+Set to `true` to enable SSL on the HTTP API. Doing so requires both `api.ssl.keystore.path` and `api.ssl.keystore.password` to be set. Default is `false.`
+</dd>
+<dt>
+<span class="term">
+api.ssl.keystore.path
+</span>
+</dt>
+<dd>
+The path to a valid JKS or PKCS12 keystore for use in securing the Logstash API. The keystore must be password-protected, and must contain a single certificate chain and a private key.  This setting is ignored unless `api.ssl.enabled` is set to `true`.
+</dd>
+<dt>
+<span class="term">
+api.ssl.keystore.password
+</span>
+</dt>
+<dd>
+The password to the keystore provided with `api.ssl.keystore.path`. This setting is ignored unless `api.ssl.enabled` is set to `true`.
+</dd>
+<dt>
+<span class="term">
+api.auth.type
+</span>
+</dt>
+<dd>
+Set to `basic` to require HTTP Basic auth on the API using the credentials supplied with `api.auth.basic.username` and `api.auth.basic.password`. Default is `none`.
+</dd>
+<dt>
+<span class="term">
+api.auth.basic.username
+</span>
+</dt>
+<dd>
+The username to require for HTTP Basic auth. Ignored unless `api.auth.type` is set to `basic`.
+</dd>
+<dt>
+<span class="term">
+api.auth.basic.password
+</span>
+</dt>
+<dd>
+<p>
+The password to require for HTTP Basic auth. Ignored unless `api.auth.type` is set to `basic`. It should meet default password policy which requires non-empty minimum 8 char string that includes a digit, upper case letter and lower case letter. You can customize the default password policy with these options:<br>
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Set <code class="literal">api.auth.basic.password_policy.include.digit</code> <code class="literal">REQUIRED</code> (default) to accept only passwords that include at least one digit or <code class="literal">OPTIONAL</code> to exclude from requirement.
+</li>
+<li class="listitem">
+Set <code class="literal">api.auth.basic.password_policy.include.upper</code> <code class="literal">REQUIRED</code> (default) to accept only passwords that include at least one upper case letter or <code class="literal">OPTIONAL</code> to exclude from requirement.
+</li>
+<li class="listitem">
+Set <code class="literal">api.auth.basic.password_policy.include.lower</code> <code class="literal">REQUIRED</code> (default) to accept only passwords that include at least one lower case letter or <code class="literal">OPTIONAL</code> to exclude from requirement.
+</li>
+<li class="listitem">
+Set <code class="literal">api.auth.basic.password_policy.include.symbol</code> <code class="literal">REQUIRED</code> to accept only passwords that include at least one special character or <code class="literal">OPTIONAL</code> (default) to exclude from requirement.
+</li>
+<li class="listitem">
+Set <code class="literal">api.auth.basic.password_policy.length.minimum</code> to a value from 9 to 1024 if you want to require more than the 8 character default setting for passwords.
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+
+<div class="section">
+<div class="titlepage"><div><div>
+<h4 class="title"><a id="settings-debug"></a>Debug settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/logstash/edit/main/docs/static/settings/settings.asciidoc">edit</a></h4>
+</div></div></div>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+log-level
+</span>
+</dt>
+<dd>
+Options for log.level are `fatal`, `error`, `warn`, `info`, `debug`, `trace`. Default is  `info`.
+</dd>
+<dt>
+<span class="term">
+path.logs
+</span>
+</dt>
+<dd>
+The directory where Logstash writes its logs.
+</dd>
+<dt>
+<span class="term">
+log.format
+</span>
+</dt>
+<dd>
+The format to use for outputting logs. Set to `json` to log in JSON format, or `plain` to use `Object#.inspect`. Default is `plain`.
+</dd>
+</dl>
+</div>
+</div>
+
+</div>
+
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="logstash-settings-file.html">« logstash.yml</a>
+</span>
+<span class="next">
+<a href="keystore.html">Secrets keystore for secure settings »</a>
+</span>
+</div>
+</div>
+</body>
+</html>
