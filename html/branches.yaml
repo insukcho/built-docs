@@ -5221,7 +5221,7 @@ elasticsearch-php:
   Elasticsearch Guide/docs/examples/8.0: 75e55644ede27c855bd6e9129c16fb5a6c0631f5
   Elasticsearch Guide/docs/examples/8.1: ed54e436d43bdbd0dc7bf43414b2a97f05886605
   Elasticsearch Guide/docs/examples/8.2: 0a3c8143ca4cf7d9b2a5a51c3c6ae0be5955e0b9
-  Elasticsearch Guide/docs/examples/8.3: ecb1790f4b3df4be0c50ff2fa2041fe86825dafe
+  Elasticsearch Guide/docs/examples/8.3: local
   Elasticsearch Guide/docs/examples/master: ce46edd90ea414f171088040d48e2d8cb11ffeac
   PHP Client/docs/0.4: ecd9be4f3b4ab6d14cb485cc77b7a8fb0bf76ec8
   PHP Client/docs/1.x: 517ed82ff22bd573ecfcc5fc03ddf11e5ca491fe
@@ -5234,7 +5234,7 @@ elasticsearch-php:
   PHP Client/docs/8.0: 75e55644ede27c855bd6e9129c16fb5a6c0631f5
   PHP Client/docs/8.1: ed54e436d43bdbd0dc7bf43414b2a97f05886605
   PHP Client/docs/8.2: 0a3c8143ca4cf7d9b2a5a51c3c6ae0be5955e0b9
-  PHP Client/docs/8.3: ecb1790f4b3df4be0c50ff2fa2041fe86825dafe
+  PHP Client/docs/8.3: local
   PHP Client/docs/master: ce46edd90ea414f171088040d48e2d8cb11ffeac
 elasticsearch-php-cn:
   PHP API/./cn: 2ebdc22260b51650d42abffbbc6539195acbe8bb
