@@ -5371,7 +5371,7 @@ enterprise-search-ruby:
   Enterprise Search Ruby client/docs/guide/8.0: afee8ea7b45058fc3fe315cec194ca72b80fb50f
   Enterprise Search Ruby client/docs/guide/8.1: 9ed9c146d924a5cd8b35fda751e5dd41ef357271
   Enterprise Search Ruby client/docs/guide/8.2: 58ff8d611b6e216055057fb9527da84ef2bd6c6c
-  Enterprise Search Ruby client/docs/guide/8.3: 8926e1590cccc1eaa4d888095866798668b7ebe4
+  Enterprise Search Ruby client/docs/guide/8.3: local
   Enterprise Search Ruby client/docs/guide/main: 9993cf43e1e2c48175e61604c5506e0735f12eae
 go-elasticsearch:
   Elasticsearch Guide/.doc/examples/doc/8.0: 77b879ba2cb78c15964af59088906918e4f51137
