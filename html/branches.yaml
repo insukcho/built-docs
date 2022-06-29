@@ -5766,12 +5766,12 @@ security-docs:
   Elastic Security/docs/8.0: 69202c265d16387607a64c5466160ee7396896db
   Elastic Security/docs/8.1: 00cbd061204a14a0934eed58133ba2d5277e7c9e
   Elastic Security/docs/8.2: c43b960baee1713b63c86076b2c3cec99dcb80c5
-  Elastic Security/docs/8.3: c03210dff00830663ec56c3acff8a8e0fcb55b4f
+  Elastic Security/docs/8.3: local
   Elastic Security/docs/main: b6de7bdf6242de3e05a3db33c07833506ab0947a
   Installation and Upgrade Guide/docs/8.0: 69202c265d16387607a64c5466160ee7396896db
   Installation and Upgrade Guide/docs/8.1: 00cbd061204a14a0934eed58133ba2d5277e7c9e
   Installation and Upgrade Guide/docs/8.2: c43b960baee1713b63c86076b2c3cec99dcb80c5
-  Installation and Upgrade Guide/docs/8.3: c03210dff00830663ec56c3acff8a8e0fcb55b4f
+  Installation and Upgrade Guide/docs/8.3: local
   Installation and Upgrade Guide/docs/main: b6de7bdf6242de3e05a3db33c07833506ab0947a
 sense:
   Sense Editor for 4.x/docs/master: e4b27640c79c102d1e09941c4430092522338cff
