@@ -35612,7 +35612,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/elastic-stack-breaking-changes.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -35626,7 +35626,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/elasticsearch-breaking-changes.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -35640,14 +35640,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/kibana-breaking-changes.html</loc>
-    <lastmod>2022-06-29T21:12:08+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -35661,7 +35661,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/logstash-breaking-changes.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -35675,14 +35675,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/overview.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/security-breaking-changes.html</loc>
-    <lastmod>2022-06-28T17:42:36+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -35696,35 +35696,35 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrade-elastic-stack-for-elastic-cloud.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-elastic-stack-on-prem.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-elastic-stack.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-elasticsearch.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/elastic-stack/current/upgrading-kibana.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -82785,7 +82785,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/codec-new-plugin.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -82932,14 +82932,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/docker-config.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/docker.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -82995,7 +82995,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/filter-new-plugin.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83009,7 +83009,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/first-event.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83037,7 +83037,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/hot-threads-api.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83051,7 +83051,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/input-new-plugin.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83254,7 +83254,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/logstash-modules.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83331,7 +83331,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/monitoring-logstash.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -83394,14 +83394,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/offline-plugins.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/output-new-plugin.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84017,7 +84017,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/plugins-inputs-beats.html</loc>
-    <lastmod>2022-06-29T04:15:27+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84864,14 +84864,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/running-logstash-command-line.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/running-logstash-windows.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -84997,7 +84997,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/logstash/current/working-with-plugins.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-06-30T13:51:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
