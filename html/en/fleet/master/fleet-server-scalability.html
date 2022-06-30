@@ -234,6 +234,38 @@ Total size of the cache.
 </dd>
 <dt>
 <span class="term">
+<code class="literal">server.timeouts</code>
+</span>
+</dt>
+<dd>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<code class="literal">checkin_timestamp</code>
+</span>
+</dt>
+<dd>
+How often Fleet Server updates the "last activity" field for each agent.
+Defaults to <code class="literal">30s</code>. When deploying higher scales of agents, increasing this
+setting may improve performance. If set higher than <code class="literal">2m</code>, most agents will be
+shown as "offline" in the Fleet UI and is not recommended in a typical set up.
+</dd>
+<dt>
+<span class="term">
+<code class="literal">checkin_long_poll</code>
+</span>
+</dt>
+<dd>
+How long Fleet Server will allow a long poll request from an agent before
+timing out. Defaults to <code class="literal">5m</code>. When deploying higher scales of agents, increasing
+this setting may improve performance.
+</dd>
+</dl>
+</div>
+</dd>
+<dt>
+<span class="term">
 <code class="literal">server.limits</code>
 </span>
 </dt>
