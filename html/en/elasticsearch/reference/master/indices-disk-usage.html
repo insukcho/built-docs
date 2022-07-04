@@ -460,6 +460,18 @@ is likely underestimated while the <code class="literal">_source</code> field is
 </tr>
 </table>
 </div>
+<div class="section">
+<div class="titlepage"><div><div>
+<h4 class="title"><a id="_running_disk_usage_api_asynchronously"></a>Running disk usage API asynchronously<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/indices/diskusage.asciidoc">edit</a></h4>
+</div></div></div>
+<p>If the request contains <code class="literal">wait_for_completion=false</code>, Elasticsearch
+performs some preflight checks, launches the request, and returns a
+<a class="xref" href="tasks.html" title="Task management API"><code class="literal">task</code></a> you can use to cancel or get the status of the task.
+Elasticsearch creates a record of this task as a document at <code class="literal">_tasks/&lt;task_id&gt;</code>.
+When you are done with a task, you should delete the task document so
+Elasticsearch can reclaim the space.</p>
+</div>
+
 </div>
 
 </div>
