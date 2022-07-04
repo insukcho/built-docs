@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Restore from snapshot | Elasticsearch Guide [master] | Elastic</title>
+<link rel="home" href="index.html" title="Elasticsearch Guide [master]"/>
+<link rel="up" href="troubleshooting.html" title="Troubleshooting"/>
+<link rel="prev" href="start-slm.html" title="Start Snapshot Lifecycle Management"/>
+<link rel="next" href="monitoring-troubleshooting.html" title="Troubleshooting monitoring"/>
+<meta name="DC.type" content="Learn/Docs/Elasticsearch/Reference/master"/>
+<meta name="DC.subject" content="Elasticsearch"/>
+<meta name="DC.identifier" content="master"/>
+</head>
+<body><div class="page_header">
+You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Elasticsearch Guide [master]</a></span>
+»
+<span class="breadcrumb-link"><a href="troubleshooting.html">Troubleshooting</a></span>
+»
+<span class="breadcrumb-node">Restore from snapshot</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="start-slm.html">« Start Snapshot Lifecycle Management</a>
+</span>
+<span class="next">
+<a href="monitoring-troubleshooting.html">Troubleshooting monitoring »</a>
+</span>
+</div>
+<div class="chapter">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="restore-from-snapshot"></a>Restore from snapshot<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/troubleshooting/data/restore-from-snapshot.asciidoc">edit</a></h2>
+</div></div></div>
+<p>Elasticsearch is using snapshots to store a copy of your data outside a cluster. You can restore a snapshot to recover
+indices and data streams for which there are no copies of the shards in the cluster. This can happen if the data
+(indices or data streams) was deleted or if the cluster membership changed and the current nodes in the system do not
+contain a copy of the data anymore.</p>
+<div class="important admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Restoring the missing data requires you to have a backup of the affected indices and data streams that is
+up-to-date enough for your use case. Please do not proceed without confirming this.</p>
+</div>
+</div>
+<p>Users from Elasticsearch Service, Elastic Cloud Enterprise or self-managed platform are able to use either the Kibana or API steps to restore a
+snapshot. Choose your preferred method to start.</p>
+<div class="tabs" data-tab-group="host">
+  <div role="tablist" aria-label="Restore from snapshot">
+    <button role="tab"
+            aria-selected="true"
+            aria-controls="kibana-tab-restore-from-snapshot"
+            id="kibana-restore-from-snapshot">
+      Kibana
+    </button>
+    <button role="tab"
+            aria-selected="false"
+            aria-controls="api-tab-restore-from-snapshot"
+            id="api-restore-from-snapshot"
+            tabindex="-1">
+      API
+    </button>
+  </div>
+  <div tabindex="0"
+       role="tabpanel"
+       id="kibana-tab-restore-from-snapshot"
+       aria-labelledby="kibana-restore-from-snapshot">
+<p>In order to restore the indices and data streams that are missing data:</p>
+<p><span class="strong strong"><strong>Use Kibana</strong></span></p>
+<p>If you are self-managed user, you can go straight to Kibana and start from step 3.</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+Log in to the <a href="https://cloud.elastic.co?baymax=docs-body&amp;elektra=docs" class="ulink" target="_top">Elastic Cloud console</a>.
+</li>
+<li class="listitem">
+<p>On the <span class="strong strong"><strong>Elasticsearch Service</strong></span> panel, click the name of your deployment.</p>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>If the name of your deployment is disabled your Kibana instances might be
+unhealthy, in which case please contact <a href="https://support.elastic.co" class="ulink" target="_top">Elastic Support</a>.
+If your deployment doesn&#8217;t include Kibana, all you need to do is
+<a href="/guide/en/cloud/current/ec-access-kibana.html" class="ulink" target="_top">enable it first</a>.</p>
+</div>
+</div>
+</li>
+<li class="listitem">
+Open your deployment&#8217;s side navigation menu (placed under the Elastic logo in the upper left corner)
+and go to <span class="strong strong"><strong>Stack Management &gt; Index Management</strong></span>.
+</li>
+<li class="listitem">
+<p>In this step we are going to find all the indices and data streams missing data. If you already have that information
+you could skip this. Go in the <span class="strong strong"><strong>Indices</strong></span> tab, enable <span class="strong strong"><strong>Include hidden indices</strong></span> toggle and find all the open indices
+that have an empty <span class="strong strong"><strong>Health</strong></span> and empty <span class="strong strong"><strong>Data stream</strong></span>, keep their names somewhere handy. Then, go to the
+<span class="strong strong"><strong>Data Streams</strong></span> tab and keep the name of all the data streams whose <span class="strong strong"><strong>Health</strong></span> is <code class="literal">red</code>.</p>
+<div class="imageblock text-center screenshot">
+<div class="content">
+<img src="images/troubleshooting/data/kibana-index-management-select-red-indices.png" alt="Kibana indices">
+</div>
+</div>
+<div class="imageblock text-center screenshot">
+<div class="content">
+<img src="images/troubleshooting/data/kibana-index-management-select-red-data-steams.png" alt="Kibana data streams">
+</div>
+</div>
+</li>
+<li class="listitem">
+<p>Use the left side menu to go to <span class="strong strong"><strong>Snapshot and Restore</strong></span>, there you can verify that you have a snapshot to restore
+the target indices and data streams from. By clicking on every snapshot you can see the indices and data streams it
+contains. Not all resources need to be restored from the same snapshot. <span class="strong strong"><strong>Do not proceed</strong></span> if there is no backup of the
+affected resources in a snapshot that is up-to-date enough for your use case, otherwise this will result in further data
+loss.</p>
+<div class="imageblock text-center screenshot">
+<div class="content">
+<img src="images/troubleshooting/data/kibana-restore-snapshot-content.png" alt="Kibana snapshots">
+</div>
+</div>
+</li>
+<li class="listitem">
+Go back to <span class="strong strong"><strong>Index Management</strong></span> via the left side menu. In <span class="strong strong"><strong>Indices</strong></span> enable <span class="strong strong"><strong>Include hidden indices</strong></span> toggle and
+delete all the indices that have noted, by selecting them and then using the <span class="strong strong"><strong>Manage index</strong></span> button
+choose delete index. In the <span class="strong strong"><strong>Data Streams</strong></span> tab repeat the same by selecting the <code class="literal">red</code> data streams and then
+clicking <span class="strong strong"><strong>Delete data steam</strong></span>.
+</li>
+<li class="listitem">
+<p>Use the left side menu to go back to <span class="strong strong"><strong>Snapshot and Restore</strong></span>, click on the snapshot that you would like to restore
+from then click <span class="strong strong"><strong>Restore</strong></span>. In the next page disable the toggle <span class="strong strong"><strong>All data streams and indices, including system
+indices</strong></span>, deselect all and then choose the indices and data streams you would like to restore.</p>
+<div class="imageblock text-center screenshot">
+<div class="content">
+<img src="images/troubleshooting/data/kibana-restore-snapshot-select-resources.png" alt="Kibana select resources to restore">
+</div>
+</div>
+</li>
+<li class="listitem">
+<p>Click <span class="strong strong"><strong>Next</strong></span> twice to continue without changing anything else and finally click <span class="strong strong"><strong>Restore Snapshot</strong></span>.</p>
+<div class="imageblock screenshot">
+<div class="content">
+<img src="images/troubleshooting/data/kibana-restore-snapshot-confirm.png" alt="Kibana confirm snapshot restore" width="30%">
+</div>
+</div>
+</li>
+<li class="listitem">
+<p>When the process is complete, you will see in the <span class="strong strong"><strong>Restore Status</strong></span> tab the result of your restore.</p>
+<div class="imageblock text-center screenshot">
+<div class="content">
+<img src="images/troubleshooting/data/kibana-restore-snapshot-result.png" alt="Kibana select resources to restore">
+</div>
+</div>
+<p>For more guidance on creating and restoring snapshots see
+<a class="xref" href="snapshot-restore.html" title="Snapshot and restore">this guide</a>.</p>
+</li>
+</ol>
+</div>
+  </div>
+  <div tabindex="0"
+       role="tabpanel"
+       id="api-tab-restore-from-snapshot"
+       aria-labelledby="api-restore-from-snapshot"
+       hidden="">
+<p>In order to restore the indices that are missing shards:</p>
+<div class="olist orderedlist">
+<ol class="orderedlist">
+<li class="listitem">
+<p>View the affected indices using the <a class="xref" href="cat-indices.html" title="cat indices API">cat indices API</a>.</p>
+<a id="2ceded6ee764adf1aaaac0a1cd25ed5f"></a>
+<div class="pre_wrapper lang-console">
+<pre class="programlisting prettyprint lang-console">GET _cat/indices?v&amp;health=red&amp;h=index,status,health</pre>
+</div>
+<div class="console_widget" data-snippet="snippets/1854.console"></div>
+<p>The response will look like this:</p>
+<a id="bfa0028824c6ad79f78cd0fd7a143a35"></a>
+<div class="pre_wrapper lang-console-result">
+<pre class="programlisting prettyprint lang-console-result">index                                status health
+.ds-my-data-stream-2022.06.17-000001 open   red
+kibana_sample_data_flights           open   red</pre>
+</div>
+<p>The <code class="literal">red</code> health of the indices above indicates that these indices are missing primary shards,
+meaning they are missing data.</p>
+</li>
+<li class="listitem">
+<p>In order to restore the data we need to find a snapshot that contains these two indices. To find
+such a snapshot use the
+<a class="xref" href="get-snapshot-api.html" title="Get snapshot API">get snapshot API</a>.</p>
+<a id="4e926063a9494b563387617b08c4f232"></a>
+<div class="pre_wrapper lang-console">
+<pre class="programlisting prettyprint lang-console">GET _snapshot/my_repository/*?verbose=false</pre>
+</div>
+<div class="console_widget" data-snippet="snippets/1855.console"></div>
+<p>The response will look like this:</p>
+<a id="5cfdd1c75400b033465b33275e45ba91"></a>
+<div class="pre_wrapper lang-console-result">
+<pre class="programlisting prettyprint lang-console-result">{
+  "snapshots" : [
+    {
+      "snapshot" : "snapshot-20200617",                                     <a id="CO627-1"></a><i class="conum" data-value="1"></i>
+      "uuid" : "dZyPs1HyTwS-cnKdH08EPg",
+      "repository" : "my_repository",                                           <a id="CO627-2"></a><i class="conum" data-value="2"></i>
+      "indices" : [                                                         <a id="CO627-3"></a><i class="conum" data-value="3"></i>
+        ".apm-agent-configuration",
+        ".apm-custom-link",
+        ".ds-ilm-history-5-2022.06.17-000001",
+        ".ds-my-data-stream-2022.06.17-000001",
+        ".geoip_databases",
+        ".kibana-event-log-8.2.2-000001",
+        ".kibana_8.2.2_001",
+        ".kibana_task_manager_8.2.2_001",
+        "kibana_sample_data_ecommerce",
+        "kibana_sample_data_flights",
+        "kibana_sample_data_logs"
+      ],
+      "data_streams" : [ ],
+      "state" : "SUCCESS"                                                     <a id="CO627-4"></a><i class="conum" data-value="4"></i>
+    }
+  ],
+  "total" : 1,
+  "remaining" : 0
+}</pre>
+</div>
+<div class="calloutlist">
+<table border="0" summary="Callout list">
+<tr>
+<td align="left" valign="top" width="5%">
+<p><a href="#CO627-1"><i class="conum" data-value="1"></i></a></p>
+</td>
+<td align="left" valign="top">
+<p>The name of the snapshot.</p>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" width="5%">
+<p><a href="#CO627-2"><i class="conum" data-value="2"></i></a></p>
+</td>
+<td align="left" valign="top">
+<p>The repository of the snapshot.</p>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" width="5%">
+<p><a href="#CO627-3"><i class="conum" data-value="3"></i></a></p>
+</td>
+<td align="left" valign="top">
+<p>The indices backed up in the snapshot.</p>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" width="5%">
+<p><a href="#CO627-4"><i class="conum" data-value="4"></i></a></p>
+</td>
+<td align="left" valign="top">
+<p>If the snapshot was successful.</p>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li class="listitem">
+The snapshot <code class="literal">snapshot-20200617</code> contains the two indices we want to restore.
+You might have multiple snapshots from which you could restore the target indices. Choose the latest snapshot.
+</li>
+<li class="listitem">
+<p>Now that we found a snapshot, we will close the target indices via the use the <a class="xref" href="indices-close.html" title="Close index API">close indices API</a>.</p>
+<a id="c28f0b0dd3246cb91d6facb3295a61d7"></a>
+<div class="pre_wrapper lang-console">
+<pre class="programlisting prettyprint lang-console">POST kibana_sample_data_flights,.ds-my-data-stream-2022.06.17-000001/_close</pre>
+</div>
+<div class="console_widget" data-snippet="snippets/1856.console"></div>
+<p>You can confirm that they are closed with the
+the <a class="xref" href="cat-indices.html" title="cat indices API">cat indices API</a>.</p>
+<a id="2ceded6ee764adf1aaaac0a1cd25ed5f"></a>
+<div class="pre_wrapper lang-console">
+<pre class="programlisting prettyprint lang-console">GET _cat/indices?v&amp;health=red&amp;h=index,status,health</pre>
+</div>
+<div class="console_widget" data-snippet="snippets/1857.console"></div>
+<p>The response will look like this:</p>
+<a id="cbe594afe7bcef64510d78ff02934450"></a>
+<div class="pre_wrapper lang-console-result">
+<pre class="programlisting prettyprint lang-console-result">index                                status health
+.ds-my-data-stream-2022.06.17-000001 close   red
+kibana_sample_data_flights           close   red</pre>
+</div>
+</li>
+<li class="listitem">
+<p>The indices are closed, now we can restore them from snapshots without causing
+any complications using the <a class="xref" href="restore-snapshot-api.html" title="Restore snapshot API">restore snapshot API</a>:</p>
+<a id="a699189c8d1a7573beeaea768f2fc618"></a>
+<div class="pre_wrapper lang-console">
+<pre class="programlisting prettyprint lang-console">POST _snapshot/my_repository/snapshot-20200617/_restore
+{
+  "indices": "kibana_sample_data_flights,.ds-my-data-stream-2022.06.17-000001", <a id="CO628-1"></a><i class="conum" data-value="1"></i>
+  "include_aliases": true                                                       <a id="CO628-2"></a><i class="conum" data-value="2"></i>
+}</pre>
+</div>
+<div class="console_widget" data-snippet="snippets/1858.console"></div>
+<div class="calloutlist">
+<table border="0" summary="Callout list">
+<tr>
+<td align="left" valign="top" width="5%">
+<p><a href="#CO628-1"><i class="conum" data-value="1"></i></a></p>
+</td>
+<td align="left" valign="top">
+<p>The indices to restore.</p>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top" width="5%">
+<p><a href="#CO628-2"><i class="conum" data-value="2"></i></a></p>
+</td>
+<td align="left" valign="top">
+<p>We also want to restore the aliases.</p>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li class="listitem">
+<p>Finally we can verify that the indices health is now <code class="literal">green</code> via the <a class="xref" href="cat-indices.html" title="cat indices API">cat indices API</a>.</p>
+<a id="734e2b1d1ca84a305240a449738f0eba"></a>
+<div class="pre_wrapper lang-console">
+<pre class="programlisting prettyprint lang-console">GET _cat/indices?v&amp;index=.ds-my-data-stream-2022.06.17-000001,kibana_sample_data_flightsh=index,status,health</pre>
+</div>
+<div class="console_widget" data-snippet="snippets/1859.console"></div>
+<p>The response will look like this:</p>
+<a id="3d6986d5be947ec06c5c49287edf9ce5"></a>
+<div class="pre_wrapper lang-console-result">
+<pre class="programlisting prettyprint lang-console-result">index                                status health
+.ds-my-data-stream-2022.06.17-000001 open   green
+kibana_sample_data_flights           open   green</pre>
+</div>
+<p>As we can see above the indices are <code class="literal">green</code> and open. The issue is resolved.</p>
+<p>For more guidance on creating and restoring snapshots see
+<a class="xref" href="snapshot-restore.html" title="Snapshot and restore">this guide</a>.</p>
+</li>
+</ol>
+</div>
+  </div>
+</div>
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="start-slm.html">« Start Snapshot Lifecycle Management</a>
+</span>
+<span class="next">
+<a href="monitoring-troubleshooting.html">Troubleshooting monitoring »</a>
+</span>
+</div>
+</div>
+</body>
+</html>
