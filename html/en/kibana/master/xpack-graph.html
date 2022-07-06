@@ -315,6 +315,12 @@ configure a drilldown URL to perform a web search for the selected vertex term.<
 in the graph toolbar to show the drilldown buttons for the selected vertices.
 To configure drilldowns, go to <span class="strong strong"><strong>Settings &gt; Drilldowns</strong></span>. See also
 <a class="xref" href="graph-configuration.html#disable-drill-down" title="Disable drilldown configuration">Disabling drilldown configuration</a>.</p>
+<div class="note admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>when creating custom drilldowns, make sure to enclose the referenced index pattern in single quotes (<code class="literal">'</code>) to avoid rison decoding errors.</p>
+</div>
+</div>
 <h4><a id="graph-run-layout"></a>Run and pause the layout<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/kibana/edit/main/docs/user/graph/index.asciidoc">edit</a></h4>
 <p>Graph uses a "force layout", where vertices behave like magnets,
 pushing off of one another. By default, when you add a new vertex to
