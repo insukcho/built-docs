@@ -71,7 +71,7 @@ For syntax, see <a class="xref" href="search-aggregations-pipeline.html#buckets-
 <dd>
 <p>
 (Required, object)
-The correlation function to execute.
+The correlation function to execute. Only one function is allowed.
 </p>
 <details open>
 <summary class="title">Properties of <code class="literal">function</code></summary>
@@ -85,7 +85,7 @@ The correlation function to execute.
 </dt>
 <dd>
 <p>
-(Required<sup>*</sup>, object)
+(Optional, object)
 The configuration to calculate a count correlation. This function is designed for
 determining the correlation of a term value and a given metric. Consequently, it
 needs to meet the following requirements.
@@ -157,6 +157,45 @@ An array of fractions to use when averaging and calculating variance. This shoul
 </div>
 </div>
 </details>
+</dd>
+</dl>
+</div>
+</div>
+</details>
+</dd>
+<dt>
+<span class="term">
+<code class="literal">metric_correlation</code>
+</span>
+</dt>
+<dd>
+<p>
+(Optional, object)
+The configuration to calculate a metric correlation. This function is designed for
+determining the correlation of metrics given at two bucket_paths. Consequently, it
+needs to meet the following requirements.
+</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+The <code class="literal">buckets_path</code> must point to a metric within a multi-bucket aggregation.
+</li>
+</ul>
+</div>
+<details open>
+<summary class="title">Properties of <code class="literal">metric_correlation</code></summary>
+<div class="content">
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<code class="literal">buckets_path</code>
+</span>
+</dt>
+<dd>
+(Required, string)
+Path to the buckets that contain one set of values to correlate.
+For syntax, see <a class="xref" href="search-aggregations-pipeline.html#buckets-path-syntax" title="buckets_path Syntax"><code class="literal">buckets_path</code> Syntax</a>.
 </dd>
 </dl>
 </div>
