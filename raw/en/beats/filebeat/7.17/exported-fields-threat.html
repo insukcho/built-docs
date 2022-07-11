@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>threat fields | Filebeat Reference [7.17] | Elastic</title>
+<link rel="home" href="index.html" title="Filebeat Reference [7.17]"/>
+<link rel="up" href="exported-fields.html" title="Exported fields"/>
+<link rel="prev" href="exported-fields-system.html" title="System fields"/>
+<link rel="next" href="exported-fields-threatintel.html" title="threatintel fields"/>
+<meta name="DC.type" content="Learn/Docs/Filebeat/Reference/7.17"/>
+<meta name="DC.subject" content="Filebeat"/>
+<meta name="DC.identifier" content="7.17"/>
+</head>
+<body><div class="page_header">
+A newer version is available. For the latest information, see the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Filebeat Reference [7.17]</a></span>
+»
+<span class="breadcrumb-link"><a href="exported-fields.html">Exported fields</a></span>
+»
+<span class="breadcrumb-node">threat fields</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="exported-fields-system.html">« System fields</a>
+</span>
+<span class="next">
+<a href="exported-fields-threatintel.html">threatintel fields »</a>
+</span>
+</div>
+<div class="chapter">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="exported-fields-threat"></a>threat fields<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/beats/edit/7.17/filebeat/docs/fields.asciidoc">edit</a></h2>
+</div></div></div>
+<p>Threat indicator fields.</p>
+<div class="variablelist">
+<dl class="variablelist">
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.issuer</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>Name of issuing certificate authority. Could be either Distinguished Name (DN) or Common Name (CN), depending on source.</p>
+<p>type: keyword</p>
+<p>example: C=US, O=Example Inc, OU=www.example.com, CN=Example SHA2 High Assurance Server CA</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.issuer.common_name</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>List of common name (CN) of issuing certificate authority.</p>
+<p>type: keyword</p>
+<p>example: Example SHA2 High Assurance Server CA</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.not_after</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>Time at which the certificate is no longer considered valid.</p>
+<p>type: date</p>
+<p>example: 2020-07-16 03:15:39+00:00</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.not_before</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>Time at which the certificate is first considered valid.</p>
+<p>type: date</p>
+<p>example: 2019-08-16 01:40:25+00:00</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.public_key_algorithm</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>Algorithm used to generate the public key.</p>
+<p>type: keyword</p>
+<p>example: RSA</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.serial_number</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>Unique serial number issued by the certificate authority. For consistency, if this value is alphanumeric, it should be formatted without colons and uppercase characters.</p>
+<p>type: keyword</p>
+<p>example: 55FBB9C7DEBF09809D12CCAA</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.subject</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>Name of the certificate subject entity. Could be either Distinguished Name (DN) or Common Name (CN), depending on source.</p>
+<p>type: keyword</p>
+<p>example: C=US, ST=California, L=San Francisco, O=Example, Inc., CN=shared.global.example.net</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.subject.common_name</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>List of common names (CN) of subject.</p>
+<p>type: keyword</p>
+<p>example: shared.global.example.net</p>
+</dd>
+<dt>
+<span class="term">
+<span class="strong strong"><strong><code class="literal">threat.indicator.file.x509.alternative_names</code></strong></span>
+</span>
+</dt>
+<dd>
+<p>List of subject alternative names (SAN). Name types vary by certificate authority and certificate type but commonly contain IP addresses, DNS names (and wildcards), and email addresses.</p>
+<p>type: keyword</p>
+<p>example: *.elastic.co</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="exported-fields-system.html">« System fields</a>
+</span>
+<span class="next">
+<a href="exported-fields-threatintel.html">threatintel fields »</a>
+</span>
+</div>
+</div>
+</body>
+</html>
