@@ -5374,14 +5374,14 @@ go-elasticsearch:
   Elasticsearch Guide/.doc/examples/doc/8.1: bdcd8aca360d3ac3fc9e967f87eba37e3bdd7dcf
   Elasticsearch Guide/.doc/examples/doc/8.2: 681972c5bbcc7db2167b9388c2fd550793058e80
   Elasticsearch Guide/.doc/examples/doc/8.3: 12728fd8a55554a4688d8346c36f025b5f81ab48
-  Elasticsearch Guide/.doc/examples/doc/main: 5fa14011dfff9af0a15fb9871fb0dc2ec83a210f
+  Elasticsearch Guide/.doc/examples/doc/main: local
   Go Client/.doc/7.16: 564732cbb96aed7d1583e5d11df6e71752558046
   Go Client/.doc/7.17: 45db3408bd0e4a16c9372fb0e40559462715f769
   Go Client/.doc/8.0: 77b879ba2cb78c15964af59088906918e4f51137
   Go Client/.doc/8.1: bdcd8aca360d3ac3fc9e967f87eba37e3bdd7dcf
   Go Client/.doc/8.2: 681972c5bbcc7db2167b9388c2fd550793058e80
   Go Client/.doc/8.3: 12728fd8a55554a4688d8346c36f025b5f81ab48
-  Go Client/.doc/main: 5fa14011dfff9af0a15fb9871fb0dc2ec83a210f
+  Go Client/.doc/main: local
 guide:
   'Elasticsearch - The Definitive Guide/./1.x': ab5e9555ef7a18dd9eb917e4ddfe4557213b5ef3
   'Elasticsearch - The Definitive Guide/./2.x': 07acfc9d998108ec22d9d36b4777d228de64fe0c
