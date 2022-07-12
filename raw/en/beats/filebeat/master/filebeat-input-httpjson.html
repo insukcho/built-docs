@@ -1008,10 +1008,122 @@ Third call: <a href="https://example.com/services/data/v1.0/export_ids`/<code cl
 </li>
 </ul>
 </div>
+<h4><a id="_chain_while"></a><code class="literal">chain[].while</code><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/beats/edit/main/x-pack/filebeat/docs/inputs/input-httpjson.asciidoc">edit</a></h4>
+<p>Contains basic request and response configuration for chained while calls. Chained while calls will keep making the requests for a given number of times until a condition is met
+or the maximum number of attempts gets exhausted. While chain has an attribute <code class="literal">till</code> which holds the expression to be evaluated. Ideally the <code class="literal">till</code> field should always be used
+together with the attributes <code class="literal">request.retry.max_attempts</code> and <code class="literal">request.retry.wait_min</code> which specifies the maximum number of attempts to evaluate <code class="literal">till</code> before giving up and the
+maximum wait time in between such requests. If <code class="literal">request.retry.max_attempts</code> is not specified, it will only try to evaluate the expression once and give up if it fails. If
+<code class="literal">request.retry.wait_min</code> is not specified the default wait time will always be <code class="literal">0</code> as in successive calls will be made immediately.</p>
+<h4><a id="_chain_while_request"></a><code class="literal">chain[].while.request</code><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/beats/edit/main/x-pack/filebeat/docs/inputs/input-httpjson.asciidoc">edit</a></h4>
+<p>Please refer to <a class="xref" href="filebeat-input-httpjson.html#request-parameters" title="request.url">request parameters</a> for more information. Required.</p>
+<p>Example:</p>
+<p>First call: <a href="http://example.com/services/data/v1.0/exports" class="ulink" target="_top">http://example.com/services/data/v1.0/exports</a></p>
+<p>Second call: <a href="http://example.com/services/data/v1.0/9ef0e6a5/export_ids/status" class="ulink" target="_top">http://example.com/services/data/v1.0/9ef0e6a5/export_ids/status</a></p>
+<p>Third call: <a href="http://example.com/services/data/v1.0/export_ids/1/info" class="ulink" target="_top">http://example.com/services/data/v1.0/export_ids/1/info</a></p>
+<h4><a id="_chain_while_response_split"></a><code class="literal">chain[].while.response.split</code><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/beats/edit/main/x-pack/filebeat/docs/inputs/input-httpjson.asciidoc">edit</a></h4>
+<p>Please refer <a class="xref" href="filebeat-input-httpjson.html#response-split" title="response.split">response split parameter</a>.</p>
+<h4><a id="_chain_while_replace"></a><code class="literal">chain[].while.replace</code><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/beats/edit/main/x-pack/filebeat/docs/inputs/input-httpjson.asciidoc">edit</a></h4>
+<p>Please refer <code class="literal">chain[].step.replace</code>.</p>
+<p>Example:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p>First call: <a href="http://example.com/services/data/v1.0/exports" class="ulink" target="_top">http://example.com/services/data/v1.0/exports</a></p>
+<p><a class="xref" href="filebeat-input-httpjson.html#response-json1-while">response</a></p>
+</li>
+<li class="listitem">
+<p>Second call: <a href="http://example.com/services/data/v1.0/<code class="literal">$.exportId</code>/export_ids/status" class="ulink" target="_top">http://example.com/services/data/v1.0/<code class="literal">$.exportId</code>/export_ids/status</a></p>
+<p><a class="xref" href="filebeat-input-httpjson.html#response-json2-while">response</a></p>
+</li>
+<li class="listitem">
+<p>Third call: <a href="http://example.com/services/data/v1.0/export_ids/<code class="literal">$.files[:].id</code>/info" class="ulink" target="_top">http://example.com/services/data/v1.0/export_ids/<code class="literal">$.files[:].id</code>/info</a></p>
+<p><a class="xref" href="filebeat-input-httpjson.html#response-json3-while">response 1</a> , <a class="xref" href="filebeat-input-httpjson.html#response-json4-while">response 2</a></p>
+</li>
+</ul>
+</div>
+<div class="pre_wrapper lang-yaml">
+<pre class="programlisting prettyprint lang-yaml">filebeat.inputs:
+- type: httpjson
+  enabled: true
+  # first call
+  id: my-httpjson-id
+  request.url: http://example.com/services/data/v1.0/exports
+  interval: 1h
+  chain:
+    # second call
+    - while:
+        request.url: http://example.com/services/data/v1.0/$.exportId/export_ids/status
+        request.method: GET
+        replace: $.exportId
+        till: '[[ eq .last_response.body.status "completed" ]]'
+        request.retry.max_attempts: 5
+        request.retry.wait_min: 5s
+    # third call
+    - step:
+        request.url: http://example.com/services/data/v1.0/export_ids/$.files[:].id/info
+        request.method: GET
+        replace: $.files[:].id</pre>
+</div>
+<p>Example:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p>First call to collect export ids</p>
+<p>request_url: <a href="https://example.com/services/data/v1.0/exports" class="ulink" target="_top">https://example.com/services/data/v1.0/exports</a></p>
+<p>response_json:</p>
+<a id="response-json1-while"></a><div class="pre_wrapper lang-json">
+<pre class="programlisting prettyprint lang-json">{
+    "exportId": "9ef0e6a5"
+}</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Second call to collect <code class="literal">file_ids</code> using collected id from first call when <code class="literal">response.body.sataus == "completed"</code>. This call continues until the condition is satisfied or the maximum number of attempts gets exhausted.</p>
+<p>request_url using id as <em>9ef0e6a5</em>: <a href="https://example.com/services/data/v1.0/9ef0e6a5/export_ids/status" class="ulink" target="_top">https://example.com/services/data/v1.0/9ef0e6a5/export_ids/status</a></p>
+<p>response_json using id as <em>9ef0e6a5</em>:</p>
+<a id="response-json2-while"></a><div class="pre_wrapper lang-json">
+<pre class="programlisting prettyprint lang-json">{
+    "status": "completed",
+    "files": [
+      {
+        "id": 1
+      },
+      {
+        "id": 2
+      },
+      {
+        "id": 3
+      }
+    ]
+}</pre>
+</div>
+</li>
+<li class="listitem">
+<p>Third call to collect <code class="literal">files</code> using collected <code class="literal">file_id</code> from second call.</p>
+<p>request_url using file_id as <em>1</em>: <a href="https://example.com/services/data/v1.0/export_ids/1/info" class="ulink" target="_top">https://example.com/services/data/v1.0/export_ids/1/info</a></p>
+<p>request_url using file_id as <em>2</em>: <a href="https://example.com/services/data/v1.0/export_ids/2/info" class="ulink" target="_top">https://example.com/services/data/v1.0/export_ids/2/info</a></p>
+<p>response_json using id as <em>1</em>:</p>
+<a id="response-json3-while"></a><div class="pre_wrapper lang-json">
+<pre class="programlisting prettyprint lang-json">{
+    "file_name": "file_1",
+    "file_data": "some data"
+}</pre>
+</div>
+<p>response_json using id as <em>2</em>:</p>
+<a id="response-json4-while"></a><div class="pre_wrapper lang-json">
+<pre class="programlisting prettyprint lang-json">{
+    "file_name": "file_2",
+    "file_data": "some data"
+}</pre>
+</div>
+<p>Collect and make events from response in any format supported by httpjson for all calls.</p>
+</li>
+</ul>
+</div>
 <div class="note admon">
 <div class="icon"></div>
 <div class="admon_content">
-<p>httpjson chain will only create and ingest events from last call on chained configurations. Also, the current chain only supports the following: <code class="literal">request.url</code>, <code class="literal">request.method</code>, <code class="literal">request.transforms</code>, <code class="literal">request.body</code>, <code class="literal">response.transforms</code> and <code class="literal">response.split</code>.</p>
+<p>httpjson chain will only create and ingest events from last call on chained configurations. Also, the current chain only supports the following: all <a class="xref" href="filebeat-input-httpjson.html#request-parameters" title="request.url">request parameters</a>, <code class="literal">response.transforms</code> and <code class="literal">response.split</code>.</p>
 </div>
 </div>
 <h4><a id="cursor"></a><code class="literal">cursor</code><a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/beats/edit/main/x-pack/filebeat/docs/inputs/input-httpjson.asciidoc">edit</a></h4>
