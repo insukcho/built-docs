@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>First steps with the web crawler | Elastic Enterprise Search Documentation [master] | Elastic</title>
+<link rel="home" href="index.html" title="Elastic Enterprise Search Documentation [master]"/>
+<link rel="up" href="crawler.html" title="Web crawler"/>
+<link rel="prev" href="crawler.html" title="Web crawler"/>
+<link rel="next" href="crawler-search.html" title="Search your crawled documents"/>
+<meta name="DC.type" content="Learn/Docs/Enterprise Search/Guide/master"/>
+<meta name="DC.subject" content="Enterprise Search"/>
+<meta name="DC.identifier" content="master"/>
+<meta name="robots" content="noindex,nofollow"/>
+</head>
+<body><div class="page_header">
+You are looking at preliminary documentation for a future release.
+Not what you want? See the
+<a href="../current/index.html">current release documentation</a>.
+</div>
+<div id="content">
+<div class="breadcrumbs">
+<span class="breadcrumb-link"><a href="index.html">Elastic Enterprise Search Documentation [master]</a></span>
+»
+<span class="breadcrumb-link"><a href="crawler.html">Web crawler</a></span>
+»
+<span class="breadcrumb-node">First steps with the web crawler</span>
+</div>
+<div class="navheader">
+<span class="prev">
+<a href="crawler.html">« Web crawler</a>
+</span>
+<span class="next">
+<a href="crawler-search.html">Search your crawled documents »</a>
+</span>
+</div>
+<div class="section">
+<div class="titlepage"><div><div>
+<h2 class="title"><a id="crawler-first-steps"></a>First steps with the web crawler<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/enterprise-search-pubs/edit/main/enterprise-search-docs/crawler/crawler-first-steps.asciidoc">edit</a></h2>
+</div></div></div>
+<p><em>Learn how to configure, troubleshoot, and schedule crawls using the Elasticsearch native web crawler.</em></p>
+<p>This page walks you through your first crawl, by setting up an Elastic Cloud deployment, creating an Elasticsearch index, configuring crawl settings, adding domains, and defining crawl rules.
+You will learn how to monitor the results of your crawls by viewing event logs in Kibana, how to troubleshoot errors, and how to refine your settings.</p>
+<p>When you have confirmed that your documents are being indexed as expected, you can think about how to search over these documents.</p>
+<p>At this point, you can move into management mode, by scaling up to crawl all required domains, setting up automatic crawl schedules and more.</p>
+<h4><a id="crawler-first-steps-iteration"></a>Start small and iterate<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/enterprise-search-pubs/edit/main/enterprise-search-docs/crawler/crawler-first-steps.asciidoc">edit</a></h4>
+<p>Before diving into the concrete steps, try to internalize the following advice, which many crawler users have learned the hard way!</p>
+<p>It&#8217;s very rare that you will define the perfect crawl configuration in one shot.
+Be prepared for a little trial and error, especially in the beginning.
+Start small and make iterative changes.
+This makes troubleshooting easy.
+Don&#8217;t try to crawl every webpage on every target domain in your first test!</p>
+<p>When you are happy with the results at a small scale, you can gradually add more complexity — after each iteration.</p>
+<p>The iterative feedback cycle:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Defining the crawl
+</li>
+<li class="listitem">
+Monitoring the results
+</li>
+<li class="listitem">
+Troubleshooting
+</li>
+</ul>
+</div>
+<div id="iteration-cycle" class="imageblock">
+<div class="content">
+<img src="images/crawler-iteration-cycle.png" alt="iteration cycle">
+</div>
+<div class="title">Figure 1. The iteration and feedback cycle</div>
+</div>
+<h4><a id="crawler-first-steps-getting-started"></a>Getting started<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/enterprise-search-pubs/edit/main/enterprise-search-docs/crawler/crawler-first-steps.asciidoc">edit</a></h4>
+<p>Before launching your first crawl, you&#8217;ll need to set up an Elastic deployment.
+This example assumes you are using an Elastic Cloud deployment.</p>
+<p>Follow these steps to create a deployment:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<p>Create an <a href="https://cloud.elastic.co/login?redirectTo=%2Fhome" class="ulink" target="_blank" rel="noopener">Elastic cloud</a> deployment</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Name your deployment
+</li>
+<li class="listitem">
+Choose a cloud provider, region, hardware profile
+</li>
+<li class="listitem">
+Choose the Elastic Stack version — ensure you are using version 8.4+
+</li>
+<li class="listitem">
+Download or copy the user name / password pair to a safe place
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+Your deployment will be up and running in around five minutes
+</li>
+<li class="listitem">
+Ensure Enterprise Search is running
+</li>
+</ul>
+</div>
+<h4><a id="crawler-first-steps-first-crawl"></a>Set up your first crawl<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/enterprise-search-pubs/edit/main/enterprise-search-docs/crawler/crawler-first-steps.asciidoc">edit</a></h4>
+<p>Once you have set up your Elastic deployment, you can start to configure the web crawler, and run your first test crawls:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+In Kibana Create a new Elasticsearch index which uses the crawler schema
+</li>
+<li class="listitem">
+<p>Define crawler settings for your first crawl</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Enter a domain to be crawled.
+The web crawler will not crawl any webpages outside of this domain.
+</li>
+<li class="listitem">
+Validate the domain by performing basic checks
+</li>
+<li class="listitem">
+Inspect the domain&#8217;s <code class="literal">robots.txt</code> file, if it exists.
+The instructions within the file, also called directives, communicate which paths within that domain are disallowed (and allowed) for crawling.
+</li>
+<li class="listitem">
+Add the domain
+</li>
+<li class="listitem">
+<p>Define entry points, where the web crawler starts at each crawl.
+This is the first URL the crawler visits before following the HTML hyperlinks it encounters.
+Add multiple entries, if some pages are not discoverable from the first entry point.
+For example, if there’s an “island” page that isn’t linked from other pages, simply add that full URL as an entry point.</p>
+<p>If the website you are crawling uses sitemaps, you can specify the sitemap URLs.
+Note that you can choose to submit URLs to the Enterprise Search web crawler using sitemaps, entry points, or a combination of both.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<p>This is enough configuration to start a very basic crawl.
+However, we recommend defining a few <span class="strong strong"><strong>crawl rules</strong></span> before you launch your first crawl:</p>
+<div class="tip admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>The web crawler will crawl only those paths that are allowed by the crawl rules for the domain <span class="strong strong"><strong>and</strong></span> the directives within the <code class="literal">robots.txt</code> file for the domain.</p>
+</div>
+</div>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Crawl rules restrict which pages the web crawler will index.
+</li>
+<li class="listitem">
+When the web crawler discovers a new page, it will evaluate the URL against the rules you defined — to decide if the URL should be visited.
+</li>
+<li class="listitem">
+Rules are evaluated in sequential order.
+If the URL matches the crawl rule, the URL will be allowed or disallowed for crawling.
+If the URL doesn&#8217;t match the rule, it will be evaluated against the next rule.
+</li>
+<li class="listitem">
+Manage robots.txt files
+</li>
+<li class="listitem">
+Manage sitemaps
+</li>
+<li class="listitem">
+Define how you would like to handle duplicate documents.
+</li>
+</ul>
+</div>
+<div class="tip admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>Learn more about <a class="xref" href="crawler-rules.html" title="Crawl rules">Crawl rules</a>.</p>
+</div>
+</div>
+<h4><a id="crawler-first-steps-first-crawl-monitor"></a>Run and monitor your first crawl<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/enterprise-search-pubs/edit/main/enterprise-search-docs/crawler/crawler-first-steps.asciidoc">edit</a></h4>
+<p>You are ready to laucnh your first crawl.
+Eventually, you can define a crawl schedule to automatically run crawls at defined intervals.
+But, you should start with small, manual crawl tests, against a subset of your total target webpages.</p>
+<p>Follow these steps:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+Run the crawl and wait for it to complete.
+Confirm the crawl completed successfully:
+View the status of the crawl to confirm it completed successfully.
+See View crawl status.
+If the crawl failed, look for signs of crawl stability issues. See Troubleshoot crawl stability.
+</li>
+<li class="listitem">
+Monitor the results of the crawl, and note any unexpected behavior.
+View indexed documents to check for missing pages.
+See View indexed documents for instructions to view documents.
+If documents are missing from the engine, look for signs of content discovery issues. See Troubleshoot content discovery.
+</li>
+<li class="listitem">
+<p>You can also troubleshoot by examining events in Kibana.</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+First step create a data view.
+</li>
+<li class="listitem">
+Stack management —&gt; etc.
+Web crawler event logs are stored in hidden indices, which are accessible under advanced settings.
+Include these indices and add the following pattern <code class="literal">ent-search-crawler-*-logs*</code>.
+This will match the indices where the logs are stored.
+</li>
+<li class="listitem">
+Select <code class="literal">@timestamp</code> as the timestamp field
+</li>
+<li class="listitem">
+You can now visualize your logs in the Kibana Logs UI or in Discover, applying the data view you created.
+</li>
+<li class="listitem">
+Customize the information displayed.
+For example, select the fields, <code class="literal">crawler.crawl.id</code>,
+<code class="literal">url.domain</code>,<code class="literal">url.path</code>, <code class="literal">event.action</code>, and <code class="literal">crawler.url.deny.reason</code>.
+</li>
+<li class="listitem">
+Select "Stream" to see your crawl logs.
+The logs might indicate that the entry point has been denied by one of the crawl rules.
+If the first entry point is denied, the crawl stops immediately, because the crawler cannot discover any further URLs to visit.
+Entry points need to be chosen carefully!
+</li>
+</ul>
+</div>
+</li>
+<li class="listitem">
+Repeat troubleshooting as necessary until your documents are correct
+</li>
+</ul>
+</div>
+<div class="tip admon">
+<div class="icon"></div>
+<div class="admon_content">
+<p>TODO Add tips and notes linking to advanced crawler configuration for relevant sections</p>
+</div>
+</div>
+<h4><a id="crawler-first-steps-first-crawl-search"></a>Search your crawled data<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/enterprise-search-pubs/edit/main/enterprise-search-docs/crawler/crawler-first-steps.asciidoc">edit</a></h4>
+<p>When you are satisfied with your crawl rules, and have verified the correctness of the documents being indexed, it&#8217;s time to think about searching your crawled data.
+You have a range of powerful and flexible options for production use cases.
+See <a class="xref" href="crawler-search.html" title="Search your crawled documents">Search your crawled documents</a>.</p>
+<p>In this getting started documentation, you will use a quick and lightweight search option:
+TODO: what&#8217;s the most appropriate search option for first-time / evaluation use cases?</p>
+<h4><a id="crawler-first-steps-next-steps"></a>Next steps<a class="edit_me edit_me_private" rel="nofollow" title="Editing on GitHub is available to Elastic" href="https://github.com/elastic/enterprise-search-pubs/edit/main/enterprise-search-docs/crawler/crawler-first-steps.asciidoc">edit</a></h4>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="crawler-search.html" title="Search your crawled documents">Search your crawled documents</a>
+</li>
+<li class="listitem">
+<a class="xref" href="crawler-scale-up.html" title="Scaling up: managing crawls in production (AKA advanced crawler configuration)">Scaling up: managing crawls in production (AKA advanced crawler configuration)</a>
+</li>
+<li class="listitem">
+<a class="xref" href="crawler-faq.html" title="Web crawler FAQ">Web crawler FAQ</a>
+</li>
+<li class="listitem">
+<a class="xref" href="crawler-reference.html" title="Crawler2 reference">Crawler2 reference</a>
+</li>
+</ul>
+</div>
+<p>Once your documents are being crawled and indexed as required, and you have set up a search functionality, you can start to scale up to production levels:  use all the options available to you; scale up to crawl all the content you want to crawl; schedule your crawls, etc.</p>
+</div>
+<div class="navfooter">
+<span class="prev">
+<a href="crawler.html">« Web crawler</a>
+</span>
+<span class="next">
+<a href="crawler-search.html">Search your crawled documents »</a>
+</span>
+</div>
+</div>
+</body>
+</html>
