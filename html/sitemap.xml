@@ -85522,7 +85522,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-nlp-apis.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-07-12T14:53:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -85536,7 +85536,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-nlp-deploy-models.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-07-12T14:53:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -85557,21 +85557,14 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-nlp-model-ref.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-07-12T14:53:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
 
 <url>
     <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-nlp-overview.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
-    <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-nlp-resources.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-07-12T14:53:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
@@ -85585,7 +85578,7 @@
 
 <url>
     <loc>https://www.elastic.co/guide/en/machine-learning/current/ml-nlp.html</loc>
-    <lastmod>2022-06-28T14:39:52+00:00</lastmod>
+    <lastmod>2022-07-12T14:53:47+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
 </url>
