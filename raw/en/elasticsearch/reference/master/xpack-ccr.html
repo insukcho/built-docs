@@ -505,6 +505,85 @@ and use cross-cluster replication:</p>
 </li>
 </ul>
 </div>
+<h3><a id="ccr-limitations"></a>Cross-cluster replication limitations<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h3>
+<p>Cross-cluster replication is designed to replicate user-generated indices only and doesn&#8217;t
+currently replicate any of the following:</p>
+<div class="ulist itemizedlist">
+<ul class="itemizedlist">
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-system-indices" title="System indices">System indices</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-ml-jobs" title="Machine learning jobs">Machine learning jobs</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-index-templates" title="Index templates">Index templates</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-ilm-slm-policies" title="ILM/SLM policies">ILM/SLM policies</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-user-role-permission-mapping" title="User permissions and role mappings">User permissions and role mappings</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-snapshot-settings" title="Snapshot repository settings">Snapshot repository settings</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-cluster-settings" title="Cluster settings">Cluster settings</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-searchable-snapshots" title="Searchable snapshots">Searchable snapshots</a>
+</li>
+<li class="listitem">
+<a class="xref" href="xpack-ccr.html#ccr-restored-indices" title="Restored indices">Restored indices</a>
+</li>
+</ul>
+</div>
+<h4><a id="ccr-system-indices"></a>System indices<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p><a class="xref" href="api-conventions.html#system-indices" title="System indices">System indices</a> store configurations and internal data for
+Elastic features. Generally, system indices are reserved only for internal use
+by these features. Cross-cluster replication doesn&#8217;t replicate these indices as a security
+precaution.</p>
+<h4><a id="ccr-ml-jobs"></a>Machine learning jobs<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p>Cross-cluster replication doesn&#8217;t support replicating
+<a href="/guide/en/machine-learning/master/machine-learning-intro.html" class="ulink" target="_top">machine learning jobs</a> across clusters. If
+you want to replicate index templates, replicate them to a remote cluster manually.</p>
+<h4><a id="ccr-index-templates"></a>Index templates<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p>Cross-cluster replication doesn&#8217;t support replicating <a class="xref" href="index-templates.html" title="Index templates">index templates</a> across
+clusters. If you want to replicate index templates, replicate them to a remote
+cluster manually.</p>
+<h4><a id="ccr-ilm-slm-policies"></a>ILM/SLM policies<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p>Both <a class="xref" href="index-lifecycle-management.html" title="ILM: Manage the index lifecycle">index lifecycle management</a> and
+<a class="xref" href="snapshot-lifecycle-management-api.html" title="Snapshot lifecycle management APIs">snapshot lifecycle management</a> polices are stored locally in the
+cluster state. If you want to replicate these policies, you must replicate them
+to a remote cluster manually.</p>
+<h4><a id="ccr-user-role-permission-mapping"></a>User permissions and role mappings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p><a href="/guide/en/elasticsearch/reference/master/mapping-roles.html" class="ulink" target="_top">User permissions and role mappings</a> are stored as part
+of the cluster state. If you want to replicate these settings, you must
+replicate them to a remote cluster manually.</p>
+<h4><a id="ccr-snapshot-settings"></a>Snapshot repository settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p><a class="xref" href="snapshots-register-repository.html" title="Register a snapshot repository">Snapshot repository settings</a> are stored
+locally in the cluster state. If you want to replicate these settings, you must
+cross-cluster replication replicate them to a remote cluster manually.</p>
+<h4><a id="ccr-cluster-settings"></a>Cluster settings<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p>If you want to replicate <a class="xref" href="modules-cluster.html" title="Cluster-level shard allocation and routing settings">cluster settings</a>, you must replicate
+them to a remote cluster manually.</p>
+<h4><a id="ccr-searchable-snapshots"></a>Searchable snapshots<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p>The actual data for <a class="xref" href="searchable-snapshots.html" title="Searchable snapshots">searchable snapshot</a> indices are
+stored in the snapshot repository. While indices are either partially-cached or
+fully-cached on the Elasticsearch nodes, cross-cluster replication will not replicate the searchable
+snapshot correctly. You can still set up snapshot repositories on the remote
+cluster and use the same index lifecycle management policy to move data into the cold or frozen tiers
+to achieve searchable snapshots in the remote cluster.</p>
+<p>Data stored in the cold and frozen tier is expected to be read-only. To achieve
+searchable snapshots in these tiers, replicate the data in the hot and warm
+tiers and then move them into searchable snapshots in the cold or frozen tiers.
+Use the <a class="xref" href="ilm-searchable-snapshot.html" title="Searchable snapshot">index lifecycle management searchable snapshot action</a> to take a
+snapshot of the indices and mount them as a searchable snapshot.</p>
+<h4><a id="ccr-restored-indices"></a>Restored indices<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/docs/reference/ccr/index.asciidoc">edit</a></h4>
+<p>Cross-cluster replication auto-follow patterns don&#8217;t automatically replicate restored indices. If
+you want to replicate restored indices, you must replicate them to a remote
+cluster manually.</p>
 
 
 
