@@ -5790,7 +5790,7 @@ stack-docs:
   Elastic Security/docs/en/7.9: e0efc8ca6701d11d5ed0b7c0eb0c74c712795bb8
   Elastic Security/docs/en/8.0: 9472c406d24aebe0bb7dfc3ca935a7d2acd4a6b8
   Elastic Security/docs/en/8.1: 71e30960ec7ff241b31197c089ed391f00abd296
-  Elastic Security/docs/en/8.2: 24ca395f74e247296eff08c0a2a1a4c0e9df5f8f
+  Elastic Security/docs/en/8.2: local
   Elastic Security/docs/en/8.3: 2b5d9ee719f838bcfa985a1e814bedc7b4ec8174
   Elastic Security/docs/en/main: 40ec84d0e6c97da628f6cf7a76f87333964fcc0b
   Elastic Stack and Google Cloud's Anthos/docs/en/gke-on-prem/main: 40ec84d0e6c97da628f6cf7a76f87333964fcc0b
@@ -5820,7 +5820,7 @@ stack-docs:
   Getting Started/docs/en/7.9: e0efc8ca6701d11d5ed0b7c0eb0c74c712795bb8
   Getting Started/docs/en/8.0: 9472c406d24aebe0bb7dfc3ca935a7d2acd4a6b8
   Getting Started/docs/en/8.1: 71e30960ec7ff241b31197c089ed391f00abd296
-  Getting Started/docs/en/8.2: 24ca395f74e247296eff08c0a2a1a4c0e9df5f8f
+  Getting Started/docs/en/8.2: local
   Glossary/docs/en/main: 40ec84d0e6c97da628f6cf7a76f87333964fcc0b
   Infrastructure Monitoring Guide for 6.5-7.4/docs/en/6.5: b2aef0473fb47bcce6bbc5a55a45da6026988251
   Infrastructure Monitoring Guide for 6.5-7.4/docs/en/6.6: bedf2d16f08bb0bade0c1e57b125f50def36fe9a
@@ -5867,7 +5867,7 @@ stack-docs:
   Installation and Upgrade Guide/docs/en/7.9: e0efc8ca6701d11d5ed0b7c0eb0c74c712795bb8
   Installation and Upgrade Guide/docs/en/8.0: 9472c406d24aebe0bb7dfc3ca935a7d2acd4a6b8
   Installation and Upgrade Guide/docs/en/8.1: 71e30960ec7ff241b31197c089ed391f00abd296
-  Installation and Upgrade Guide/docs/en/8.2: 24ca395f74e247296eff08c0a2a1a4c0e9df5f8f
+  Installation and Upgrade Guide/docs/en/8.2: local
   Installation and Upgrade Guide/docs/en/8.3: 2b5d9ee719f838bcfa985a1e814bedc7b4ec8174
   Installation and Upgrade Guide/docs/en/main: 40ec84d0e6c97da628f6cf7a76f87333964fcc0b
   Machine Learning/docs/en/stack/6.3: 9c413a0149c89b5df1a4871ef5b9a7d82c356767
@@ -5896,7 +5896,7 @@ stack-docs:
   Machine Learning/docs/en/stack/7.9: e0efc8ca6701d11d5ed0b7c0eb0c74c712795bb8
   Machine Learning/docs/en/stack/8.0: 9472c406d24aebe0bb7dfc3ca935a7d2acd4a6b8
   Machine Learning/docs/en/stack/8.1: 71e30960ec7ff241b31197c089ed391f00abd296
-  Machine Learning/docs/en/stack/8.2: 24ca395f74e247296eff08c0a2a1a4c0e9df5f8f
+  Machine Learning/docs/en/stack/8.2: local
   Machine Learning/docs/en/stack/8.3: 2b5d9ee719f838bcfa985a1e814bedc7b4ec8174
   Machine Learning/docs/en/stack/main: 40ec84d0e6c97da628f6cf7a76f87333964fcc0b
   SIEM Guide/docs/en/7.2: 932f2bf515336aa41ed734f3a0b7a3299b655cda
