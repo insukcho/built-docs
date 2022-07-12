@@ -155,23 +155,22 @@ password.</p>
 </div>
 <h4><a id="set-built-in-user-passwords"></a>Setting built-in user passwords<a class="edit_me" rel="nofollow" title="Edit this page on GitHub" href="https://github.com/elastic/elasticsearch/edit/master/x-pack/docs/en/security/authentication/built-in-users.asciidoc">edit</a></h4>
 <p>You must set the passwords for all built-in users.</p>
-<p>The <code class="literal">elasticsearch-setup-passwords</code> tool is the simplest method to set the
+<p>The <code class="literal">elasticsearch-reset-passwords</code> tool is the simplest method to set the
 built-in users' passwords for the first time. It uses the <code class="literal">elastic</code> user&#8217;s
 bootstrap password to run user management API requests. For example, you can run
-the command in an "interactive" mode, which prompts you to enter new passwords
+the command in an interactive mode, which prompts you to enter new passwords
 for the <code class="literal">elastic</code>, <code class="literal">kibana_system</code>, <code class="literal">logstash_system</code>, <code class="literal">beats_system</code>, <code class="literal">apm_system</code>,
 and <code class="literal">remote_monitoring_user</code> users:</p>
 <div class="pre_wrapper lang-shell">
-<pre class="programlisting prettyprint lang-shell">bin/elasticsearch-setup-passwords interactive</pre>
+<pre class="programlisting prettyprint lang-shell">bin/elasticsearch-reset-passwords interactive</pre>
 </div>
 <p>For more information about the command options, see
-<a class="xref" href="setup-passwords.html" title="elasticsearch-setup-passwords">elasticsearch-setup-passwords</a>.</p>
+<a class="xref" href="reset-password.html" title="elasticsearch-reset-password"><code class="literal">elasticsearch-reset-password</code></a>.</p>
 <div class="important admon">
 <div class="icon"></div>
 <div class="admon_content">
 <p>After you set a password for the <code class="literal">elastic</code> user, the bootstrap
-password is no longer valid; you cannot run the <code class="literal">elasticsearch-setup-passwords</code>
-command a second time.</p>
+password is no longer valid.</p>
 </div>
 </div>
 <p>Alternatively, you can set the initial passwords for the built-in users by using
